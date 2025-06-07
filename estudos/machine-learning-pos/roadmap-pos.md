@@ -17,7 +17,6 @@ Concluir todas as disciplinas da pós-graduação com compreensão sólida dos c
 - Álgebra linear, cálculo e estatística
 - Probabilidades e distribuições
 - Aplicações com Python
-- Projeto: Análise com TRI no R
 
 Início: 07/06/25
 
