@@ -17,25 +17,58 @@ Concluir todas as disciplinas da pós-graduação com compreensão sólida dos c
 - [ ] Revisar conceitos estatísticos e matemáticos fundamentais
 - [ ] Associar conteúdo teórico com programação em python
 - [ ] Produzir anotações em jupyter notebbok para revisão futura
-- [ ] Avaliação Final
+- [ ] Avaliação e Certificado de Conclusão  
 
-**Conteúdos:**
-- [ ] Representação de Equações Matemáticas com programação em python (14/06/25)
-- [ ] Funções
+**Tópicos em estudo:**
+- [ ] Representando Equações via Programação (14/06/25)
+- [ ] Trabalhando com Funções, Logaritmos e Vetores em Python
 - [ ] Vetor e Espaço Vetorial em Data Science
 - [ ] Matrizes
 - [ ] Derivadas 
-- [ ] Análise EStatística
+- [ ] Análise Estatística
 - [ ] Probabilidade
 - [ ] Estatística com Métodos Paramétricos
 - [ ] Estatística com Métodos Não Paramétricos
-- [ ] Inferência Estatística e TEste de HIpóteses em Data Science
+- [ ] Inferência Estatística e Teste de HIpóteses em Data Science
 
-### 2. Desenvolvimento e Deploy de Modelos de Machine Learning – 🔲 Não iniciada
-- [ ] Iniciar módulo 
+**Projetos:**
+- [ ] Vetores e Espaço Vetorial em Sistemas de Recomendação
+- [ ] Construindo Algoritmo de Rede Neural Artificial Através de Operações com Matrizes
+- [ ] Aplicação Prática de Autovetores e Autovalores com PCA (Análise de Componentes Principais)
+- [ ] Matemática da Arquitetura Transformer na Análise e Forecast de Séries Temporais
+- [ ] Tratamento de Dados Categóricos e o Impacto em Modelagem Estatística
+- [ ] Modelagem Estatística em Indicadores Socioeconômicos
+- [ ] Respondendo Perguntas de Negócio com Distribuições de Probabilidade de Variáveis Contínuas
+- [ ] Aplicação e Interpretação de Testes Estatísticos Para Analisar a Taxa de Ocupação de Imóveis
+- [ ] Análise de Sentimento em Avaliações de Usuários com Regressão Não Paramétrica
+- [ ] Análise de Teste A/B em Campanha de Marketing Digital
+
+### 2. Desenvolvimento e Deploy de Modelos de Machine Learning – 🟡 Em andamento
+- [x] Iniciar módulo (14/07/25).
+- [ ] Produzir anotações para revisões futuras.
 - [ ] Estudar o ciclo completo: pré-processamento, modelagem, avaliação e deploy
 - [ ] Criar ao menos um projeto completo com deploy (ex: Streamlit ou Flask)
 - [ ] Documentar o projeto no portfólio (README, estrutura de pastas)
+- [ ] Avaliação e Certificado de Conclusão  
+
+**Tópicos em estudo:**
+
+- [x] Introdução  (14/06/25)
+- [ ] O Processo de Construção de Modelos de Machine Learning  
+- [ ] Design do Processo de Treino e Teste de Modelos de Machine Learning - Parte 1  
+- [ ] Design do Processo de Treino e Teste de Modelos de Machine Learning - Parte 2  
+- [ ] Design do Processo de Deploy do Modelo - Parte 1  
+- [ ] Design do Processo de Deploy do Modelo - Parte 2  
+- [ ] Deploy do Modelo Como API via Docker  
+- [ ] Checkpoint de Conhecimento  
+- [ ] Engenharia de Atributos e Feature Store  
+- [ ] Retreinamento e Versionamento do Modelo  
+- [ ] Model e Data Drift  
+- [ ] Módulo Especial - Assistentes Pessoais Baseados em IA  
+- [ ] Introdução à Linguagem Rust - Parte 1  
+- [ ] Introdução à Linguagem Rust - Parte 2  
+- [ ] Deploy de Modelos de Machine Learning com Linguagem Rust  
+
 
 ### 3. Deep Learning para Aplicações de IA com Python e C++ – 🔲 Não iniciada
 - [ ] Iniciar módulo 
@@ -59,4 +92,4 @@ Concluir todas as disciplinas da pós-graduação com compreensão sólida dos c
 
 - [x] Criar pasta em `estudos/` dentro do repositório
 - [ ] Inserir uma subpasta para cada disciplina com anotações, códigos e outputs
-- [ ] Atualizar regularmente o `roadmap.md` com progresso nas disciplinas
+- [ ] Atualizar regularmente o `roadmap-pos.md` com progresso nas disciplinas
