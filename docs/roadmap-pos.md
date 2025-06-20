@@ -20,8 +20,8 @@ Concluir todas as disciplinas da pós-graduação com compreensão sólida dos c
 - [ ] Avaliação e Certificado de Conclusão  
 
 **Tópicos em estudo:**
-- [ ] Representando Equações via Programação (14/06/25)
-- [ ] Trabalhando com Funções, Logaritmos e Vetores em Python
+- [x] Representando Equações via Programação (14/06/25)
+- [x] Trabalhando com Funções, Logaritmos e Vetores em Python (19/06/25)
 - [ ] Vetor e Espaço Vetorial em Data Science
 - [ ] Matrizes
 - [ ] Derivadas 
@@ -54,7 +54,7 @@ Concluir todas as disciplinas da pós-graduação com compreensão sólida dos c
 **Tópicos em estudo:**
 
 - [x] Introdução  (14/06/25)
-- [ ] O Processo de Construção de Modelos de Machine Learning  
+- [x] O Processo de Construção de Modelos de Machine Learning  (15/06/25)
 - [ ] Design do Processo de Treino e Teste de Modelos de Machine Learning - Parte 1  
 - [ ] Design do Processo de Treino e Teste de Modelos de Machine Learning - Parte 2  
 - [ ] Design do Processo de Deploy do Modelo - Parte 1  
@@ -87,9 +87,3 @@ Concluir todas as disciplinas da pós-graduação com compreensão sólida dos c
 - [ ] Apresentar os resultados no GitHub com README claro e visualizações
 
 ---
-
-##  Organização e Aplicação
-
-- [x] Criar pasta em `estudos/` dentro do repositório
-- [ ] Inserir uma subpasta para cada disciplina com anotações, códigos e outputs
-- [ ] Atualizar regularmente o `roadmap-pos.md` com progresso nas disciplinas
