@@ -69,6 +69,16 @@ Concluir todas as disciplinas da pós-graduação com compreensão sólida dos c
 - [ ] Introdução à Linguagem Rust - Parte 2  
 - [ ] Deploy de Modelos de Machine Learning com Linguagem Rust  
 
+**Projetos:**
+- [x] Construção e Deploy de Modelo de Machine Learning Para a Área de Logística (22/06/25)
+- [ ] Prevendo o Churn de Clientes com RandomForest – Da Concepção do Problema ao Deploy
+- [ ] Deploy de Modelo de Machine Learning na Nuvem AWS Para Gestão de Escolas
+- [ ] Deploy de API Para Geração de Texto a Partir de Imagens com LLM
+- [ ] Construção de Feature Store e Engenharia de Atributos no Pipeline de Machine Learning
+- [ ] Retreinamento e Versionamento de um Modelo de Machine Learning
+- [ ] Monitoramento, Identificação e Mitigação de Model e Data Drift
+- [ ] Deploy de Modelo de Classificação Através de API em Linguagem Rust
+
 
 ### 3. Deep Learning para Aplicações de IA com Python e C++ – 🔲 Não iniciada
 - [ ] Iniciar módulo 

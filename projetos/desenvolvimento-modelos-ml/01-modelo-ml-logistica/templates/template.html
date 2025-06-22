@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Previsão de Produto</title>
+</head>
+<body>
+
+<h2>Insira os Detalhes do Produto</h2>
+<form action="/predict" method="post">
+    Peso (em gramas): <input type="number" name="peso"><br><br>
+    Tipo de Embalagem: 
+    <select name="tipo_embalagem">
+        <option value="Caixa de Papelão">Caixa de Papelão</option>
+        <option value="Plástico Bolha">Plástico Bolha</option>
+    </select><br><br>
+    <input type="submit" value="Prever">
+</form>
+
+<br>
+{% if prediction %}
+<h3>O Produto Nessa Embalagem Provavelmente é Um: {{ prediction }}</h3>
+{% endif %}
+
+</body>
+</html>

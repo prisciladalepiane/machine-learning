@@ -7,15 +7,18 @@ Repositório dedicado a estudos, anotações e projetos práticos em Machine Lea
 ## 📂 Desenvolvimento e Deploy de Modelos de Machine Learning
 Projetos voltados ao ciclo completo de criação e entrega de modelos de machine learning.
 
-📘 Conceitos teóricos e explicações [`estudos/esenvolvimento-modelos-ml//conceitos`](projetos/matematica-estatistica-aplicada/conceitos)
+📘 [Conceitos teóricos e explicações](projetos/matematica-estatistica-aplicada/conceitos)
 
-🔎  **Modelo de Classificação Logística**
+🔎  **Modelo de Classificação Logística:**
+
+Projeto simples de classificação de produtos com base no peso e tipo de embalagem, usando uma Árvore de Decisão com pré-processamento via LabelEncoder. O modelo é avaliado com acurácia e relatório de classificação, e disponibilizado via API Flask com formulário web interativo.
+
 Pasta: [`projetos/desenvolvimento-modelos-ml/01-modelo-ml-logistica`](projetos/desenvolvimento-modelos-ml/01-modelo-ml-logistica)
 
 ## 📂 Matemática e Estatística Aplicada
 Aplicações matemáticas e estatísticas com foco em fundamentos da ciência de dados.
 
-📘 Conceitos teóricos e explicações: [`estudos/matematica-estatistica-aplicada/conceitos`](projetos/matematica-estatistica-aplicada/conceitos)
+📘 [Conceitos teóricos e explicações](projetos/matematica-estatistica-aplicada/conceitos)
 
 ---
 
