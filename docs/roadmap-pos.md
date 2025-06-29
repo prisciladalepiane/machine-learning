@@ -22,8 +22,11 @@ Concluir todas as disciplinas da pós-graduação com compreensão sólida dos c
 **Tópicos em estudo:**
 - [x] Representando Equações via Programação (14/06/25)
 - [x] Trabalhando com Funções, Logaritmos e Vetores em Python (19/06/25)
-- [ ] Vetor e Espaço Vetorial em Data Science
-- [ ] Matrizes
+- [x] Regras Básicas da Álgebra e vetores (26/06/25)
+- [ ] Vetor e Espaço Vetorial em Data Science parte 1
+- [ ] Vetor e Espaço Vetorial em Data Science parte 2
+- [ ] Vetor e Espaço Vetorial em Data Science parte 3
+- [ ] Operação com Matrizes
 - [ ] Derivadas 
 - [ ] Análise Estatística
 - [ ] Probabilidade
