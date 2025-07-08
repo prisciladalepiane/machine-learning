@@ -67,6 +67,83 @@ Rodada 5: Treina com [1 2 3 4] → Testa com [5]
 
 ### Evitar Vazamento de Dados
 
-É essencial garantir que nenhum dado do conjunto de teste vaze para o conjunto de treino, Isso pode enviedsr o modelo e fdar uma falsa impressão de alto desempenho.
+É essencial garantir que nenhum dado do conjunto de teste vaze para o conjunto de treino, Isso pode enviesar o modelo e dar uma falsa impressão de alto desempenho.
 
-Por isso algumas técnicas de pré-proecessamento devem ser feitas após a divisão em treino e teste.
+Por isso algumas técnicas de pré-proecessamento devem ser feitas após a divisão em treino e teste, como a padronização ou normalização dos dados.
+
+> A escolha de técnica adequada para divisão depende: dos tipos de dados, do tamanho do conjunto de dados, da naturezado problema de negócio e dos recursos computacionais disponíveis. 
+
+## Teste durante ou depois de treinar o modelo?
+
+Conjunto de Treino: Utilizado para treinar o modelo. O modelo aprende a partir deste conjunto.
+
+Conjunto de Teste: Utilizado para avaliar o modelo depois de treinado. Avalia a perforace do modelo em dados que não foram vistos durante o treinanto.
+
+Além disso, muitas vezes um **terceiro conjunto**, chamado COnjunto de Validação é utilizado durante o treinamento para ajustar os parâmetros do modelo, selecionar entre vários modelos ou para fazer a sintonia fina dos hiperparâmetros.
+
+O modelo é ajustado até que a performace no conjunto de validação não melhore mais.
+Isso é especialmente útil em modelos de Deep LEarning ou com grande conjuntos de dados.
+
+> Portanto, o teste do modelo pode acontecer durante e depois do treinamento.
+
+**Durante:** O conjunto de validação é usado para monitorar e ajustar o modelo durante o treinamento (por exemplo, pra evitar overfitting). Não é exatamente um "teste" no sentido estrito, mas sim uma validação e otimização.
+
+**Depois:** Após o modelo ser treinado e ajustado, o conjunto de teste é utilizado para avaliar a performace final do modelo.
+
+É uma maneira de verificar se o modelo aprendeu padrões verdadeiros nos dados e não apenas ruído ou detalhes específicos do conjunto de treino.
+
+Para a validação, diminuir os dados de teste, não de treino, exemplo: (70%, 15% e 15%)
+
+## Estratégias de Avaliação de Desempenho DURANTE o Treino do modelo
+
+### CALLBACKS
+Em Machine Learning, especialmente ao treinar modelos com bibliotecas como Keras (usada com TensorFlow), um callback é um mecanismo que permite executar funções específicas em determinados momentos do treinamento do modelo, como no final de uma época (epoch), após um batch, no início ou fim do treino, etc.
+
+Um callback é uma função ou classe que “escuta” o treinamento do modelo e intervém automaticamente quando certas condições são atendidas.
+
+**Early Stopping:** Para interromper o treinamento quando uma métrica monitorada parou de melhorar, prevenindo overfitting.
+
+**Model Checkpointing:** Para salvar o modelo em diferentes pontos do treinamento, geralmente mantendo apenas a melhor versão do modelo de acordo com uma métrica de desempenho escolhida.
+
+**TensorBoard Integration:**
+Para integrar com ferramentas de visualização como o TensorBoard, permitindo que você monitore o progresso do treinamento em tempo real.
+
+**Dynamic Adjustments:**
+Para fazer ajustes dinâmicos em hiperparâmetros ou na estrutura do modelo em resposta ao desempenho do treinamento.
+
+**Condition-based Actions:**
+Para realizar ações com base no estado atual do treinamento, como aumentar a complexidade do modelo se o treinamento estiver indo bem, ou simplificá-lo se estiver ocorrendo overfitting.
+
+**Custom Callbacks:**
+Para executar ações personalizadas que você define. Por exemplo, você pode criar um callback para enviar uma mensagem de alerta se determinadas condições forem atendidas ou para modificar os dados de entrada de maneiras específicas antes de cada época.
+
+> Use callbacks sempre que quiser automatizar decisões durante o treinamento do modelo. Isso ajuda a evitar overfitting, economiza tempo e melhora a reprodutibilidade do processo.
+
+## Estratégias de Avaliação de Desempenho DEPOIS o Treino do modelo
+
+Após o treinamento do modelo de ML, DEVEMOS realizar uma rigorosa avaliação de desempenho para entender como o modelo provavelmente se comportará com dados novos e não vistos.
+
+**Conjunto de Teste**: Utilizar um conjunto de dados separados que não foi usado durante  o treino nem na validação para avalir a performace do modelo. Este é o teste final que fornece a estimativa mais realista do desempenho do modelo em condições reais.
+
+**Métricas de desempenho**: CAlcular métricas específicas para o problema em questão, como: precição, recall, F1 score para problemas de classificação; MSE, RMSE, MAE para problemas de regressão; conficiente de silhoeta para problemas de clustering.
+
+**Matriz de confusão:** Para problemas de classificação, uma matriz de confusão pode ajudar a entender as taxas de verdadeiro positivo, falso positivo, verdadeiro negativo e falso negativo.
+
+**Curvas ROC e AUC**: Avaliar a capacidade do modelo de discriminar entre classes. A área sob a curva (AUC) da curva ROC (Receiver Operating Characteristic) é uma métrica agregada de desempenho em todos os limiares de classificação.
+
+**Análise de Erros:** Examinar casos onde o modelo falhou para entender os erros e potencialmente melhorar o modelo.
+
+**Comparação com modelos de referência:** Comparar o desempenho do modelo com modelos de linha de base simples ou modelos previamente estabelecidos para avaliar ganhos de desempenho.
+
+**Testes Estatísticos:** Para modelos preditivos, realizar testes estatísticos, como teste t, para comparar a média das métricas de desempenho do modelo com outros modelos ou com um benchmar.
+
+**Análise de Sensibilidade e Especificidade:** Para problemas de classificação médica, por exemplo, a sensibilidade (tava de verdadeiro positivo) e a especificidade (tava de verdadeiro negativo) são métricas que devem ser verificadas.
+
+**Teste de significância:** Avaliar de as diferenças no desempenho entre modelos são estatísticamente significativas.
+
+**Avaliação de desempenho em subgrupos:** Verificas o desempenho do modelo em diferentes segmentos dos dados para identificar se o modelo tem um viés em relação a determinados grupos.
+
+**Análise de Custo-Benefício:** Em certos cados, como em marketing ou diagnósticos médicos, é importante considerar o custo de falsos positivos e falsos negativos para avaliar a performace do modelo de uma perspectiva de negócios ou clínica.
+
+**Feedback de Pós-Impantação:** Após a implementação do modelo, coletar feedback contínuo sobre seu desempenho para monitorar o desempenho a longo prazo.
+
