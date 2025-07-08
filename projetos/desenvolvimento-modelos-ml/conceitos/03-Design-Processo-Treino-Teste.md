@@ -1,5 +1,5 @@
 # Design do Processo Treino e Teste
-## Porque dividimos os dados em Treino e Teste nno processo de MAchine Learning?
+## Porque dividimos os dados em Treino e Teste no processo de MAchine Learning?
 
 No processo de Machine Learning, uma das etapas é dividir os dados em treino e teste. Usamos a amostra de treino para treinar o modelo e a amostra de teste para avaliar o modelo depois do treinamento.
 
@@ -75,9 +75,9 @@ Por isso algumas técnicas de pré-proecessamento devem ser feitas após a divis
 
 ## Teste durante ou depois de treinar o modelo?
 
-Conjunto de Treino: Utilizado para treinar o modelo. O modelo aprende a partir deste conjunto.
+**Conjunto de Treino:** Utilizado para treinar o modelo. O modelo aprende a partir deste conjunto.
 
-Conjunto de Teste: Utilizado para avaliar o modelo depois de treinado. Avalia a perforace do modelo em dados que não foram vistos durante o treinanto.
+**Conjunto de Teste:** Utilizado para avaliar o modelo depois de treinado. Avalia a perforace do modelo em dados que não foram vistos durante o treinanto.
 
 Além disso, muitas vezes um **terceiro conjunto**, chamado COnjunto de Validação é utilizado durante o treinamento para ajustar os parâmetros do modelo, selecionar entre vários modelos ou para fazer a sintonia fina dos hiperparâmetros.
 
@@ -147,3 +147,54 @@ Após o treinamento do modelo de ML, DEVEMOS realizar uma rigorosa avaliação d
 
 **Feedback de Pós-Impantação:** Após a implementação do modelo, coletar feedback contínuo sobre seu desempenho para monitorar o desempenho a longo prazo.
 
+## Como detectar Overfitting e Underfitting?
+
+Pode ser difícil e em muitos casos só conseguimos detectar ao final do processo, quando muito trabalho já foi realizado. Quanto antes for detectado e resolvido, menos retrabalho será necessário.
+
+Estratégias comuns:
+
+- Regra Geral - Desempenho no Conjunto de Treino vs. Conjunto de Teste
+
+*Overfitting*: Se o modelo tem desempenho muito bom no conjunto de treino mas pobre no conjunto de teste ou de validação, é sinal clássico de overfitting.
+
+*Underfitting*: Se o modelo tem um desempenho ruim tanto no conjunto de treino quanto no conjunto de teste, pode estar ocorrendo underfitting.
+
+- Desenhe curvas de aprendizado que mostram o desempenho do modelo nos conjuntos de treino e validação/teste ao longo das épocas de treinamento. *Overfitting* pode ser indicado por uma grande lacuna entre as duas curvas. 
+- O uso de **validação cruzada** fornece uma estimativa mais robusta do desempenho do modelo. Se o modelo tem um alto desempenho na validação cruzada, mas um desempenho muito menor no conjunto de teste, isso pode indicar *overfitting*.
+- Modelos com **muitos parâmetros** comparados em relação ao número de observações pode estar propenso ao *overfitting*. tendem a se ajustar demais aos dados de treino.
+- Uma **matriz de confusão** que mostra desempenho muito alto em uma classe e ruim nas demais pode revelar **sobreajuste/overfitting**.
+
+### Estratégias para tratar overfitting e underfitting
+
+Para Overfitting:
+
+- Simplifique o modelo (reduza a arquitetura)
+- Use técnicas de regularização (L1, L2, dropout)
+- Colete mais dados de treino
+- Utilize técnicas como data augmentation
+- Aplique early stopping durante o treino
+- Reduza a complexidade das features (feature selection)
+
+Para Underfitting:
+
+- AUmente a complexidade do modelo (adicione mais camadas/neurônios)
+- Treine modelos por mais tempo
+- Experimente diferentes algoritmos de otmização
+- Adicione mais atributos ou crie atributos mais complexos
+- Revise o pré-processamento dos dados para garantir que não está demasiadamente simplificado
+
+## Data Augmentation
+
+**Data Augmentation** é uma técnica usada para aumentar artificialmente o volume de dados, por meio de modificações nos dados existentes ou da geração de dados sintéticos. Essa abordagem é especialmente útil quando o conjunto de dados é pequeno, ajudando a melhorar a generalização do modelo e a reduzir o overfitting.
+
+### Pontos-chave:
+
+- **Variação de Dados Existentes**: Inclui transformações como rotações, cortes e mudanças de cor (em imagens) ou substituição de palavras e reestruturação de frases (em texto).
+- **Geração de Dados Sintéticos**: Pode ser feita com técnicas como GANs ou simulações.
+- **Melhoria da Generalização**: Aumenta a exposição do modelo a diferentes variações, melhorando sua performance em dados não vistos.
+- **Prevenção de Overfitting**: Reduz a chance de o modelo memorizar dados em vez de aprender padrões.
+- **Aplicação Ampla**: Utilizável com imagens, texto, áudio e dados tabulares.
+- **Parte do Pré-processamento**: Geralmente integrado ao pipeline de preparação dos dados.
+- **Balanceamento de Classes**: Útil para aumentar a representatividade de classes minoritárias.
+
+> ⚠️ Deve ser usado com cautela: exageros podem comprometer a representatividade e a qualidade dos dados.

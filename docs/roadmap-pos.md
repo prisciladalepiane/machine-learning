@@ -58,7 +58,7 @@ Concluir todas as disciplinas da pós-graduação com compreensão sólida dos c
 
 - [x] Introdução  (14/06/25)
 - [x] O Processo de Construção de Modelos de Machine Learning  (15/06/25)
-- [ ] Design do Processo de Treino e Teste de Modelos de Machine Learning - Parte 1  
+- [x] Design do Processo de Treino e Teste de Modelos de Machine Learning - Parte 1  (29/06/25)
 - [ ] Design do Processo de Treino e Teste de Modelos de Machine Learning - Parte 2  
 - [ ] Design do Processo de Deploy do Modelo - Parte 1  
 - [ ] Design do Processo de Deploy do Modelo - Parte 2  
