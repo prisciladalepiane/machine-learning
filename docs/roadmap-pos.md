@@ -13,18 +13,13 @@ Concluir todas as disciplinas da pós-graduação com compreensão sólida dos c
 ## 📚 Disciplinas e Metas Gerais
 
 ### 1. Matemática e Estatística Aplicada para Data Science, Machine Learning e IA – 🟡 Em andamento
-- [x] Iniciar módulo (07/06/25)
-- [ ] Revisar conceitos estatísticos e matemáticos fundamentais
-- [ ] Associar conteúdo teórico com programação em python
-- [ ] Produzir anotações em jupyter notebbok para revisão futura
-- [ ] Avaliação e Certificado de Conclusão  
 
 **Tópicos em estudo:**
 - [x] Representando Equações via Programação (14/06/25)
 - [x] Trabalhando com Funções, Logaritmos e Vetores em Python (19/06/25)
 - [x] Regras Básicas da Álgebra e vetores (26/06/25)
-- [ ] Vetor e Espaço Vetorial em Data Science parte 1
-- [ ] Vetor e Espaço Vetorial em Data Science parte 2
+- [x] Vetor e Espaço Vetorial em Data Science parte 1 (09/07/25)
+- [ ] Vetor e Espaço Vetorial em Data Science parte 2 (24/07/25)
 - [ ] Vetor e Espaço Vetorial em Data Science parte 3
 - [ ] Operação com Matrizes
 - [ ] Derivadas 
@@ -47,12 +42,6 @@ Concluir todas as disciplinas da pós-graduação com compreensão sólida dos c
 - [ ] Análise de Teste A/B em Campanha de Marketing Digital
 
 ### 2. Desenvolvimento e Deploy de Modelos de Machine Learning – 🟡 Em andamento
-- [x] Iniciar módulo (14/07/25).
-- [ ] Produzir anotações para revisões futuras.
-- [ ] Estudar o ciclo completo: pré-processamento, modelagem, avaliação e deploy
-- [ ] Criar ao menos um projeto completo com deploy (ex: Streamlit ou Flask)
-- [ ] Documentar o projeto no portfólio (README, estrutura de pastas)
-- [ ] Avaliação e Certificado de Conclusão  
 
 **Tópicos em estudo:**
 
@@ -74,7 +63,7 @@ Concluir todas as disciplinas da pós-graduação com compreensão sólida dos c
 
 **Projetos:**
 - [x] Construção e Deploy de Modelo de Machine Learning Para a Área de Logística (22/06/25)
-- [ ] Prevendo o Churn de Clientes com RandomForest – Da Concepção do Problema ao Deploy
+- [ ] Prevendo o Churn de Clientes com RandomForest – Da Concepção do Problema ao Deploy (22/07/25)
 - [ ] Deploy de Modelo de Machine Learning na Nuvem AWS Para Gestão de Escolas
 - [ ] Deploy de API Para Geração de Texto a Partir de Imagens com LLM
 - [ ] Construção de Feature Store e Engenharia de Atributos no Pipeline de Machine Learning
@@ -82,21 +71,11 @@ Concluir todas as disciplinas da pós-graduação com compreensão sólida dos c
 - [ ] Monitoramento, Identificação e Mitigação de Model e Data Drift
 - [ ] Deploy de Modelo de Classificação Através de API em Linguagem Rust
 
-
 ### 3. Deep Learning para Aplicações de IA com Python e C++ – 🔲 Não iniciada
-- [ ] Iniciar módulo 
-- [ ] Explorar arquiteturas de redes neurais (CNNs, RNNs, Transformers)
-- [ ] Escolher e desenvolver ao menos um estudo de caso ou projeto prático
-- [ ] Compartilhar insights e código no repositório do portfólio
 
 ### 4. MLOps e Ciclo de Vida de Modelos – 🔲 Não iniciada
-- [ ] Entender os conceitos de CI/CD, ML pipelines, monitoramento
-- [ ] Aplicar ao menos um fluxo de MLOps em projeto próprio
-- [ ] Documentar boas práticas e ferramentas utilizadas
 
 ### 5. Machine Learning para Aplicações Biomédicas – 🔲 Não iniciada
-- [ ] Identificar desafios específicos do domínio biomédico
-- [ ] Escolher um dos projetos sugeridos na disciplina para aprofundar
-- [ ] Apresentar os resultados no GitHub com README claro e visualizações
+
 
 ---
