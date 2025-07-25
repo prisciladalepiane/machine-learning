@@ -19,7 +19,7 @@ Concluir todas as disciplinas da pós-graduação com compreensão sólida dos c
 - [x] Trabalhando com Funções, Logaritmos e Vetores em Python (19/06/25)
 - [x] Regras Básicas da Álgebra e vetores (26/06/25)
 - [x] Vetor e Espaço Vetorial em Data Science parte 1 (09/07/25)
-- [ ] Vetor e Espaço Vetorial em Data Science parte 2 (24/07/25)
+- [x] Vetor e Espaço Vetorial em Data Science parte 2 (24/07/25)
 - [ ] Vetor e Espaço Vetorial em Data Science parte 3
 - [ ] Operação com Matrizes
 - [ ] Derivadas 
