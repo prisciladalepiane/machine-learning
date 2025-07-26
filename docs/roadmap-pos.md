@@ -30,7 +30,7 @@ Concluir todas as disciplinas da pós-graduação com compreensão sólida dos c
 - [ ] Inferência Estatística e Teste de HIpóteses em Data Science
 
 **Projetos:**
-- [ ] Vetores e Espaço Vetorial em Sistemas de Recomendação
+- [x] Vetores e Espaço Vetorial em Sistemas de Recomendação (25/07/25)
 - [ ] Construindo Algoritmo de Rede Neural Artificial Através de Operações com Matrizes
 - [ ] Aplicação Prática de Autovetores e Autovalores com PCA (Análise de Componentes Principais)
 - [ ] Matemática da Arquitetura Transformer na Análise e Forecast de Séries Temporais
