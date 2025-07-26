@@ -20,8 +20,7 @@ Concluir todas as disciplinas da pós-graduação com compreensão sólida dos c
 - [x] Regras Básicas da Álgebra e vetores (26/06/25)
 - [x] Vetor e Espaço Vetorial em Data Science parte 1 (09/07/25)
 - [x] Vetor e Espaço Vetorial em Data Science parte 2 (24/07/25)
-- [ ] Vetor e Espaço Vetorial em Data Science parte 3
-- [ ] Operação com Matrizes
+- [ ] Operação com Matrizes (26/07/25)
 - [ ] Derivadas 
 - [ ] Análise Estatística
 - [ ] Probabilidade
