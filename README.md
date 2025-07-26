@@ -20,6 +20,12 @@ Aplicações matemáticas e estatísticas com foco em fundamentos da ciência de
 
 📘 [Conceitos teóricos e explicações](projetos/matematica-estatistica-aplicada/conceitos)
 
+🔎 **Sistema de Recomendação de Filmes:**  
+Este projeto aplica conceitos de vetores e espaço vetorial em um sistema de recomendação de filmes baseado em conteúdo. A partir das características dos filmes, o algoritmo calcula similaridades para sugerir cinco títulos semelhantes ao que foi assistido, utilizando dados da API do The Movie Database. A abordagem demonstra na prática como a distância entre vetores pode representar preferências e gerar recomendações personalizadas, como fazem plataformas de streaming.
+  
+📁 Pasta: [`projetos/matematica-estatistica-aplicada/01-sistema-recomendacao`](projetos/matematica-estatistica-aplicada/01-sistema-recomendacao)
+
+
 ---
 
 # 🔗 Outros Projetos
