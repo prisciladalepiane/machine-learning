@@ -14,8 +14,8 @@ from sklearn.preprocessing import StandardScaler
 st.set_page_config(page_title = "Data Science Academy", page_icon = ":100:", layout = "centered")
 
 # Carregar o modelo e o scaler
-modelo_dsa = joblib.load('dsa_modelo_final.pkl')
-scaler = joblib.load('dsa_padronizador.pkl')
+modelo_dsa = joblib.load('modelos/modelo_final.pkl')
+scaler = joblib.load('modelos/scaler.pkl')
 
 # Função para pré-processar os dados de entrada
 # As colunas devem ser exatamente as mesmas usadas durante o treinamento
