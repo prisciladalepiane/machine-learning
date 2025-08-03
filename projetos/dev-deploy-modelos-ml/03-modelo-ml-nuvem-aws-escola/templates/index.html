@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projeto Machine Learning</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            margin-top: 50px;
+            text-align: center; /* Centraliza o conteúdo dentro do container */
+        }
+        h1 {
+            text-align: center; /* Centraliza o cabeçalho */
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: 0 auto; /* Centraliza o formulário */
+        }
+        label {
+            margin-bottom: 5px;
+        }
+        input[type="text"] {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        input[type="submit"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: navy;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h1>Previsão de Admissão - Projeto Machine Learning</h1>
+        
+        <form method="post" action="/predict">
+            <label for="exame_ingles">Nota no Exame de Inglês</label>
+            <input type="text" id="exame_ingles" name="exame_ingles" placeholder="Digite Um Valor Entre 0 e 10" required>
+
+            <label for="exame_psico">Exame Psicotécnico</label>
+            <input type="text" id="exame_psico" name="exame_psico" placeholder="Digite Um Valor Entre 0 e 100" required>
+
+            <label for="nota_qi">Quociente de Inteligência (QI)</label>
+            <input type="text" id="nota_qi" name="nota_qi" placeholder="Digite Um Valor Entre 0 e 200" required>
+
+            <input type="submit" value="Prever Admissão">
+        </form>
+        </br>
+        {% if result %}
+            <p><strong>{{result}}</strong></p>
+        {% endif %}
+    </div>
+</body>
+</html>
