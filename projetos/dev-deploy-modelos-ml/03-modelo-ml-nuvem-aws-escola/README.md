@@ -42,7 +42,7 @@ gunicorn -w 4 app:app
 gunicorn --bind 0.0.0.0:8000 app:app
 
 # Acessa (coloque aqui o endereço da sua instância EC2)
-http://ec2-18-227-10-199.us-east-2.compute.amazonaws.com:8000
+http://ecec2-52-15-145-226.us-east-2.compute.amazonaws.com:8000
 
 # Criando Serviço
 
