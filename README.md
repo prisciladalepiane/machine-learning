@@ -11,9 +11,10 @@ Projetos voltados ao ciclo completo de criação e entrega de modelos de machine
 
 Projeto simples de classificação de produtos com base no peso e tipo de embalagem, usando uma Árvore de Decisão com pré-processamento via LabelEncoder. O modelo é avaliado com acurácia e relatório de classificação, e disponibilizado via API Flask com formulário web interativo.
 
-Pasta: [`projetos/dev-deploy-modelos-ml/01-modelo-ml-logistica`](projetos/desenvolvimento-modelos-ml/01-modelo-ml-logistica)
+Pasta: [`projetos/deploy-ml/01-modelo-ml-logistica`](projetos/deploy-ml/01-modelo-ml-logistica)
 
-📘 [Conceitos teóricos e explicações](projetos/dev-deploy-modelos-ml/conceitos)
+📘 [Conceitos teóricos e explicações](projetos/deploy-ml/conceitos)
+
 ## 📂 Matemática e Estatística Aplicada
 Aplicações matemáticas e estatísticas com foco em fundamentos da ciência de dados.
 
