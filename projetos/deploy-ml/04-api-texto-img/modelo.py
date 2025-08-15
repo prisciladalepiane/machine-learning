@@ -14,14 +14,3 @@ def pipeline_modelo(text:str, image:Image):
 
     idx = logits.argmax(-1).item()
     return model.config.id2label[idx]
-
-
-# prepare image + question
-url = "projetos/deploy-ml/04-api-texto-img/img/imagem3.jpg"
-image = Image.open(url)
-
-text = "what kind of dog is it?"
-
-answer = pipeline_modelo(text, image)
-
-print("Answer:", answer)
