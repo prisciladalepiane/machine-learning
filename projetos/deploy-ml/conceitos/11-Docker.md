@@ -138,3 +138,25 @@ Remover imagem
 ```bash
 DOCKER RMI MINHA-IMAGEM:1.0
 ```
+
+## Sobre o Dockerfile do projeto 4
+
+### 1. `ARG PYTHON_VERSION=3.11.5`
+- Define uma **variável de build** chamada `PYTHON_VERSION`.
+- Valor padrão: `3.11.5`.
+- Isso permite que, na hora de construir a imagem, seja possível trocar a versão do Python sem precisar editar o Dockerfile.
+  - Exemplo:
+    ```bash
+    docker build --build-arg PYTHON_VERSION=3.12.1 -t minha-imagem .
+    ```
+     Usaria a versão 3.12.1 do Python.
+
+
+### 2. `FROM python:${PYTHON_VERSION}-slim AS base`
+- Diz que a imagem **base** será a versão **slim** do Python especificada em `PYTHON_VERSION`.
+- `slim` = uma variante mais **leve** da imagem oficial do Python (com menos pacotes do sistema).
+- O `AS base` dá um **nome (alias)** para essa etapa da build, útil quando o Dockerfile tem múltiplos estágios.
+
+
+### Resumindo:
+Esse código cria uma imagem a partir do **Python 3.11.5 (slim)**, mas permite que você mude facilmente a versão do Python usando `--build-arg`. O alias `base` é usado caso você precise referenciar essa imagem em outras etapas da construção (multistage build).
