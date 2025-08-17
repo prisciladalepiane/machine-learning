@@ -35,10 +35,10 @@ Documentar a compreensão do problema de negócio é um passo **crítico** no de
 ---
 
 ## 5. Restrições e Limitações
-
 - **Técnicas:** Informe limitações técnicas ou operacionais que podem afetar a solução.
 - **Ética e privacidade:** Discuta aspectos éticos e de privacidade relacionados ao uso dos dados.
 
+Influencia quais técnicas e abordagens são viáveis, tanto do ponto de vista técnico quanto do negócio
 ---
 
 ## 6. Plano de Projeto
