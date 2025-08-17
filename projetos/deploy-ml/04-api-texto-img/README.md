@@ -12,19 +12,19 @@ FastAPI: [fastapi](https://fastapi.tiangolo.com)
 
 ## Instruções Para Execução do Projeto 
 
-Abra o terminal ou prompt de comando e navegue até a pasta onde você colocou os arquivos
+Abra o terminal ou prompt de comando e navegue até a pasta onde está os arquivos
 
 Execute o comando abaixo para criar a imagem Docker
 
-`docker build -t deploy:p4`
+`docker build -t pri-deploy:p4 .`
 
 Execute o comando abaixo para criar o container Docker
 
-`docker run -dit --name dsa-p4 -p 3000:3000 dsa-deploy:p4`
+`docker run -dit --name pri-p4 -p 3000:3000 pri-deploy:p4`
 
 Visualize os logs para verificar se a API já foi inicializada
 
-`docker logs dsa-p4`
+`docker logs pri-p4`
 
 Então execute a chamada cliente
 
