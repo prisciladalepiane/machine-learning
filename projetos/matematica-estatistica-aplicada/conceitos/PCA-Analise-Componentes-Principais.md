@@ -1,5 +1,7 @@
 # O Que é Análise de Componentes Principais?
 
+https://ieeexplore.ieee.org/document/7005973
+
 A Análise de Componentes Principais (PCA, do inglês Principal Component Analysis) é uma técnica de redução de dimensionalidade amplamente utilizada em Ciência de Dados e Machine Learning.
 
 O objetivo principal com PCA é transformar um conjunto de variáveis possivelmente correlacionadas em um conjunto de valores de variáveis linearmente não correlacionadas, chamadas de componentes principais. Este processo é realizado mantendo-se o máximo possível da variabilidade presente no conjunto de dados original.
@@ -124,6 +126,35 @@ Como cada autovalor é aproximadamente a importância do seu autovetor correspon
 
 Os autovetores da matriz de covariância são as direções principais, enquanto os autovalores representam a magnitude dessas direções. Os autovalores são importantes para entender a quantidade de variação capturada por cada componente principal.
 
+### Por que o PCA Funciona?
+
+#### Autovalores (Eigenvalues) e Autovetores (Eigenvectors)
+
+Uma forma automática de detectar associações multicolineares (e descobrir problemas numéricos em uma inversão de matriz) é usar autovetores. Explicados em termos simples, os autovetores são uma maneira muito inteligente de recombinar a variância entre as variáveis, criando novos recursos acumulando toda a variância compartilhada. Tal recombinação pode ser obtida usando a função NumPy linalg.eig, resultando em um vetor de autovalores (representando a quantidade de variância recombinada para cada nova variável) e autovetores (uma matriz nos dizendo como as novas variáveis se relacionam com as antigas).
+
+Na álgebra linear, um autovetor ou vetor característico de uma transformação linear é um vetor diferente de zero que muda no máximo por um fator escalar quando essa transformação linear é aplicada a ele.
+
+Existe uma correspondência direta entre matrizes quadradas n por n e transformações lineares de um espaço vetorial n-dimensional em si mesmo, dada qualquer base do espaço vetorial. Por esse motivo, em um espaço vetorial de dimensão finita, é equivalente a definir autovalores e autovetores usando a linguagem das matrizes ou a linguagem das transformações lineares. 
+
+Geometricamente, um autovetor correspondente a um autovalor real diferente de zero, aponta para uma direção em que é inclinado pela transformação e o autovalor é o fator pelo qual é inclinado. Se o autovalor for negativo, a direção será invertida. Falando livremente, em um espaço vetorial multidimensional, o autovetor não é rotacionado. No entanto, em um espaço vetorial unidimensional, o conceito de rotação não tem sentido.
+
+Depois de extrair os autovalores, imprimimos em ordem decrescente e procuramos qualquer elemento cujo valor seja próximo de zero ou pequeno em comparação com os outros. Valores próximos a zero podem representar um problema real para equações normais e outros métodos de otimização baseados na inversão matricial. Valores pequenos representam uma fonte elevada, mas não crítica, de multicolinearidade. 
+
+#### Interpretação do PCA.
+
+Embora o PCA seja um método muito técnico, baseado em algoritmos de álgebra linear aprofundados, é um método relativamente intuitivo quando você pensa sobre isso.
+
+* Primeiro, a matriz de covariância ZᵀZ é uma matriz que contém estimativas de como cada variável em Z se relaciona com todas as outras variáveis ​​em Z. Compreender como uma variável está associada a outra é bastante poderoso.
 
 
-https://ieeexplore.ieee.org/document/7005973
+* Segundo, autovalores e autovetores são importantes. Os autovetores representam direções. Pense em plotar seus dados em um gráfico de dispersão multidimensional. Então, pode-se pensar em um autovetor como uma “direção” específica em seu gráfico de dispersão de dados. Os autovalores representam magnitude ou importância. Autovalores maiores se correlacionam com direções mais importantes.
+
+
+* Finalmente, assumimos que mais variabilidade em uma direção específica se correlaciona com a explicação do comportamento da variável dependente. Muita variabilidade geralmente indica sinal, enquanto pouca variabilidade geralmente indica ruído. Assim, quanto maior a variabilidade em uma direção específica, teoricamente, é indicativo de algo importante que queremos detectar.
+
+Assim, o PCA é um método que reúne:
+
+* Uma medida de como cada variável está associada uma à outra (Matriz de covariância).
+* As direções nas quais nossos dados estão dispersos (Autovetores).
+* A importância relativa dessas diferentes direções (Autovalores).
+* O PCA combina nossos preditores e nos permite eliminar os autovetores que são relativamente sem importância.
