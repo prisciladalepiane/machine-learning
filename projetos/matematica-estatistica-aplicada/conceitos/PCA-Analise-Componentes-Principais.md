@@ -158,3 +158,18 @@ Assim, o PCA é um método que reúne:
 * As direções nas quais nossos dados estão dispersos (Autovetores).
 * A importância relativa dessas diferentes direções (Autovalores).
 * O PCA combina nossos preditores e nos permite eliminar os autovetores que são relativamente sem importância.
+
+
+### Procedimento para construir o algoritmo PCA em Python
+
+Os passos abaixo devem ser seguidos para construir o algoritmo PCA:
+
+**Padronização dos Dados**: PCA é sensível à escala das variáveis. Portanto, é comum padronizar os dados para que cada característica contribua igualmente. Isso envolve subtrair a média e dividir pelo desvio padrão de cada característica.
+
+**Calculando a Matriz de Covariância**: A matriz de covariância representa a covariância de cada par de características. Ela é essencial no algoritmo PCA, pois suas direções principais são os autovetores dessa matriz.
+
+**Encontrando os Autovetores e Autovalores**: Os autovetores da matriz de covariância são as direções principais, enquanto os autovalores representam a magnitude dessas direções. Os autovalores são importantes para entender a quantidade de variação capturada por cada componente principal.
+
+**Ordenando os Componentes Principais**: Ordenamos os autovetores com base nos autovalores em ordem decrescente. Isso nos dá os componentes principais em ordem de importância.
+
+**Projetando os Dados:** Finalmente, os dados originais são projetados nos principais componentes escolhidos. Esta etapa reduz a dimensionalidade dos dados, mantendo a maior parte da informação.
