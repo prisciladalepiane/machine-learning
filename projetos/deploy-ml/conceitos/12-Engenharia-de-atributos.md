@@ -10,24 +10,15 @@ Por vezes, dados brutos não estão imediatamente prontos para serem eficazmente
 
 A engenharia de atributos envolve várias técnicas, como:
 
-**Seleção de Atributos**
-Identificar e selecionar as variáveis mais relevantes para o problema em questão.
+**Seleção de Atributos:** Identificar e selecionar as variáveis mais relevantes para o problema em questão.
 
+**Transformação de Atributos:** Aplicar transformações matemáticas ou estatísticas para alterar a escala ou a distribuição dos dados.
 
-**Transformação de Atributos**
-Aplicar transformações matemáticas ou estatísticas para alterar a escala ou a distribuição dos dados.
+**Criação de Atributos:** Derivar novos atributos a partir dos existentes, por exemplo, combinando duas colunas de dados para criar uma nova que capture uma interação relevante.
 
+**Codificação de Variáveis Categóricas:** Converter variáveis categóricas, como gênero ou país, em uma forma numérica que os modelos de aprendizado de máquina possam processar, utilizando técnicas como codificação one-hot ou ordinal.
 
-**Criação de Atributos**
-Derivar novos atributos a partir dos existentes, por exemplo, combinando duas colunas de dados para criar uma nova que capture uma interação relevante.
-
-
-**Codificação de Variáveis Categóricas**
-Converter variáveis categóricas, como gênero ou país, em uma forma numérica que os modelos de aprendizado de máquina possam processar, utilizando técnicas como codificação one-hot ou ordinal.
-
-
-**Normalização ou Padronização**
-Ajustar a escala dos atributos para que tenham uma distribuição mais uniforme, o que pode ajudar na convergência dos algoritmos de aprendizado.
+**Normalização ou Padronização:** Ajustar a escala dos atributos para que tenham uma distribuição mais uniforme, o que pode ajudar na convergência dos algoritmos de aprendizado.
 
 A engenharia de atributos é frequentemente vista como uma arte tanto quanto uma ciência, pois requer intuição, criatividade e um profundo entendimento dos dados, além de um conhecimento sólido dos algoritmos de aprendizado de máquina a serem aplicados.
 
@@ -39,46 +30,48 @@ As técnicas de engenharia de atributos podem ser amplamente categorizadas com b
 
 Detalhamos a seguir algumas das técnicas mais comuns utilizadas na engenharia de atributos:
 
-1. Seleção de Atributos
-Filtragem: Usa estatísticas para selecionar atributos baseando-se em seu relacionamento com a variável alvo.
+### 1. Seleção de Atributos
+**Filtragem:** Usa estatísticas para selecionar atributos baseando-se em seu relacionamento com a variável alvo.
 
-Wrapper methods: Usam um modelo preditivo para avaliar a importância dos atributos, selecionando aqueles que melhoram a performance do modelo.
+**Wrapper methods:** Usam um modelo preditivo para avaliar a importância dos atributos, selecionando aqueles que melhoram a performance do modelo.
 
-Embedded methods: Integram a seleção de atributos como parte do processo de treinamento do modelo, como é o caso de modelos que utilizam regularização.
+**Embedded methods:** Integram a seleção de atributos como parte do processo de treinamento do modelo, como é o caso de modelos que utilizam regularização.
 
-2. Extração e Criação de Atributos
-Análise de Componentes Principais (PCA): Reduz a dimensionalidade dos dados ao transformá-los em um conjunto menor de variáveis sumárias (componentes) que retêm a maior parte da variabilidade original dos dados.
+### 2. Extração e Criação de Atributos
+**Análise de Componentes Principais (PCA):** Reduz a dimensionalidade dos dados ao transformá-los em um conjunto menor de variáveis sumárias (componentes) que retêm a maior parte da variabilidade original dos dados.
 
 
-Engenharia de Atributos Temporais: Derivação de novos atributos a partir de variáveis de tempo, como hora do dia, dia da semana, diferenças de tempo entre eventos etc.
+**Engenharia de Atributos Temporais:** Derivação de novos atributos a partir de variáveis de tempo, como hora do dia, dia da semana, diferenças de tempo entre eventos etc.
 
-Combinação e Transformação de Atributos: Criação de novos atributos por meio da combinação ou transformação de atributos existentes, como somar, subtrair, multiplicar ou dividir duas ou mais colunas.
-3. Tratamento de Dados Categóricos
-Codificação One-Hot: Transforma variáveis categóricas em uma forma que possa ser fornecida aos algoritmos de ML, criando uma nova coluna binária para cada categoria.
+**Combinação e Transformação de Atributos:** Criação de novos atributos por meio da combinação ou transformação de atributos existentes, como somar, subtrair, multiplicar ou dividir duas ou mais colunas.
 
-Codificação de Frequência: Substitui as categorias pela frequência (ou porcentagem) de sua ocorrência nos dados.
+### 3. Tratamento de Dados Categóricos
 
-Codificação Target (Mean encoding): Substitui a categoria pelo valor médio da variável alvo para essa categoria.
+**Codificação One-Hot:** Transforma variáveis categóricas em uma forma que possa ser fornecida aos algoritmos de ML, criando uma nova coluna binária para cada categoria.
 
-4. Normalização e Padronização
-Normalização (Min-Max Scaling): Escala os atributos para que fiquem dentro de um intervalo específico, geralmente entre 0 e 1.
+**Codificação de Frequência:** Substitui as categorias pela frequência (ou porcentagem) de sua ocorrência nos dados.
 
-Padronização (Z-score normalization): Transforma os atributos para que tenham média 0 e desvio padrão 1.
+**Codificação Target (Mean encoding):** Substitui a categoria pelo valor médio da variável alvo para essa categoria.
 
-5. Tratamento de Dados Faltantes
-Imputação: Substituição de valores faltantes por um valor estimado com base em outras observações.
+### 4. Normalização e Padronização
+**Normalização (Min-Max Scaling)**: Escala os atributos para que fiquem dentro de um intervalo específico, geralmente entre 0 e 1.
 
-Indicadores de Dados Faltantes: Criação de novos atributos que indicam a presença de dados faltantes em outros atributos.
+**Padronização (Z-score normalization):** Transforma os atributos para que tenham média 0 e desvio padrão 1.
 
-6. Tratamento de Dados Desbalanceados
-Sobreamostragem (Oversampling) ou Subamostragem (Undersampling): Ajusta o balanceamento das classes alvo por meio da replicação de exemplos da classe minoritária ou remoção de exemplos da classe majoritária.
+### 5. Tratamento de Dados Faltantes
 
-SMOTE: Técnica de sobreamostragem que cria exemplos sintéticos da classe minoritária.
+**Imputação:** Substituição de valores faltantes por um valor estimado com base em outras observações.
+**Indicadores de Dados Faltantes:** Criação de novos atributos que indicam a presença de dados faltantes em outros atributos.
 
-7. Detecção e Tratamento de Outliers
-Métodos estatísticos: Uso de scores Z ou intervalos interquartis (IQR) para identificar outliers.
+### 6. Tratamento de Dados Desbalanceados
+**Sobreamostragem (Oversampling) ou Subamostragem (Undersampling):** Ajusta o balanceamento das classes alvo por meio da replicação de exemplos da classe minoritária ou remoção de exemplos da classe majoritária.
 
-Truncamento ou Capping: Limitação de valores extremos a um certo limite definido.
+**SMOTE**: Técnica de sobreamostragem que cria exemplos sintéticos da classe minoritária.
+
+### 7. Detecção e Tratamento de Outliers
+**Métodos estatísticos:** Uso de scores Z ou intervalos interquartis (IQR) para identificar outliers.
+
+**Truncamento ou Capping**: Limitação de valores extremos a um certo limite definido.
 
 Cada uma dessas técnicas pode ser aplicada conforme necessário, dependendo do conjunto de dados específico e do problema que está sendo resolvido.
 
@@ -93,37 +86,35 @@ A seleção, criação e otimização de bons atributos são etapas essenciais q
 
 Vejamos a seguir  os principais motivos que tornam a qualidade dos atributos tão importante:
 
-1. Melhora o Desempenho do Modelo
-Atributos de alta qualidade fornecem informações claras e relevantes que facilitam a tarefa do modelo em identificar padrões.
+### 1. Melhora o Desempenho do Modelo
 
+Atributos de alta qualidade fornecem informações claras e relevantes que facilitam a tarefa do modelo em identificar padrões.
 Modelos alimentados com dados bem preparados tendem a alcançar uma precisão mais alta, menor taxa de erro e melhor generalização para dados não vistos.
 
-2. Facilita a Convergência do Modelo
+### 2. Facilita a Convergência do Modelo
 Atributos bem selecionados e adequadamente preparados ajudam a otimizar o processo de treinamento, permitindo que o modelo alcance a convergência mais rapidamente.
 
 Isso é particularmente importante em modelos complexos, onde o custo computacional do treinamento pode ser significativo.
 
-3. Reduz a Complexidade do Modelo
+### 3. Reduz a Complexidade do Modelo
 A eliminação de atributos irrelevantes ou redundantes através de técnicas de seleção de atributos pode reduzir a complexidade do modelo.
 
 Modelos mais simples são geralmente mais rápidos para treinar, mais fáceis de interpretar e manter, e menos propensos ao overfitting.
 
-4. Melhora a Interpretabilidade
+### 4. Melhora a Interpretabilidade
 Modelos construídos com atributos de alta qualidade e bem entendidos são mais fáceis de interpretar.
 
 Isso é essencial para aplicações em que a tomada de decisões precisa ser explicada ou justificada, como em contextos financeiros, médicos ou jurídicos.
 
-5. Adequação aos Diferentes Tipos de Dados e Modelos
+### 5. Adequação aos Diferentes Tipos de Dados e Modelos
 Cada modelo de aprendizado de máquina tem suas próprias exigências quanto ao tipo, escala e distribuição dos atributos de entrada.
-
 A qualidade dos atributos influencia diretamente a compatibilidade com diferentes algoritmos, maximizando a eficácia do modelo escolhido.
 
-6. Gestão de Dados Faltantes e Outliers
+### 6. Gestão de Dados Faltantes e Outliers
 O tratamento cuidadoso de dados faltantes e outliers é parte da engenharia de atributos.
-
 Atributos de qualidade são aqueles que foram devidamente tratados para minimizar distorções e viéses no modelo causados por anomalias nos dados.
 
-7. Adaptação a Mudanças nos Dados
+### 7. Adaptação a Mudanças nos Dados
 Em ambientes dinâmicos, onde os padrões de dados podem mudar com o tempo (drift de conceito), atributos de alta qualidade permitem uma melhor adaptação a essas mudanças, mantendo a precisão do modelo ao longo do tempo.
 
 A qualidade dos atributos é um dos pilares mais importantes do aprendizado de máquina, impactando diretamente a eficácia, eficiência, e aplicabilidade dos modelos gerados.
@@ -140,41 +131,39 @@ Isso não apenas pode melhorar o desempenho do modelo, mas também tornar o mode
 
 ### Por que é Seleção de Atributos é Importante?
 
+**Reduz a Complexidade do Modelo**: Diminuir o número de atributos pode simplificar o modelo, tornando-o mais rápido para treinar e mais fácil de entender e interpretar.
 
-Reduz a Complexidade do Modelo: Diminuir o número de atributos pode simplificar o modelo, tornando-o mais rápido para treinar e mais fácil de entender e interpretar.
+**Melhora o Desempenho**: Remover dados irrelevantes ou redundantes pode melhorar a precisão do modelo, pois o modelo não é mais distraído por ruídos nos dados.
 
-Melhora o Desempenho: Remover dados irrelevantes ou redundantes pode melhorar a precisão do modelo, pois o modelo não é mais distraído por ruídos nos dados.
-
-Previne Overfitting: Menos atributos significam menos oportunidades para o modelo aprender o ruído nos dados de treinamento como se fossem padrões significativos, o que pode melhorar a capacidade do modelo de generalizar para novos dados.
+**Previne Overfitting:** Menos atributos significam menos oportunidades para o modelo aprender o ruído nos dados de treinamento como se fossem padrões significativos, o que pode melhorar a capacidade do modelo de generalizar para novos dados.
 
 Reduz o Tempo de Treinamento: Menos dados significam que os algoritmos de aprendizado de máquina podem processar mais rápido, reduzindo o tempo necessário para treinar os modelos.
 
 
 ### Técnicas Comuns de Seleção de Atributos
 
-1. Métodos de Filtragem (Filter Methods)
+#### 1. Métodos de Filtragem (Filter Methods)
 Essas técnicas aplicam um critério estatístico para avaliar a relação entre cada atributo e a variável alvo, independentemente do modelo.
 
 Exemplos incluem:
 
-* Correlação: Seleciona atributos com base na força da correlação (positiva ou negativa) com a variável alvo.
+* **Correlação**: Seleciona atributos com base na força da correlação (positiva ou negativa) com a variável alvo.
+
+* **Testes estatísticos:** Chi-quadrado, testes ANOVA, etc., para avaliar a importância dos atributos.
 
 
-* Testes estatísticos: Chi-quadrado, testes ANOVA, etc., para avaliar a importância dos atributos.
 
-
-
-2. Wrapper Methods
+#### 2. Wrapper Methods
 Esses métodos avaliam subconjuntos de atributos, criando modelos usando esses subconjuntos e calculando a qualidade do modelo para determinar a importância dos atributos.
 
 Exemplos incluem:
 
-* RFE (Recursive Feature Elimination): Iterativamente constrói modelos e remove o pior ou os piores atributos, continuando este processo até que o número desejado de atributos seja alcançado.
+* **RFE** (Recursive Feature Elimination): Iterativamente constrói modelos e remove o pior ou os piores atributos, continuando este processo até que o número desejado de atributos seja alcançado.
 
-* Métodos de busca sequencial: Como busca sequencial para frente (forward selection) e busca sequencial para trás (backward elimination).
+* Métodos de **busca sequencial**: Como busca sequencial para frente (forward selection) e busca sequencial para trás (backward elimination).
 
 
-3. Embedded Methods
+#### 3. Embedded Methods
 Integram a seleção de atributos como parte do processo de treinamento do modelo e são específicos para determinados tipos de modelos. Esses métodos aproveitam a penalização (como L1/Lasso e L2/Ridge) para adicionar custos aos atributos, efetivamente realizando seleção de atributos enquanto o modelo é treinado.
 
 Exemplos incluem:
