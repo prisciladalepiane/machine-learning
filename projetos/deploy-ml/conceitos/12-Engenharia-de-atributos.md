@@ -325,3 +325,11 @@ As Feature Stores desempenham um papel essencial na simplificação e na otimiza
 **Benefício**: Facilita a modelagem preditiva ao prover features históricas de vendas, tendências de mercado e dados sazonais de forma centralizada e consistente.
 
 > A implementação de uma Feature Store oferece uma infraestrutura robusta que suporta as necessidades de desenvolvimento de modelos de ML de ponta a ponta, desde a criação de features até a implantação e monitoramento em produção, em uma variedade de aplicações e indústrias.
+
+---
+
+What Is a Feature Store?
+https://www.tecton.ai/blog/what-is-a-feature-store/
+
+O Que São Feature Stores e Por Que São Essenciais na Escalabilidade em Data Science?
+https://www.cienciaedados.com/o-que-sao-feature-stores-e-por-que-sao-essenciais-na-escalabilidade-em-data-science/
