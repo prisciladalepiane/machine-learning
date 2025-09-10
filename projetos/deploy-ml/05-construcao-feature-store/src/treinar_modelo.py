@@ -28,13 +28,3 @@ def treina_avalia_modelo(df_features):
 
     # Retorna o modelo treinado, os dados de teste, os valores verdadeiros de teste, as previsões, a acurácia e o relatório de classificação
     return modelo, X_teste, y_teste, previsoes, acuracia, class_report
-
-import pandas as pd
-
-df_features = pd.read_csv('feature_store.csv')
-
-modelo, X_teste, y_teste, previsoes, acuracia, class_report = treina_avalia_modelo(df_features)
-
-print(f'Acurácia: {acuracia:.2f}')
-print('Relatório de Classificação:')
-print(class_report)

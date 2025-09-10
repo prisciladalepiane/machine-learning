@@ -5,36 +5,31 @@
 import numpy as np
 import pandas as pd
 
+def criar_feature_store():
+    np.random.seed(29)
+    n_samples = 100
+    n_features = 20
+    n_features_grupo1 = 2
+    n_features_grupo2 = 10
+    n_random = n_features - (n_features_grupo1 + n_features_grupo2)
 
-# Criação dos dados aleatórios
-n_samples = 100
-n_features = 20
-n_features_grupo1 = 2
-n_features_grupo2 = 10
-n_random = n_features - (n_features_grupo1 + n_features_grupo2)
+    # Gerar primeiro grupo de features
+    features_grupo1 = np.random.randn(n_samples, n_features_grupo1)
 
-# Gerar primeiro grupo de features
-features_grupo1 = np.random.randn(n_samples, n_features_grupo1)
+    # Gerar segundo grupo de features (combinações lineares das informativas)
+    features_grupo2 = np.dot(features_grupo1, np.random.rand(n_features_grupo1, n_features_grupo2))
 
-# Gerar segundo grupo de features (combinações lineares das informativas)
-features_grupo2 = np.dot(features_grupo1, np.random.rand(n_features_grupo1, n_features_grupo2))
+    # Gerar features aleatórias
+    features_grupo3 = np.random.randn(n_samples, n_random)
 
-# Gerar features aleatórias
-features_grupo3 = np.random.randn(n_samples, n_random)
+    # Combinar todos os tipos de features
+    X = np.hstack([features_grupo1, features_grupo2, features_grupo3])
 
-# Combinar todos os tipos de features
-X = np.hstack([features_grupo1, features_grupo2, features_grupo3])
+    # Gerar o vetor de target simulando uma classificação binária
+    y = (features_grupo1[:, 0] + features_grupo1[:, 1] > 0).astype(int)  
 
-# Gerar o vetor de target simulando uma classificação binária
-y = (features_grupo1[:, 0] + features_grupo1[:, 1] > 0).astype(int)  
+    # Criar um DataFrame
+    df = pd.DataFrame(X, columns = [f'feature_{i}' for i in range(X.shape[1])])
+    df['target'] = y
 
-# Criar um DataFrame
-df = pd.DataFrame(X, columns = [f'feature_{i}' for i in range(X.shape[1])])
-df['target'] = y
-
-print("DataFrame criado com sucesso!")
-print(df.head())
-
-# Salvar o DataFrame em um arquivo CSV
-df.to_csv('feature_store.csv', index=False)
-print("Feature Store salva em 'feature_store.csv'")
+    return df
