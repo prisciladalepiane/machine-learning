@@ -35,4 +35,6 @@ df['target'] = y
 print("DataFrame criado com sucesso!")
 print(df.head())
 
-
+# Salvar o DataFrame em um arquivo CSV
+df.to_csv('feature_store.csv', index=False)
+print("Feature Store salva em 'feature_store.csv'")
