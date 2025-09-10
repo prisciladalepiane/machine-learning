@@ -1,11 +1,9 @@
 # Projeto 5 - Construção de Feature Store e Aplicação de Engenharia de Atributos 
 # Exploração e Visualização dos Dados
 
-import matplotlib.pyplot as plt
-import seaborn as sns
+import matplotlib.pyplot as plt # type: ignore
+import seaborn as sns # type: ignore
 import pandas as pd
-
-df_features = pd.read_csv('feature_store.csv')
 
 def plot_histograms(df_features):
     # Histogrmas das Features
