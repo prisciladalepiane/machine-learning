@@ -74,3 +74,17 @@ E torna a vida dos programadores mais simples.
 - **Internet das Coisas (IoT)**: Coleta e compartilhamento de dados entre dispositivos conectados.  
 - **Integração com serviços de terceiros**: Acesso a funcionalidades e dados externos.  
 - **APIs públicas**: Empresas disponibilizam APIs para que desenvolvedores criem integrações com seus
+
+# Consumo da API
+
+Para consumir uma API criada para o deploy de um modelo de Machine Learning, você pode utilizar várias ferramentas e linguagens de programação. Aqui estão algumas opções:
+
+Python Requests: Biblioteca popular para fazer requisições HTTP de forma simples e eficiente.
+
+Postman: Ferramenta gráfica para testar e automatizar chamadas de API, visualizando respostas em tempo real.
+
+cURL: Ferramenta de linha de comando para fazer requisições HTTP, ideal para scripts e automações.
+
+JavaScript Fetch API: Utilizada em aplicativos web para fazer chamadas HTTP de forma assíncrona.
+
+Essas opções cobrem uma variedade de linguagens e ferramentas, permitindo a integração com APIs de Machine Learning em diversos ambientes de desenvolvimento.
