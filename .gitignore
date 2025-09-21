@@ -1,8 +1,11 @@
 *.pkl
-projetos/deploy-ml/04-api-texto-img/img/
+*img/
 *mlvenv/
 *.egg-info
 *.csv
 *.json
 *.joblib
 __pycache__/
+*.png
+*.jpg
+*.jpeg
