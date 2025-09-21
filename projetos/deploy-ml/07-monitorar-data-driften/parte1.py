@@ -33,9 +33,11 @@ modelo_v1.fit(X_treino_scaled, y_treino)
 # Avalia o modelo no conjunto de teste inicial
 previsoes = modelo_v1.predict(X_teste_scaled)
 acuracia = round(accuracy_score(y_teste, previsoes), 2) * 100
+report = classification_report(y_teste, previsoes)
 
 print("\nScript 1 - Treinamento Inicial do Modelo")
 print("\nAcurácia Inicial do Modelo (%):", acuracia)
+print("\nRelatório de classificação:\n", report)
 
 # Salva o modelo treinado e o padronizador
 modelo_arquivo = 'modelo_v1.pkl'
