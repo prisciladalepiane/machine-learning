@@ -34,7 +34,7 @@ pip install -r requirements.txt
 Execute:
 
 ```bash
-python parte1.py
+python script-1.py
 ```
 
 Use os comandos abaixo para desativar o ambiente virtual e remover o ambiente (opcional):
