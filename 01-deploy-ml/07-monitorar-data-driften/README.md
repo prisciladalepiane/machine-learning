@@ -6,11 +6,12 @@ Os dados usados no projeto foram extraídos do link:
 
 https://archive.ics.uci.edu/dataset/109/wine
 
+## Execute:
 
 Abra o terminal ou prompt de comando, navegue até a pasta com os arquivos 
 
 ```bash
-    cd projetos/deploy-ml/07-monitorar-data-driften
+cd 01-deploy-ml/07-monitorar-data-driften
 ```
 
 execute o comando abaixo para criar um ambiente virtual:
@@ -22,21 +23,47 @@ conda create --name .venv7 python=3.13
 Ative o ambiente:
 
 ```bash
-conda activate venv7 (ou: source activate venv7)
+conda activate .venv7 (ou: source activate .venv7)
 ```
 
-# Instale o pip e as dependências:
+Instale o pip e as dependências:
 
 ```bash
 conda install pip
 pip install -r requirements.txt 
 ```
-Execute:
+### Scripts:
+
+#### Script 1: Treinamento Inicial do Modelo
 
 ```bash
 python script-1.py
 ```
+#### Script 2: Simulação de Data Drift e avaliação do modelo
+Detecta o Data Drift com a comparação da acurácia do modelo.
 
+```bash
+python script-2.py
+```
+#### Script 3: Retreina o modelo com os novos dados e otimiza Hiperparâmetros
+
+```bash
+python script-3.py
+```
+
+#### Script 4:  Retreina o modelo com os novos dados, muda o algoritmo e otimiza hiperparâmetros 
+Usa o algoritmo GradientBoostingClassifier
+
+```bash
+python script-4.py
+```
+#### Script 5: Retreina o modelo com os novos dados, otimiza hiperparâmetros, combina diferentes algoritmos
+
+```bash
+python script-5.py
+```
+
+---
 Use os comandos abaixo para desativar o ambiente virtual e remover o ambiente (opcional):
 
 ```bash
