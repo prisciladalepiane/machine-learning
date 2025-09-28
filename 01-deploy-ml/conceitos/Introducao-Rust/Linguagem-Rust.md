@@ -15,3 +15,35 @@ A biblioteca padrão da Linguagem Rust é minimalista, mas a comunidade Rust con
 Rust é ideal para desenvolvimento de sistemas, programação de aplicativos, desenvolvimento de jogos e especialmente para software que requer alto desempenho e segurança. 
 
 Com uma comunidade ativa e crescente, Rust continua a evoluir, com frequentes atualizações que refinam a linguagem e expandem suas capacidades, tornando-a cada vez mais uma escolha atraente para diversos tipos de projetos de software, incluindo Machine Learning
+
+## Como compilar
+
+Compila
+```bash
+rust main.rs
+```
+EXecuta o programa
+```bash
+./main
+```
+
+## Compilar com cargo
+
+Criar cargo
+```bash
+cargo new projeto
+```
+
+Entra na pasta
+```bash
+cd projeto
+```
+
+Executa o programa
+```bash
+cargo run
+```
+Para limpar a memória e recompilar
+```
+cargo clean
+```
