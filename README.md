@@ -2,28 +2,27 @@
 
 Repositório dedicado a estudos, anotações e projetos práticos em Machine Learning Data Science e MLOps. 
 
-# 📂 Projetos 
-
 ## 📂 Desenvolvimento e Deploy de Modelos de Machine Learning
 Projetos voltados ao ciclo completo de criação e entrega de modelos de machine learning.
 
-🔎  **Modelo de Classificação Logística:**
+📘 [Conceitos teóricos e explicações](01-deploy-ml/conceitos)
+
+### 🔎 Modelo de Classificação Logística
 
 Projeto simples de classificação de produtos com base no peso e tipo de embalagem, usando uma Árvore de Decisão com pré-processamento via LabelEncoder. O modelo é avaliado com acurácia e relatório de classificação, e disponibilizado via API Flask com formulário web interativo.
 
-Pasta: [`projetos/deploy-ml/01-modelo-ml-logistica`](projetos/deploy-ml/01-modelo-ml-logistica)
+📁 [`01-deploy-ml/01-modelo-ml-logistica`](01-deploy-ml/01-modelo-ml-logistica)
 
-📘 [Conceitos teóricos e explicações](projetos/deploy-ml/conceitos)
 
 ## 📂 Matemática e Estatística Aplicada
 Aplicações matemáticas e estatísticas com foco em fundamentos da ciência de dados.
 
-📘 [Conceitos teóricos e explicações](projetos/matematica-estatistica-aplicada/conceitos)
+📘 [Conceitos teóricos e explicações](02-mat-est-aplicada/conceitos)
 
-🔎 **Sistema de Recomendação de Filmes:**  
+### 🔎 Sistema de Recomendação de Filmes:  
 Este projeto aplica conceitos de vetores e espaço vetorial em um sistema de recomendação de filmes baseado em conteúdo. A partir das características dos filmes, o algoritmo calcula similaridades para sugerir cinco títulos semelhantes ao que foi assistido, utilizando dados da API do The Movie Database. A abordagem demonstra na prática como a distância entre vetores pode representar preferências e gerar recomendações personalizadas, como fazem plataformas de streaming.
   
-📁 Pasta: [`projetos/matematica-estatistica-aplicada/01-sistema-recomendacao`](projetos/matematica-estatistica-aplicada/01-sistema-recomendacao)
+📁 [`02-mat-est-aplicada/01-sistema-recomendacao`](02-mat-est-aplicada/01-sistema-recomendacao)
 
 
 ---
