@@ -44,6 +44,10 @@ Executa o programa
 cargo run
 ```
 Para limpar a memória e recompilar
-```
+```bash
 cargo clean
+```
+Instala os pacotes e dependencias
+```bash
+cargo build
 ```
