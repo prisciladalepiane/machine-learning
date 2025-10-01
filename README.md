@@ -11,8 +11,15 @@ Projetos voltados ao ciclo completo de criação e entrega de modelos de machine
 
 Projeto simples de classificação de produtos com base no peso e tipo de embalagem, usando uma Árvore de Decisão com pré-processamento via LabelEncoder. O modelo é avaliado com acurácia e relatório de classificação, e disponibilizado via API Flask com formulário web interativo.
 
-📁 [`01-deploy-ml/01-modelo-ml-logistica`](01-deploy-ml/01-modelo-ml-logistica)
+📁 [01-deploy-ml/01-modelo-ml-logistica](01-deploy-ml/01-modelo-ml-logistica)
 
+### 🔎 Prevendo Churn de clientes
+
+📁 [01-deploy-ml/02-prevendo-churn-de-clientes](01-deploy-ml/02-prevendo-churn-de-clientes)
+
+### 🔎 Nuven AWS
+
+📁 [01-deploy-ml/03-modelo-ml-nuven-aws-escola](01-deploy-ml/03-modelo-ml-nuven-aws-escola)
 
 ## 📂 Matemática e Estatística Aplicada
 Aplicações matemáticas e estatísticas com foco em fundamentos da ciência de dados.
@@ -22,7 +29,7 @@ Aplicações matemáticas e estatísticas com foco em fundamentos da ciência de
 ### 🔎 Sistema de Recomendação de Filmes:  
 Este projeto aplica conceitos de vetores e espaço vetorial em um sistema de recomendação de filmes baseado em conteúdo. A partir das características dos filmes, o algoritmo calcula similaridades para sugerir cinco títulos semelhantes ao que foi assistido, utilizando dados da API do The Movie Database. A abordagem demonstra na prática como a distância entre vetores pode representar preferências e gerar recomendações personalizadas, como fazem plataformas de streaming.
   
-📁 [`02-mat-est-aplicada/01-sistema-recomendacao`](02-mat-est-aplicada/01-sistema-recomendacao)
+📁 [02-mat-est-aplicada/01-sistema-recomendacao](02-mat-est-aplicada/01-sistema-recomendacao)
 
 
 ---
