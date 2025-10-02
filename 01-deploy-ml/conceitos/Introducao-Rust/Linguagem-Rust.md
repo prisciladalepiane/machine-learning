@@ -47,7 +47,29 @@ Para limpar a memória e recompilar
 ```bash
 cargo clean
 ```
-Instala os pacotes e dependencias
+Instala os pacotes e dependencias, testa o programa
 ```bash
 cargo build
 ```
+
+Versão final do programa
+```bash
+cargo build --release
+```
+
+## Estrutura de Repetição
+
+Rust oferece várias estruturas de loop para controle de fluxo, cada uma adequada para diferentes situações de programação:
+
+**Loop**: Este é o tipo mais simples de loop, que continua a executar o bloco de código dentro dele indefinidamente até que seja explicitamente interrompido por uma instrução de saída, como break. É útil quando o número de iterações não é conhecido antes de o loop começar ou quando o loop deve continuar até que uma condição externa seja atendida. É similar ao While, porém mais básico.
+
+```rust
+loop{
+
+}
+```
+
+**While**: Este tipo de loop executa repetidamente um bloco de código enquanto uma condição especificada é verdadeira. Antes de cada iteração, a condição é avaliada e o loop continua até que a condição se torne falsa. É útil quando você precisa continuar a executar um loop até que uma condição externa mude, mas onde essa condição é verificada antes de cada iteração.
+
+
+**For**: O loop for em Rust é frequentemente usado para iterar sobre elementos de uma coleção, como arrays, vetores ou outras estruturas. Este loop itera sobre cada elemento da coleção, executando o bloco de código para cada elemento. É especialmente útil quando você conhece o conjunto de itens que deseja iterar, tornando o código mais seguro e conciso ao evitar erros comuns, como acessar índices fora dos limites da coleção.
