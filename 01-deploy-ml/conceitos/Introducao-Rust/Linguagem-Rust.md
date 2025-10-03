@@ -12,6 +12,8 @@ Além disso, Rustsuporta abstrações de alto nível com desempenho comparável 
 
 A biblioteca padrão da Linguagem Rust é minimalista, mas a comunidade Rust contribui para um ecossistema rico de "crates" (pacotes) disponíveis através do gerenciador de pacotes Cargo. Cargo facilita a compilação de projetos, gerenciamento de dependências e publicação de crates no site crates.io, o registro de pacotes Rust. Este ecossistema permite aos desenvolvedores compartilhar e reutilizar código facilmente, potencializando a colaboração e inovação.
 
+https://docs.rs/cargo/latest/cargo/
+
 Rust é ideal para desenvolvimento de sistemas, programação de aplicativos, desenvolvimento de jogos e especialmente para software que requer alto desempenho e segurança. 
 
 Com uma comunidade ativa e crescente, Rust continua a evoluir, com frequentes atualizações que refinam a linguagem e expandem suas capacidades, tornando-a cada vez mais uma escolha atraente para diversos tipos de projetos de software, incluindo Machine Learning
