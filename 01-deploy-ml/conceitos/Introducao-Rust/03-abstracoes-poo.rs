@@ -67,13 +67,13 @@ fn main() {
     
     // Criando uma instância de Person
     let person = Person {
-        name: String::from("Bob"),
+        name: String::from("Priscila"),
         age: 30,
     };
 
     // Criando duas instâncias de Job
     let job1 = Job::Unemployed;
-    let job2 = Job::Employed(String::from("Engenheiro de Machine Learning"));
+    let job2 = Job::Employed(String::from("Estatística"));
 
     // Imprimindo as descrições das instâncias de Person e Job
     println!("Pessoa --> {}", person.describe());
