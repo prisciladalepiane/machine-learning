@@ -2,7 +2,7 @@ use std::fs::File;
 use std::io::{self, Read, Write};
 use std::fs; // Para manipulação de arquivos
 
-fn criar_arquivo(file_path: &str, content: &str) -> Result<(), io::Error> {
+fn create_file(file_path: &str, content: &str) -> Result<(), io::Error> {
     let mut file = File::create(file_path)?; // Cria o arquivo
     file.write_all(content.as_bytes())?; // Escreve o conteúdo no arquivo
     Ok(())
@@ -15,8 +15,8 @@ fn read_file_content(file_path: &str) -> Result<String, io::Error> {
     Ok(content) // Retorna o conteúdo lido
 }
 
-fn delete_file(file_path: &str) -> io.Result<()> {
-    fs::remove_file(file_path) // Remove o arquivo
+fn delete_file(file_path: &str) -> io::Result<()> {
+    fs::remove_file(file_path); // Remove o arquivo
     Ok(())
 } 
 
@@ -24,7 +24,7 @@ fn main() -> io::Result<()> {
     let filename = "exemplo.txt"; // Nome do arquivo a ser criado
 
     // Cria o arquivo com algum conteúdo
-    criar_arquivo(filename, "Olá, Mundo!")?;
+    create_file(filename, "Olá, Mundo!")?;
     println!("Arquivo '{}' criado com sucesso.", filename);
 
     // Lê o conteúdo do arquivo
