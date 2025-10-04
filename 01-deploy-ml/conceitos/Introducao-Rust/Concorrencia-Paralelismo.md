@@ -18,3 +18,16 @@ Uma thread, em termos de computação, é a menor unidade de processamento que p
 
 **Sincronização**: Como threads compartilham recursos, é essencial gerenciar o acesso a esses recursos para evitar condições de corrida e outros problemas de sincronização.
 
+### [./06-concorrencia-paralelismo.rs](./06-concorrencia-paralelismo.rs)
+
+O script em Rust acima utiliza concorrência e paralelismo para criar e gerenciar múltiplas threads que executam tarefas simultaneamente.
+
+Primeiramente, ele importa módulos necessários da biblioteca padrão para manipulação de threads (`std::thread`), comunicação entre threads (`std::sync::mpsc`), e manipulação de duração de tempo (`std::time::Duration`). No início da função `main`, um canal de comunicação é criado usando `mpsc::channel()`, que retorna um transmissor (`tx`) e um receptor (`rx`).
+
+O script então cria o vetor handles para armazenar os identificadores das threads. Em seguida, um loop for é utilizado para criar 5 threads. Dentro do loop, o transmissor `tx` é clonado para cada thread. Cada thread é criada utilizando thread::spawn, onde uma mensagem é formatada com o número da thread e enviada através do canal utilizando `tx.send(message).unwrap()`. A thread então dorme por 1 segundo utilizando `thread::sleep(Duration::from_secs(1))`.
+
+Após a criação das threads, outro loop for é utilizado para receber e imprimir mensagens de cada thread. As mensagens são recebidas pelo canal usando `rx.recv().unwrap()` e impressas na tela.
+
+Finalmente, um último loop for espera que todas as threads terminem a execução usando `handle.join().unwrap()`, garantindo que o programa principal só finalize após todas as threads terem concluído suas tarefas.
+
+Ao final, uma mensagem é impressa para indicar que todas as threads foram processadas com sucesso.
