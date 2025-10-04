@@ -31,3 +31,24 @@ Após a criação das threads, outro loop for é utilizado para receber e imprim
 Finalmente, um último loop for espera que todas as threads terminem a execução usando `handle.join().unwrap()`, garantindo que o programa principal só finalize após todas as threads terem concluído suas tarefas.
 
 Ao final, uma mensagem é impressa para indicar que todas as threads foram processadas com sucesso.
+
+## Mutex (Mutual Exclusion)
+
+Mutex (Mutual Exclusion) é um mecanismo de sincronização utilizado em programação para garantir que somente uma thread ou processo possa acessar um recurso compartilhado por vez.
+
+Em outras palavras, ele é usado para evitar condições de corrida (race conditions) quando múltiplas threads tentam ler e escrever em um recurso compartilhado simultaneamente. Aqui estão algumas características principais do mutex:
+
+- **Exclusividade**: Um mutex garante que uma thread que possua o "lock" tenha acesso exclusivo ao recurso compartilhado.
+- **Bloqueio**: Quando uma thread tenta adquirir um mutex que já está bloqueado por outra thread, ela será bloqueada até que o mutex seja liberado.
+- **Liberação**: Uma vez que a thread que possui o mutex termine de usar o recurso compartilhado, ela deve liberar o mutex para permitir que outras threads adquiram o lock.
+
+## Arc (Atomic Reference Counted)
+
+Arc (Atomic Reference Counted) é uma estrutura de dados em Rust que permite que múltiplas threads compartilhem a propriedade de um valor.
+
+Arc é uma forma segura e eficiente de gerenciar memória compartilhada entre threads, garantindo que o valor compartilhado seja desalocado apenas quando não houver mais referências a ele. Aqui estão algumas características principais do Arc:
+
+- **Contagem de Referências Atômica**: Arc mantém uma contagem de referência atômica, garantindo que incrementos e decrementos na contagem de referência sejam realizados de forma segura entre múltiplas threads.
+- **Imutabilidade**: Os dados gerenciados por Arc são imutáveis por padrão. Se for necessário modificar os dados, é comum combinar Arc com estruturas como Mutex para permitir mutabilidade segura.
+- **Compartilhamento Seguro**: Arc permite que múltiplas threads possuam e acessem os mesmos dados de forma segura e eficiente, sem a necessidade de gerenciamento manual de memória.
+
