@@ -37,6 +37,11 @@ Este notebook implementa uma rede neural simples para classificação binária, 
 
 📁 [02-mat-est-aplicada/01-algoritmo-rede-neural.ipynb](02-mat-est-aplicada/01-algoritmo-rede-neural.ipynb)
 
+### 🔎 Testes para analisar a taxa de ocupação de imóveis
+
+Projeto com ênfase na modelagem estatística com objetivo de analisar os dados e verificar quais fatores influenciam a taxa de ocupação de imóveis em bairros de uma cidade usando métodos paramétricos.
+
+
 ---
 
 # 🔗 Outros Projetos
