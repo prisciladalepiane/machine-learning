@@ -21,6 +21,7 @@ Projeto simples de classificação de produtos com base no peso e tipo de embala
 
 📁 [01-deploy-ml/03-modelo-ml-nuven-aws-escola](01-deploy-ml/03-modelo-ml-nuven-aws-escola)
 
+------------------------------------------------------------------------------------------------------------------------------------------------
 ## 📂 Matemática e Estatística Aplicada
 Aplicações matemáticas e estatísticas com foco em fundamentos da ciência de dados.
 
@@ -35,12 +36,37 @@ Este projeto aplica conceitos de vetores e espaço vetorial em um sistema de rec
 
 Este notebook implementa uma rede neural simples para classificação binária, explicando o processo de aprendizado via gradiente descendente, do cálculo da saída à atualização dos pesos. Inclui exemplo prático com separação de dados, treinamento e previsão de resultados.
 
-📁 [02-mat-est-aplicada/01-algoritmo-rede-neural.ipynb](02-mat-est-aplicada/01-algoritmo-rede-neural.ipynb)
+📁 [02-mat-est-aplicada/02-algoritmo-rede-neural.ipynb](02-mat-est-aplicada/02-algoritmo-rede-neural.ipynb)
+
+### 🔎 Analise de componetes principais
+
+Análise de componentes principais de um questionário usando algoritmo PCA.
+
+📁 [02-mat-est-aplicada/03-analise-compontentes-principais.ipynb](02-mat-est-aplicada/03-analise-compontentes-principais.ipynb)
+
+### 🔎 Arquitetura Transformer
+
+Aplicação da arquitetura transformer em uma série temporal.
+
+📁 [02-mat-est-aplicada/04-arquiteura-transformer.ipynb](02-mat-est-aplicada/04-arquiteura-transformer.ipynb)
+
+### 🔎 Tratamento de dados categóricos
+
+Tratamento de dados categóricos e seu impacto na análise estatística.
+
+📁 [02-mat-est-aplicada/05-tratamento-dados-categoricos.ipynb](02-mat-est-aplicada/05-tratamento-dados-categoricos.ipynb)
+
+### 🔎 Modelagem estatística de indicadores socioeconomicos
+
+Estuda quais são os indicadores socioeconômicos que impactam a expectativa de vida das pessoas em diferentes países.
+
+[02-mat-est-aplicada/06-modelagem-estatistica-indicadores-socioeconomicos.ipynb](02-mat-est-aplicada/06-modelagem-estatistica-indicadores-socioeconomicos.ipynb)
 
 ### 🔎 Testes para analisar a taxa de ocupação de imóveis
 
 Projeto com ênfase na modelagem estatística com objetivo de analisar os dados e verificar quais fatores influenciam a taxa de ocupação de imóveis em bairros de uma cidade usando métodos paramétricos.
 
+📁 [02-mat-est-aplicada/07-ocupacao-imoveis.ipynb](07-ocupacao-imoveis.ipynb)
 
 ---
 
