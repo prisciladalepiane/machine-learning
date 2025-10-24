@@ -60,7 +60,7 @@ Tratamento de dados categóricos e seu impacto na análise estatística.
 
 Estuda quais são os indicadores socioeconômicos que impactam a expectativa de vida das pessoas em diferentes países.
 
-[02-mat-est-aplicada/06-modelagem-estatistica-indicadores-socioeconomicos.ipynb](02-mat-est-aplicada/06-modelagem-estatistica-indicadores-socioeconomicos.ipynb)
+📁 [02-mat-est-aplicada/06-modelagem-estatistica-indicadores-socioeconomicos.ipynb](02-mat-est-aplicada/06-modelagem-estatistica-indicadores-socioeconomicos.ipynb)
 
 ### 🔎 Testes para analisar a taxa de ocupação de imóveis
 
@@ -68,6 +68,11 @@ Projeto com ênfase na modelagem estatística com objetivo de analisar os dados 
 
 📁 [02-mat-est-aplicada/07-ocupacao-imoveis.ipynb](07-ocupacao-imoveis.ipynb)
 
+### 🔎 Aplicação da regressão LOESS
+
+O Projeto demonstra na prática como aplicar regressão não paramétrica no contexto de  um problema  de  negócio  com  o  objetivo  de  prever  sentimento  em  avaliações  de  usuários.
+
+📁 [02-mat-est-aplicada/08-regressao-loess.ipynb](08-regressao-loess.ipynb)
 ---
 
 # 🔗 Outros Projetos
