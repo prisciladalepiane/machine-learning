@@ -2,7 +2,7 @@
 
 Aprimorar habilidades matemáticas é essencial para atuar com excelência no campo da Ciência de Dados. Essa área se apoia substancialmente em conceitos e técnicas matemáticas, que formam a espinha dorsal de uma vasta gama de algoritmos, modelos e abordagens analíticas. Abaixo, exploramos os motivos principais que destacam a importância das competências matemáticas para Cientistas de Dados e Engenheiros de IA:
 
-**Compreendendo algoritmos de aprendizado de máquina**
+**Compreendendo algoritmos de aprendizado de máquina:**
 Muitos algoritmos de aprendizado de máquina são baseados em conceitos matemáticos como álgebra linear, cálculo, probabilidade e otimização. Ter um conhecimento sólido desses conceitos é essencial para entender como funcionam os algoritmos, ajustar seus parâmetros e interpretar seus resultados.
 
 **Engenharia de recursos**: O pré-processamento de dados e a engenharia de recursos geralmente envolvem transformações matemáticas, como normalização, dimensionamento e técnicas de redução de dimensionalidade, como Análise de Componentes Principais (PCA). Habilidades matemáticas são necessárias para compreender e aplicar essas técnicas corretamente.
