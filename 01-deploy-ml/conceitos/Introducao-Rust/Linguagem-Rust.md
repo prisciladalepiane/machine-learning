@@ -22,7 +22,7 @@ Com uma comunidade ativa e crescente, Rust continua a evoluir, com frequentes at
 
 Compila
 ```bash
-rust main.rs
+rustc main.rs
 ```
 EXecuta o programa
 ```bash
