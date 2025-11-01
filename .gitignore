@@ -9,3 +9,4 @@ __pycache__/
 *.png
 *.jpg
 *.jpeg
+target/
