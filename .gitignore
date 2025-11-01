@@ -10,3 +10,4 @@ __pycache__/
 *.jpg
 *.jpeg
 target/
+*.Cargo.lock
