@@ -1,11 +1,13 @@
 # O Que é Machine Learning?
 
-**Machine Learning (Aprendizado de Máquina)** é um subcampo da Inteligência Artificial (IA) que desenvolve sistemas capazes de **aprender padrões a partir de dados**, melhorando seu desempenho com o tempo, sem serem explicitamente programados para cada tarefa.
+**Machine Learning (Aprendizado de Máquina)** é um subcampo da **Inteligência Artificial (IA)** que desenvolve sistemas capazes de **aprender padrões a partir de dados**, melhorando seu desempenho com o tempo, sem serem explicitamente programados para cada tarefa.
 
 ## Como Funciona?
 
 - Em vez de seguir regras fixas, os sistemas são **treinados com grandes volumes de dados**.
 - Algoritmos analisam esses dados, aprendem padrões e passam a realizar **previsões ou decisões automatizadas**.
+
+Por exemplo, ao fornecer a um modelo de Machine Learning muitas imagens de carros e informando que são carros, o modelo irá identificar características comuns nas imagens que o tornam capaz  de reconhecer um carro em uma nova imagem.
 
 
 ## Aplicações Reais
@@ -27,7 +29,7 @@ Machine Learning está presente em diversos setores, como:
 
 # Desenvolvimento de Modelos de Machine Learning
 
-Este processo envolve a criação de uma representação matemática ou computacional capaz de identificar padrões em dados e realizar previsões ou decisões automaticamente.
+Este processo envolve a criação de uma **representação matemática ou computacional** capaz de identificar padrões em dados e realizar previsões ou decisões automaticamente.
 
 ## Etapas:
 
