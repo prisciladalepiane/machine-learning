@@ -9,7 +9,7 @@ A divisão dos dados em conjunto de treino e teste é uma prática padrão em MA
 - Ajuste de hiperparâmetros
 - COnfiança na performace do modelo
 
-> DIVIDIMOS OS DADOS EM TREINO E TESTE PARA PODER TREINAR E AVALIAR O MODELO USANDO AMOSTRAS DIFERENTES, CASO CONTRÁRIO AS INTERPRETAÇÕES SOBRE O MODELO ESTARIAM ERRADAS.
+> Dividimos os dados em treino e teste para poder treinar e avaliar o modelo usando amostras diferentes.
 
 ## Técnicas e Regras Para Divisão de Dados
 
@@ -28,7 +28,7 @@ Em caso de conjunto de dados pequenos, técnicas como validação cruzada (onde 
 ### Amostragem aleatória
 
 Regra Geral: Os dados devem ser divididos aleatóriamente para evitar qualquer viés. 
-Bibliotecas como `Scikit-learn` fornecem funções para dividir dados aleatpriamente e de forma eficiente.
+Bibliotecas como `Scikit-learn` fornecem funções para dividir dados aleatóriamente e de forma eficiente.
 
 Para garantir que as proporções de diferentes classes ou grupos sejam mantidas tanto no conjunto de treino quanto no de teste, a **estratificação** pode ser utilizada. Isso é particularmente importante em casos de desiquilibro de classes, onde algumas classes são muito menos representadas do que outras.
 
@@ -119,7 +119,7 @@ Para executar ações personalizadas que você define. Por exemplo, você pode c
 
 > Use callbacks sempre que quiser automatizar decisões durante o treinamento do modelo. Isso ajuda a evitar overfitting, economiza tempo e melhora a reprodutibilidade do processo.
 
-## Estratégias de Avaliação de Desempenho DEPOIS o Treino do modelo
+## Estratégias de Avaliação de Desempenho DEPOIS do Treino do modelo
 
 Após o treinamento do modelo de ML, DEVEMOS realizar uma rigorosa avaliação de desempenho para entender como o modelo provavelmente se comportará com dados novos e não vistos.
 
