@@ -190,11 +190,11 @@ Para Underfitting:
 ### Pontos-chave:
 
 - **Variação de Dados Existentes**: Inclui transformações como rotações, cortes e mudanças de cor (em imagens) ou substituição de palavras e reestruturação de frases (em texto).
-- **Geração de Dados Sintéticos**: Pode ser feita com técnicas como GANs ou simulações.
+- **Geração de Dados Sintéticos**: Pode ser feita com técnicas como GANs (*Generative Adversarial Networks*) ou simulações.
 - **Melhoria da Generalização**: Aumenta a exposição do modelo a diferentes variações, melhorando sua performance em dados não vistos.
 - **Prevenção de Overfitting**: Reduz a chance de o modelo memorizar dados em vez de aprender padrões.
-- **Aplicação Ampla**: Utilizável com imagens, texto, áudio e dados tabulares.
-- **Parte do Pré-processamento**: Geralmente integrado ao pipeline de preparação dos dados.
-- **Balanceamento de Classes**: Útil para aumentar a representatividade de classes minoritárias.
+- **Aplicação Ampla**: Embora seja frequentemente associada a imagens, pode ser usada em texto, áudio e dados tabulares.
+- **Parte da Pipeline de Pré-processamento**: Geralmente integrado ao pipeline de preparação dos dados.
+- **Balanceamento de Classes**: Em conjuntos de dados com distribuição de classes desequilibrada é Útil para aumentar a representatividade de classes minoritárias.
 
 > ⚠️ Deve ser usado com cautela: exageros podem comprometer a representatividade e a qualidade dos dados.
