@@ -21,7 +21,14 @@ Projeto simples de classificação de produtos com base no peso e tipo de embala
 
 📁 [01-deploy-ml/03-modelo-ml-nuven-aws-escola](01-deploy-ml/03-modelo-ml-nuven-aws-escola)
 
-------------------------------------------------------------------------------------------------------------------------------------------------
+### 🔎 Deploy de Modelo de Classificação através de API em Linguagem Rust
+
+Projeto para construir, treinar e fazer o deploy de um modelo de classificação em Rust. Deploy feito através de uma API com endpoint de previsão usando o modelo treinado. O pipeline permite que o modelo seja treinado com os dados históricos imediatamente antes de ser usado no deploy com novos dados, a cada execução.
+
+📁 [01-deploy-ml/08-deploy-rust](01-deploy-ml/08-deploy-rust)
+
+
+-------------------------------------------------------------------------------
 ## 📂 Matemática e Estatística Aplicada
 Aplicações matemáticas e estatísticas com foco em fundamentos da ciência de dados.
 
