@@ -75,3 +75,7 @@ loop{
 
 
 **For**: O loop for em Rust é frequentemente usado para iterar sobre elementos de uma coleção, como arrays, vetores ou outras estruturas. Este loop itera sobre cada elemento da coleção, executando o bloco de código para cada elemento. É especialmente útil quando você conhece o conjunto de itens que deseja iterar, tornando o código mais seguro e conciso ao evitar erros comuns, como acessar índices fora dos limites da coleção.
+
+## Pacotes/bibliotecas em rust
+
+São chamadas de crates, estão em crates.io
