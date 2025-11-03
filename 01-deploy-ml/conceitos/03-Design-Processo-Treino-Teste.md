@@ -130,6 +130,7 @@ Após o treinamento do modelo de ML, DEVEMOS realizar uma rigorosa avaliação d
 **Matriz de confusão:** Para problemas de classificação, uma matriz de confusão pode ajudar a entender as taxas de verdadeiro positivo, falso positivo, verdadeiro negativo e falso negativo.
 
 **Curvas ROC e AUC**: Avaliar a capacidade do modelo de discriminar entre classes. A área sob a curva (AUC) da curva ROC (Receiver Operating Characteristic) é uma métrica agregada de desempenho em todos os limiares de classificação.
+https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc?hl=pt-br
 
 **Análise de Erros:** Examinar casos onde o modelo falhou para entender os erros e potencialmente melhorar o modelo.
 
