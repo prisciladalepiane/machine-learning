@@ -19,12 +19,13 @@ Ele pertence à classe de algoritmos de ensemble conhecida como **bagging** (*Bo
 
 - Cada conjunto de dados bootstrap é usado para construir uma **árvore de decisão**.
 - Em cada ponto de divisão (nó), é considerado **um subconjunto aleatório de features**, o que aumenta a diversidade entre as árvores.
+- Isso ajuda a evitar overfitting, pois cada árvore tem uma perspectiva diferente dos dados.
 
 ---
 
 ### 3. Seleção de Divisões
 
-- Ao contrário de uma árvore tradicional, o Random Forest **seleciona aleatoriamente um número limitado de variáveis** para encontrar a melhor divisão em cada nó.
+- Ao contrário de uma árvore tradicional (única) onde todas as características são consideradas para fazer uma divisão, o Random Forest **seleciona aleatoriamente um número limitado de variáveis** para encontrar a melhor divisão em cada nó.
 - Essa aleatoriedade promove a diversidade e ajuda a evitar o overfitting.
 
 ---
@@ -36,7 +37,7 @@ Ele pertence à classe de algoritmos de ensemble conhecida como **bagging** (*Bo
 
 ---
 
-### 5. Previsão
+### 5. Previsão/Predição
 
 - **Classificação**: cada árvore vota em uma classe, e a **classe mais votada (moda)** é a predição final.
 - **Regressão**: a **média** das previsões de todas as árvores é usada como resultado.
@@ -50,9 +51,9 @@ Ele pertence à classe de algoritmos de ensemble conhecida como **bagging** (*Bo
 
 ---
 
-### 7. Importância das Features
+### 7. Importância das Características/Features
 
-- O algoritmo permite medir a **importância de cada variável** para a predição.
+- O algoritmo permite estimar a **importância de cada variável** para a predição.
 - Isso é feito analisando a contribuição de cada feature na **redução da impureza** das divisões ao longo da floresta.
 
 ---
