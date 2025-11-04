@@ -69,3 +69,15 @@ Ele pertence à classe de algoritmos de ensemble conhecida como **bagging** (*Bo
 ---
 
 > O Random Forest é um dos algoritmos mais usados em Machine Learning devido à sua **eficácia, simplicidade** e **capacidade de generalização**.
+
+# Compreendendo o Conceito de Churn
+
+**"Churn",** no contexto de Machine Learning, refere-se à previsão de quando um cliente vai deixar de usar um serviço, cancelar uma assinatura ou parar de comprar produtos de uma empresa.
+
+Em termos mais técnicos, churn é a taxa na qual os clientes param de fazer negócios com uma entidade. Modelos de Machine Learning são usados para identificar os sinais ou padrões que indicam a probabilidade de um cliente desistir, permitindo que a empresa tome ações preventivas para reter esses clientes.  
+
+Os modelos de previsão de churn geralmente analisam uma série de características dos clientes, como comportamento de compra, uso do serviço, interações de suporte ao cliente e feedback para determinar quem está em risco de sair.
+
+Esses modelos são um exemplo clássico de classificação binária, onde o resultado é tipicamente "churn" ou "não churn".
+
+O treinamento de tais modelos envolve o uso de dados históricos onde o status de churn é conhecido, para que o modelo possa aprender a identificar os indicadores relevantes de churn nos dados atuais.
