@@ -180,7 +180,9 @@ Benefícios:
 
 ## Monitoramento 
 
-teis. Este processo envolve o acompanhamento contínuo de várias métricas e aspectos do modelo e do ambiente em que ele está operando.
+O monitoramento de modelos de machine learning em produção é uma etapa crítica para garantir que eles continuem oferecendo previsões precisas e úteis. Este processo envolve o acompanhamento contínuo de várias métricas e aspectos do modelo e do ambiente em que ele está operando.
+
+Principais componentes do monitoramento de modelos de machine learning:
 
 **1. Performance do Modelo**  
 - **Acurácia e Outras Métricas**: Monitorar métricas como acurácia, precisão, recall, F1-score e AUC-ROC, dependendo do tipo de modelo.  
@@ -217,7 +219,7 @@ teis. Este processo envolve o acompanhamento contínuo de várias métricas e as
 > O monitoramento eficaz dos modelos é essencial para manter a integridade, eficácia e confiabilidade dos sistemas de machine learning ao longo do tempo. Ele permite identificar e resolver problemas rapidamente, adaptar-se a mudanças e garantir justiça e conformidade.
 
 ## Versionamento de Modelos
-O versionamento de modelos de machine learning é uma prática para gerenciar diferentes versões de modelos ao longo do tempo. Ele permite rastrear alterações, realizar testes comparativos e facilitar a reversão para versões anteriores, se necessário. Vamos detalhar a seguir os aspectos essenciais do versionamento de modelos:
+O versionamento de modelos de machine learning é uma prática para **gerenciar diferentes versões de modelos ao longo do tempo**. Ele permite rastrear alterações, realizar testes comparativos e facilitar a reversão para versões anteriores, se necessário. Vamos detalhar a seguir os aspectos essenciais do versionamento de modelos:
 
 1. **Princípios Básicos**
    - **Identificação Única**: Cada versão do modelo deve ter um identificador único, como um número de versão ou um hash do modelo.
@@ -306,3 +308,13 @@ A **segurança** e o **compliance** (conformidade) garantem que os modelos e os 
   Trabalhar com profissionais de segurança e conformidade para manter as práticas atualizadas.
 
 > A segurança e o compliance em sistemas de ML são essenciais não apenas para proteger a integridade dos modelos e dados, mas também para manter a confiança dos usuários, atender normas éticas e garantir aderência a regulamentações.
+
+## O Que é WSGI (Web Server Gateway Interface)?
+
+WSGI, sigla para Web Server Gateway Interface, é uma especificação para uma interface simples entre servidores web e aplicações web ou frameworks para a linguagem de programação Python. Definido pela PEP 3333, o WSGI foi criado como um padrão para facilitar a comunicação entre componentes de software web, permitindo uma maior interoperabilidade e flexibilidade no desenvolvimento de aplicações web em Python.
+
+A ideia central do WSGI é definir uma interface comum que permite a aplicações web serem executadas em cima de vários servidores web sem a necessidade de alterações no código da aplicação. Isso significa que desenvolvedores podem escolher entre diferentes servidores web (como Apache, Nginx com módulos WSGI, ou servidores dedicados como Gunicorn ou uWSGI) e frameworks web (como Django, Flask, Pyramid, etc.) sem se preocuparem com incompatibilidades entre a aplicação e o servidor.
+
+Um aplicativo WSGI é simplesmente um objeto Python "chamável" (como uma função ou um método) que aceita dois parâmetros: um dicionário contendo variáveis de ambiente (que inclui dados da requisição HTTP) e uma função de callback para iniciar a resposta HTTP. O aplicativo então retorna os dados da resposta em um iterável. Isso permite que o aplicativo web seja escrito de forma modular e reutilizável, seguindo os princípios da interface WSGI.
+
+A adoção do WSGI como padrão no desenvolvimento web Python trouxe uma grande flexibilidade para a comunidade, permitindo uma rica ecologia de frameworks e servidores web, além de facilitar a composição de aplicações com componentes de diferentes fontes. Isso promoveu um ambiente de desenvolvimento web mais dinâmico e inovador dentro do ecossistema Python.
