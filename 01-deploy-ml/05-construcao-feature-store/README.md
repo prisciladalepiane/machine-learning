@@ -1,11 +1,11 @@
-# Projeto 5 - Construção de Feature Store e Engenharia de Atributos no Pipeline de Machine Learning
+#  Construção de Feature Store e Engenharia de Atributos no Pipeline de Machine Learning
 
 ## Execute os comandos abaixo no terminal 
 
 Ir para a pasta do projeto
 
 ```bash
-cd projetos/deploy-ml/05-construcao-feature-store/
+cd 01-deploy-ml/05-construcao-feature-store/
 ```
 
 Cria um ambiente virtual para o projeto usando o Python 3
