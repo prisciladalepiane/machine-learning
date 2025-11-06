@@ -79,3 +79,25 @@ loop{
 ## Pacotes/bibliotecas em rust
 
 São chamadas de crates, estão em crates.io
+
+## Rust Notebooks
+
+Os entusiastas da programação concordarão que Rust se tornou uma linguagem de programação de primeira linha por vários motivos, como sua velocidade incrível, confiabilidade e flexibilidade incomparável. No entanto, os desenvolvedores Rust novatos enfrentaram um desafio assustador por muito tempo: a ausência de um ambiente de desenvolvimento facilmente acessível.
+
+Felizmente, com pura perseverança e determinação, os desenvolvedores da Linguagem Rust romperam essa barreira ao fornecer uma solução inovadora: acessar Rust por meio do Jupyter Notebook. Isso é possível graças a um projeto fenomenal de código aberto conhecido como evcxr_jupyter. Ele equipa os desenvolvedores com a capacidade de escrever e executar código Rust no ambiente Jupyter Notebook, elevando sua experiência de programação para o próximo nível.
+
+Para instalar o evcxr_jupyter, você deve primeiro instalar o Jupyter. Com o Jupyter instalado, o próximo passo é instalar o Rust Jupyter Kernel. No entanto, você deve garantir que Rust esteja instalada em sua máquina.
+
+## Deploy de Modelos com Rust
+
+Fazer o deploy de modelos de Machine Learning utilizando Rust é uma prática interessante para quem busca alto desempenho, segurança e controle sobre os recursos do sistema. Embora Rust não seja a primeira escolha para treinar modelos de Machine Learning, a linguagem oferece vantagens significativas na implementação e deploy de modelos já treinados, especialmente em ambientes de produção onde performance e confiabilidade são críticos.
+
+Vantagens do Deploy com Rust:
+
+**Performance**: Rust é uma linguagem compilada que gera código de máquina altamente otimizado, oferecendo desempenho próximo ao de C/C++. Isso é particularmente útil para modelos que precisam de respostas rápidas em aplicações de baixa latência.
+
+**Segurança de Memória:** Rust é conhecido por sua segurança de memória garantida pelo compilador, o que minimiza erros como vazamentos de memória e condições de corrida, que podem ser problemáticos em sistemas críticos.
+
+**Controle Fino sobre Recursos**: Rust oferece controle granular sobre alocação de memória e gerenciamento de threads, permitindo otimizar o uso de recursos do sistema para aplicações de Machine Learning que exigem alto desempenho.
+
+**Concorrência e Paralelismo**: Com um modelo de concorrência seguro e eficiente, Rust permite que aplicações sejam escaladas de forma eficaz em sistemas multicore, o que é importante para aplicações que precisam lidar com alto volume de requisições simultâneas.
