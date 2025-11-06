@@ -16,16 +16,24 @@ Abra o terminal ou prompt de comando e navegue até a pasta onde está os arquiv
 
 Execute o comando abaixo para criar a imagem Docker
 
-`docker build -t pri-deploy:p4 .`
+```
+docker build -t pri-deploy:p4 .
+```
 
 Execute o comando abaixo para criar o container Docker
 
-`docker run -dit --name pri-p4 -p 3000:3000 pri-deploy:p4`
+```
+docker run -dit --name pri-p4 -p 3000:3000 pri-deploy:p4
+```
 
 Visualize os logs para verificar se a API já foi inicializada
 
-`docker logs pri-p4`
+```
+docker logs pri-p4
+```
 
 Então execute a chamada cliente
 
-`python cliente.py`
+```
+python cliente.py
+```
