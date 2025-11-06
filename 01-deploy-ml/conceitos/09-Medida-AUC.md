@@ -2,6 +2,8 @@
 
 https://scikit-learn.org/stable/modules/generated/sklearn.metrics.auc.html
 
+https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc?hl=pt-br
+
 A **AUC** (*Area Under the Curve*) é uma métrica usada para avaliar o desempenho de modelos de classificação binária. Ela representa a **área sob a curva ROC** (*Receiver Operating Characteristic*), que é uma representação gráfica da sensibilidade (TPR) versus 1 - especificidade (FPR) em diferentes limiares de decisão.
 
 ### Intuição da Curva ROC
