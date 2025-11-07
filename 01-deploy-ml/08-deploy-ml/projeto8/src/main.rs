@@ -4,7 +4,7 @@ use linfa_logistic::LogisticRegression;
 use ndarray::{Array1, Array2};
 use rocket::{post, serde::json::Json, serde::Deserialize, serde::Serialize, routes};
 use std::fs::{File, OpenOptions};
-use std:io::{BufReader, BufWriter};
+use std::io::{BufReader, BufWriter};
 use bincode::{deserialize_from, serialize_into};
 use csv::ReaderBuilder;
 
@@ -81,7 +81,7 @@ fn treina_salva_modelo(){
 
 fn carrega_modelo() ->  Result<linfa_logistic::FittedLogisticRegression<f64, usize>, String> {
 
-    let file = OPenOPtions::new()
+    let file = OpenOptions::new()
         .read(true)
         .open("modelo.bin")
         .map_err(|e| format!("Erro ao abrir o arquivo do modelo: {}", e))?;
@@ -95,6 +95,46 @@ fn carrega_modelo() ->  Result<linfa_logistic::FittedLogisticRegression<f64, usi
 
 }
 
-fn main() {
-    
+#[post("/predict", format = "json", data = "<input>")]
+fn predict(input: Json<PredictRequest>) -> Result<Json<PredictResponse>, String> {
+  
+    // Tenta carregar o modelo treinado
+    match carrega_modelo() {
+        
+        Ok(fitted_model) => {
+
+            // Converte as características recebidas em um array 2D para a previsão
+            let features_array: Array2<f64> = Array2::from_shape_vec((1, input.features.len()), input.features.clone()).unwrap();
+            
+            // Faz a previsão usando o modelo carregado
+            let prediction = fitted_model.predict(&features_array);
+            
+            // Retorna a classe prevista como resposta em JSON
+            Ok(Json(PredictResponse {
+                class: prediction[0],
+            }))
+        },
+        Err(e) => {
+            // Em caso de erro ao carregar o modelo, exibe mensagem de erro
+            eprintln!("Erro ao carregar o modelo: {}", e);
+            panic!("Falha ao carregar o modelo!");
+        }
+    }
 }
+
+#[rocket::main]
+async fn main() {
+    treina_salva_modelo();
+
+        rocket::build()
+
+            // Define as rotas disponíveis na API
+            .mount("/", routes![predict]) 
+            .launch()
+            .await
+
+            // Inicia o servidor Rocket
+            .unwrap(); 
+}
+
+
