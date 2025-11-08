@@ -11,11 +11,11 @@ import streamlit as st
 from sklearn.preprocessing import StandardScaler
 
 # Configuração da página do Streamlit
-st.set_page_config(page_title = "Data Science Academy", page_icon = ":100:", layout = "centered")
+st.set_page_config(page_title = "Projeto da Data Science Academy", page_icon = ":100:", layout = "centered")
 
 # Carregar o modelo e o scaler
-modelo = joblib.load('modelos/modelo_final.pkl')
-scaler = joblib.load('modelos/scaler.pkl')
+modelo = joblib.load('./modelos/modelo_final.pkl')
+scaler = joblib.load('./modelos/scaler.pkl')
 
 # Função para pré-processar os dados de entrada
 # As colunas devem ser exatamente as mesmas usadas durante o treinamento
