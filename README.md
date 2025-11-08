@@ -9,17 +9,19 @@ Projetos voltados ao ciclo completo de criação e entrega de modelos de machine
 
 ### 1 - Modelo de Classificação Logística
 
-Projeto simples de classificação de produtos com base no peso e tipo de embalagem, usando uma Árvore de Decisão com pré-processamento via LabelEncoder. O modelo é avaliado com acurácia e relatório de classificação, e disponibilizado via API Flask com formulário web interativo.
+Este projeto demonstra a construção e o deploy de um modelo de Machine Learning aplicado à logística, com o objetivo de prever o tipo de produto eletrônico contido em uma embalagem com base em duas variáveis: peso e tipo de embalagem. Utilizando a biblioteca `scikit-learn`, o modelo foi desenvolvido com o algoritmo **Decision Tree Classifier,** que aprende a relacionar essas variáveis para identificar o produto mais provável. Após o treinamento e avaliação do modelo (com métricas como acurácia e relatório de classificação) o sistema foi integrado em uma aplicação web desenvolvida com `flask`, permitindo realizar previsões em tempo real a partir de um formulário interativo. O projeto simula um cenário logístico real, onde a previsão automática do conteúdo das embalagens pode otimizar o manuseio de produtos e reduzir erros operacionais.
 
 📁 [01-deploy-ml/01-modelo-ml-logistica](01-deploy-ml/01-modelo-ml-logistica)
 
 ### 2 - Prevendo Churn de clientes
 
-O projeto utiliza o algoritmo de classificação `Random Forest`, implementado com a biblioteca `scikit-learn`, para prever o churn de clientes. Na primeira etapa, os dados são explorados e pré-processados, e diferentes configurações do modelo são testadas com base em métricas de desempenho, como acurácia, incluindo a otimização de hiperparâmetros para aprimorar os resultados. Na segunda etapa, o modelo final é salvo com `joblib` e integrado em uma aplicação interativa desenvolvida com `streamlit`, permitindo realizar previsões de forma prática e visual, simulando um ambiente real de deploy de modelo de Machine Learning.
+O projeto utiliza o algoritmo de classificação **Random Forest**, implementado com a biblioteca `scikit-learn`, para prever o churn de clientes. Na primeira etapa, os dados são explorados e pré-processados, e diferentes configurações do modelo são testadas com base em métricas de desempenho, como acurácia, incluindo a otimização de hiperparâmetros para aprimorar os resultados. Na segunda etapa, o modelo final é salvo com `joblib` e integrado em uma aplicação interativa desenvolvida com `streamlit`, permitindo realizar previsões de forma prática e visual, simulando um ambiente real de deploy de modelo de Machine Learning.
 
 📁 [01-deploy-ml/02-prevendo-churn-de-clientes](01-deploy-ml/02-prevendo-churn-de-clientes)
 
-### 3 -  Nuven AWS
+### 3 -  Projeto na Nuven AWS
+O projeto consistiu na criação e implantação de modelos de Machine Learning (Regressão Logística, Random Forest e SVM) para prever a admissão de estudantes com base em variáveis como notas e QI. O processo incluiu pré-processamento, padronização dos dados, divisão em treino e teste, avaliação por métricas de desempenho (Acurácia, AUC, F1-score) e comparação de algoritmos.
+O modelo foi posteriormente preparado para deploy na AWS, integrando o fluxo de previsão a um ambiente de nuvem para uso em aplicações educacionais.
 
 📁 [01-deploy-ml/03-modelo-ml-nuven-aws-escola](01-deploy-ml/03-modelo-ml-nuven-aws-escola)
 
