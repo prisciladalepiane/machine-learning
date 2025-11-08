@@ -25,7 +25,11 @@ O modelo foi posteriormente preparado para deploy na AWS, integrando o fluxo de 
 
 📁 [01-deploy-ml/03-modelo-ml-nuven-aws-escola](01-deploy-ml/03-modelo-ml-nuven-aws-escola)
 
-### 4 - API Responde perguntas sobre imagens.
+### 4 - Deploy de API para Geração de Texto a partir de Imagens com LLM
+
+Este projeto desenvolve e implanta uma API de Machine Learning capaz de gerar respostas em texto a partir de imagens, utilizando um Modelo de Linguagem de Grande Escala (LLM) multimodal. O modelo empregado, [dandelin/vilt-b32-finetuned-vqa](dandelin/vilt-b32-finetuned-vqa), proveniente do _Hugging Face Hub_, é especializado em Visual Question Answering (VQA), permitindo que o sistema interprete imagens e responda perguntas sobre o conteúdo visual.
+
+A API foi construída com `FastAPI` e empacotada em um container Docker, garantindo portabilidade e execução independente de plataforma, seja local ou em nuvem. O fluxo inclui um cliente Python que envia uma imagem e uma pergunta à API, e recebe como resposta o texto gerado pelo modelo. O projeto demonstra o processo completo de integração entre modelos de IA multimodais, APIs REST e containers, simulando um ambiente real de deploy de aplicações de visão e linguagem natural.
 
 📁 [01-deploy-ml/04-api-texto-img](01-deploy-ml/04-api-texto-img)
 
