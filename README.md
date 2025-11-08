@@ -15,6 +15,8 @@ Projeto simples de classificação de produtos com base no peso e tipo de embala
 
 ### 2 - Prevendo Churn de clientes
 
+O projeto utiliza o algoritmo de classificação `Random Forest`, implementado com a biblioteca `scikit-learn`, para prever o churn de clientes. Na primeira etapa, os dados são explorados e pré-processados, e diferentes configurações do modelo são testadas com base em métricas de desempenho, como acurácia, incluindo a otimização de hiperparâmetros para aprimorar os resultados. Na segunda etapa, o modelo final é salvo com `joblib` e integrado em uma aplicação interativa desenvolvida com `streamlit`, permitindo realizar previsões de forma prática e visual, simulando um ambiente real de deploy de modelo de Machine Learning.
+
 📁 [01-deploy-ml/02-prevendo-churn-de-clientes](01-deploy-ml/02-prevendo-churn-de-clientes)
 
 ### 3 -  Nuven AWS
