@@ -1,38 +1,39 @@
-# Procedimento Manual Para Deploy na AWS
+# Procedimento manual para Deploy na AWS
 
-
-##### Deploy Local #####
+# Deploy Local 
 
 Abra o terminal ou prompt de comando, navegue até a pasta com os arquivos e execute o comando abaixo para criar um ambiente virtual:
 
-conda create --name dsadeploymlp3 python=3.13
-
-# Ative o ambiente:
-
 ```
-conda activate dsadeploymlp3 (ou: source activate dsadeploymlp3)
+conda create --name deployml3 python=3.13
 ```
 
-# Instale o pip e as dependências:
+Ative o ambiente:
+
+```
+conda activate deployml3 (ou: source activate deployml3)
+```
+
+Instale o pip e as dependências:
 
 ```
 conda install pip
 pip install -r requirements.txt 
 ```
 
-# Execute o comando abaixo para acessar o jupyter notebook e treinar o modelo:
+Execute o comando abaixo para acessar o jupyter notebook e treinar o modelo:
 
-# Modo de Desenvolvimento:
+Modo de Desenvolvimento:
 ```
 flask run
 ```
 
-# Modo de Produção (Threads):
+Modo de Produção (Threads):
 ```
 gunicorn -w 4 app:app
 ```
 
-# Use os comandos abaixo para desativar o ambiente virtual e remover o ambiente (opcional):
+Use os comandos abaixo para desativar o ambiente virtual e remover o ambiente (opcional):
 
 ```
 conda deactivate
@@ -41,43 +42,45 @@ conda deactivate
 conda remove --name dsadeploymlp3 --all
 ```
 
-##### Deploy na AWS
+## Deploy na AWS
 
-# Download do Miniconda
-```
+Download do Miniconda
+```bash
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 ```
 
-# Instalação dos pacotes
-```
+Instalação dos pacotes
+```bash
 pip install -r requirements.txt
 ```
 
-# Inicializa
-```
+Inicializa
+```bash
 gunicorn -w 4 app:app
 gunicorn --bind 0.0.0.0:8000 app:app
 ```
 
-# Acessa (coloque aqui o endereço da sua instância EC2)
-```
+Acessa (coloque aqui o endereço da sua instância EC2)
+```bash
 http://ec2-52-15-145-226.us-east-2.compute.amazonaws.com:8000
 ```
 
-# Criando Serviço
+Criando Serviço
 
-# Verifica usuário e grupo
-```
+Verifica usuário e grupo
+```bash
 id -un
 id -gn
 ```
 
-# Cria o arquivo de serviço
-```
+Cria o arquivo de serviço
+```bash
 sudo nano /etc/systemd/system/gunicorn.service
 ```
 
-# Conteúdo do arquivo de serviço
+Conteúdo do arquivo de serviço
+
+```
 [Unit]
 Description=Gunicorn instance to serve application
 After=network.target
@@ -95,9 +98,10 @@ PrivateTmp=true
 
 [Install]
 WantedBy=multi-user.target
-
-# Gerencia o serviço
 ```
+
+Gerencia o serviço
+```bash
 sudo systemctl daemon-reload
 sudo systemctl enable gunicorn
 sudo systemctl start gunicorn
