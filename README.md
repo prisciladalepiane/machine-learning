@@ -41,7 +41,9 @@ O objetivo é demonstrar como estruturar um pipeline reproduzível e escalável,
 
 📁 [01-deploy-ml/05-construcao-feature-store](01-deploy-ml/05-construcao-feature-store)
 
-### 6 - Versionamento
+### 6 - Pipeline de Versionamento, Retreinamento e Deploy
+
+O projeto implementa um fluxo completo de MLOps em Python, desde o pré-processamento e treinamento inicial de um modelo até seu deploy via API Flask. O pipeline automatiza etapas como validação cruzada, avaliação de métricas, versionamento de modelos e retreinamento com novos dados, garantindo reprodutibilidade e rastreabilidade. Cada nova versão é salva e avaliada antes de ser promovida a produção, enquanto o modelo mais recente pode ser consumido por requisições HTTP, simulando um ambiente real de manutenção e atualização contínua de modelos de Machine Learning.
 
 📁 [01-deploy-ml/06-versionamento](01-deploy-ml/06-versionamento)
 
