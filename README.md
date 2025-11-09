@@ -33,7 +33,11 @@ A API foi construída com `FastAPI` e empacotada em um container Docker, garanti
 
 📁 [01-deploy-ml/04-api-texto-img](01-deploy-ml/04-api-texto-img)
 
-### 5 - Construção de feature-store
+### 5 - Construção de feature-store e Aplicação de Engenharia de Atributos
+
+Este projeto implementa um pipeline completo de Machine Learning, desde a geração sintética de dados e criação de uma Feature Store até o treinamento, avaliação e salvamento automatizado do modelo e suas previsões. O fluxo é composto por módulos independentes responsáveis por cada etapa: criação da feature store, exploração e visualização dos dados, engenharia de atributos, treinamento de modelo (com Random Forest), e salvamento de artefatos e métricas.
+
+O objetivo é demonstrar como estruturar um pipeline reproduzível e escalável, aplicando boas práticas de MLOps, como modularização, versionamento e persistência de resultados. Todo o processo é executado por meio do script pipeline.py, que automatiza as etapas e registra o desempenho do modelo em formato JSON.
 
 📁 [01-deploy-ml/05-construcao-feature-store](01-deploy-ml/05-construcao-feature-store)
 
