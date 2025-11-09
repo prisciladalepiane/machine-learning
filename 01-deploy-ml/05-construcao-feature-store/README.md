@@ -25,7 +25,7 @@ pip install -r requirements.txt
 ```
 
 Associa o ambiente virtual ao código fonte do nosso pipeline
-Quando você executa pip install -e . em um diretório que contém um arquivo setup.py ou pyproject.toml, o pip instala o pacote definido nesse diretório. A instalação no modo editável cria apenas uma ligação entre o seu ambiente de desenvolvimento (por exemplo, o ambiente virtual) e o diretório do código-fonte. Isso significa que quaisquer alterações feitas no código-fonte serão refletidas imediatamente no ambiente onde o pacote está instalado, sem a necessidade de reinstalação.
+Quando você executa`pip install -e `. em um diretório que contém um arquivo `setup.py` ou `, o pip instala o pacote definido nesse diretório. A instalação no modo editável cria apenas uma ligação entre o seu ambiente de desenvolvimento (por exemplo, o ambiente virtual) e o diretório do código-fonte. Isso significa que quaisquer alterações feitas no código-fonte serão refletidas imediatamente no ambiente onde o pacote está instalado, sem a necessidade de reinstalação.
 
 ```bash
 pip install -e .
