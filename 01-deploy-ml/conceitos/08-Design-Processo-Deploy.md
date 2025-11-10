@@ -99,7 +99,7 @@ Ferramentas:
 - **Kubernetes**: Plataforma robusta de orquestração para sistemas distribuídos.
 - **Docker Swarm**: Mais simples, integrado ao Docker, mas menos escalável que o Kubernetes.
 
-Aplicações em Machine Learning
+### Aplicações em Machine Learning
 
 - **Implantação de Modelos**: Containers facilitam o deploy em diferentes ambientes de produção.
 - **Ambientes Consistentes**: Úteis para ambientes de treinamento e teste de modelos.
@@ -125,7 +125,7 @@ Estratégia de Deploy:
 - **Deploy Gradual**: Lançamento controlado para testar desempenho e evitar falhas.
 - **Monitoramento e Manutenção**: Acompanhamento contínuo do modelo e da infraestrutura.
 - **Atualizações e Versões**: Processo de atualização planejado e versionamento para consistência.
-- **Backup e Recuperação**: Planos robustos de contingência contra falhas e perdas de dados.
+- **Backup e Recuperação**: Implementar soluções de backup e planos de recuperação de desastres para proteger contra perda de dados e interrupções.
 
 Desafios:
 
