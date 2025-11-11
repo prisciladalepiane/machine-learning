@@ -60,6 +60,7 @@ Esse valor representa o erro que o modelo cometeu nessa predição.
 ---
 
 ## Em resumo
+<center>
 
 | Conceito | Explicação |
 |-----------|------------|
@@ -67,6 +68,10 @@ Esse valor representa o erro que o modelo cometeu nessa predição.
 | **Objetivo do treinamento** | Minimizar essa perda. |
 | **Usada em** | Regressão, classificação e outros tipos de tarefas. |
 | **Ligação com Backpropagation** | É a fonte do erro que será retropropagado para atualizar os pesos. |
+
+</center>
+
+previsão → perda → ajuste → nova previsão
 
 
 ---
