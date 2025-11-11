@@ -33,13 +33,13 @@ Permitir que a rede aprenda padrões não lineares, como:
 
 Existem várias funções de ativação disponíveis, cada uma com suas características e aplicações. Algumas das mais populares incluem:
 
-- Sigmoid: Gera saídas entre 0 e 1. Foi amplamente usada em redes neurais mais antigas, mas tem problemas com gradientes que desaparecem em camadas profundas.
+- **Sigmoid**: Gera saídas entre 0 e 1. Foi amplamente usada em redes neurais mais antigas, mas tem problemas com gradientes que desaparecem em camadas profundas.
 
-- Tanh (tangente hiperbólica): Produz saídas entre -1 e 1. É centrada em zero, o que a torna preferível ao sigmoid em muitos casos.
+- **Tanh** (tangente hiperbólica): Produz saídas entre -1 e 1. É centrada em zero, o que a torna preferível ao sigmoid em muitos casos.
 
-- ReLU: Gera saídas entre 0 e infinito. É a função de ativação mais usada atualmente em redes neurais profundas devido à sua eficiência computacional e propriedades que ajudam a mitigar o problema do gradiente que desaparece.
+- **ReLU**: Gera saídas entre 0 e infinito. É a função de ativação mais usada atualmente em redes neurais profundas devido à sua eficiência computacional e propriedades que ajudam a mitigar o problema do gradiente que desaparece.
 
-- Variantes de ReLU: Leaky ReLU, Parametric ReLU e Exponential Linear Unit são variantes da ReLU criadas para lidar com o problema de neurônios "mortos", onde alguns neurônios nunca se ativam. A GeLU é outra variação usada em alguns modelos com arquitetura Transformer.
+- **Variantes de ReLU:** Leaky ReLU, Parametric ReLU e Exponential Linear Unit são variantes da ReLU criadas para lidar com o problema de neurônios "mortos", onde alguns neurônios nunca se ativam. A GeLU é outra variação usada em alguns modelos com arquitetura Transformer.
 
 | Função | Fórmula / Ideia | Características | Uso comum |
 |--------|------------------|-----------------|------------|
