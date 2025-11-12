@@ -4,8 +4,21 @@ O Deep Learning é uma subárea do aprendizado de máquina que tem sido fundamen
 
 São compostas por várias camadas de "neurônios" matemáticos que processam informações em estágios sucessivos, permitindo que a rede aprenda reapresentações complexas de dados.
 
-# 8 Aplicações de Deep Learning em IA
-## 1.Visão Computacional:
+Modelos de machine learning tradicionais (como regressão ou árvores de decisão) têm apenas uma ou poucas camadas de processamento.
+No deep learning, há muitas camadas, permitindo que o modelo aprenda padrões complexos diretamente dos dados, sem precisar que humanos definam manualmente as variáveis relevantes
+
+## Estrutura básica
+
+Uma rede neural profunda é formada por:
+
+**Camada de entrada**: recebe os dados (ex: pixels de uma imagem, texto, som).\
+**Camadas ocultas**: processam os dados, detectando padrões e relações.\
+**Camada de saída**: fornece o resultado (ex: classificação, previsão numérica, etc.).
+
+Cada conexão entre neurônios tem um peso ajustado durante o treinamento, de modo a minimizar o erro da rede. Esse ajuste é feito pelo algoritmo de backpropagation, usando métodos de otimização (como gradient descent).
+
+## 8 Aplicações de Deep Learning em IA
+### 1.Visão Computacional:
 
 **Reconhecimento de Imagens:** Classificar imagens em categorias ou identificar objetos em imagens.
 **Detecção de Objetos:** Localizar e identificar múltiplos objetos em uma imagem.
@@ -14,7 +27,7 @@ São compostas por várias camadas de "neurônios" matemáticos que processam in
 
 **Reconhecimento Facial:** Identificar ou verificar rostos em imagens ou vídeos.
 
-## 2.Processamento de Linguagem Natural (PLN):
+### 2.Processamento de Linguagem Natural (PLN):
 
 **Tradução Automática:** Traduzir texto de uma língua para outra.
 **Geração de Texto:** Criar texto coerente e contextualmente relevante.
@@ -22,23 +35,43 @@ São compostas por várias camadas de "neurônios" matemáticos que processam in
 **Análise de Sentimento:** Determinar o sentimento expresso em um pedaço de texto.
 
 
-## 3.Áudio e Processamento de Sinal: 
+### 3.Áudio e Processamento de Sinal: 
 **Síntese de Voz:** Converter texto em fala.
 **Reconhecimento de Música:** Identificar músicas ou gêneros musicais a partir de clipes de áudio.
 **Separação de Fonte de Áudio:** Separar fontes de áudio individuais em gravações complexas.
 
-## 4.Jogos e Simulações:
+### 4.Jogos e Simulações:
 Modelos de Deep Learning têm sido usados para treinar agentes em jogos, desde simples jogos de tabuleiro, como Go, até complexos ambientes de simulação.
 
-## 5.Medicina e Saúde: 
+### 5.Medicina e Saúde: 
 Diagnóstico Médico: Analisar imagens médicas para detectar doenças.
 Predição de Doenças: Usar dados médicos para prever o risco de doenças futuras em pacientes.
 
-## 6.Veículos Autônomos: 
+### 6.Veículos Autônomos: 
 Deep Learning é fundamental para sistemas de condução autônoma, permitindo que veículos reconheçam objetos, pessoas, sinais de trânsito e outras entidades importantes para a navegação segura.
 
-## 7.Aprendizado Por Reforço:
+### 7.Aprendizado Por Reforço:
 Modelos de Deep Learning combinados com técnicas de aprendizado por reforço, têm sido usados para treinar agentes a realizar tarefas em ambientes simulados ou reais.
 
-## 8.Anomalia e Detecção de Fraude: 
+### 8.Anomalia e Detecção de Fraude: 
 Identificar atividades suspeitas em grandes conjuntos de dados, como transações de cartão de crédito. O Deep Learning tem revolucionado muitas áreas da IA, permitindo avanços que antes eram considerados desafiadores ou impossíveis. No entanto, também é importante reconhecer suas limitações e os desafios associados, como a necessidade de grandes conjuntos de dados, poder computacional significativo e potenciais preocupações éticas e de interpretabilidade.
+
+## Desafios e Limitações do Deep Learning
+
+Deep Learning é uma evolução do _perceptron_ e apresenta muitas oportunidades em IA, bem como tem seus próprios desafios e limitações.
+
+- Necessidades de grandes Datasets.
+- Complexidade e tempo de treinamento.
+- Interpretabilidade.
+- Viés presente nos dados de treino.
+- Requisitos de hardware.
+- Eficiência e Implementação em tempo real.
+- Dependência de grandes arquiteturas.
+
+REFERÊNCIAS
+
+[Deep Learning Book](https://www.deeplearningbook.com.br)
+
+[OpenAI](https://openai.com/Modelos)
+
+[Determinísticos e Estocásticos em IA –Entendendo Diferenças e Riscos dos LLMs](https://blog.dsacademy.com.br/modelos-deterministicos-e-estocasticos-em-ia-entendendo-diferencas-e-riscos-dos-llms-parte-1/)
