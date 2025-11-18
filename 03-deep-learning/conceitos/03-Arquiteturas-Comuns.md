@@ -1,4 +1,4 @@
-
+#  Arquiteturas de modelos Deep Learning
 As arquiteturas de modelos de Deep Learning evoluíram rapidamente ao longo dos anos, adaptando-se a diferentes tarefas e desafios. ALgumas das arquiteturas mais notáveis e amplamente usadas incluem:
 
 - Redes Neurais Densamente Conectadas (DNNs)
