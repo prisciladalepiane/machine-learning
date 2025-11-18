@@ -176,9 +176,9 @@ Estes passos determinam como o modelo final irá performar em tarefas de previs�
 Antes de construir e treinar o modelo, é crucial que os dados estejam preparados adequadamente:
 
 
-Faça Divisão dos Dados: Divida os dados em conjuntos de treinamento, validação e teste. Uma divisão comum é 70% treinamento, 15% validação, e 15% teste.
+- Faça Divisão dos Dados: Divida os dados em conjuntos de treinamento, validação e teste. Uma divisão comum é 70% treinamento, 15% validação, e 15% teste.
 
-Realize o Pré-processamento: Realize o pré-processamento necessário com base na análise feita durante a limpeza dos dados, incluindo normalização, codificação de variáveis categóricas, etc.
+- Realize o Pré-processamento: Realize o pré-processamento necessário com base na análise feita durante a limpeza dos dados, incluindo normalização, codificação de variáveis categóricas, etc.
 
 ### 3. Construa e Treine o Modelo
 
@@ -188,7 +188,7 @@ Realize o Pré-processamento: Realize o pré-processamento necessário com base 
 
 - **Faça Validação Cruzada**: Use validação cruzada para avaliar a generalização do modelo. Isso envolve dividir o conjunto de dados de treinamento em k subconjuntos e treinar o modelo k vezes, cada vez usando um subconjunto diferente como conjunto de teste e o restante para treinamento.
 
-- F**aça o Monitoramento de Overfitting**: Esteja atento a sinais de overfitting, onde o modelo se apresenta muito bem nos dados de treinamento mas pobremente nos dados de validação/teste. Técnicas como a regularização podem ser úteis para mitigar esse problema.
+- **Faça o Monitoramento de Overfitting**: Esteja atento a sinais de overfitting, onde o modelo se apresenta muito bem nos dados de treinamento mas pobremente nos dados de validação/teste. Técnicas como a regularização podem ser úteis para mitigar esse problema.
 
 
 ### 4. Avalie o Desempenho
@@ -502,3 +502,44 @@ Gerenciamento de Custos: Monitore e otimize os custos, utilizando ferramentas de
 Realizar o deploying e o escalonamento em modelos de ML em ambientes cloud requer uma abordagem planejada com bastante atenção aos detalhes operacionais, segurança e custos.
 
 Procure aproveitar plenamente as capacidades dos ambientes cloud para aumentar a eficácia, a eficiência e a escalabilidade das soluções de ML.
+
+# Estudo de Caso 
+## FASE 1
+
+Contexto: UMa plataforma de e-commerce deseja aumentar suas vendas e melhorar a experiência do usuário por meio de recomendações personalizadas de produtos. Para isso, decide-se desenvolver um sistema de recomendação utilizando técnicas de MAchine learning 
+
+Objetivo: DEsenvolver um modelo de recomendação capaz de sugerir produtos com base no histórico de compras e navegação dos usuários.
+
+Dados: COleta de dados de navegação, compras anteriores, avaliações de produtos e dados demográficos dos usuários.
+
+## FASE 2
+
+Experimentação: Utilização de jupyter notebooks para experimentação e prototipagem rápida de vários modelos de recomendação, como filtragem colaborativa, baseada em conteúdo e modelos híbridos.
+
+Versionamento: Uso de ferramentas de DVC (Data Version Control) para versionamento das pipelines e dos modelos.
+
+Treinamento: Treinamento do modelo selecionado utilizando frameworks como TensorFlow ou PyTorch, por exemplo.
+
+## FASE 3
+
+Testes automatizados: Implementação de testes sautomáticos para verificar a precisão das recomendações e a estabilidade do modelo.
+
+Validação Cruzada: Utilização de técnicas de validação cruzada para garantir a generalização do modelo.
+
+Pipeline de CI: Automação do processo de treinamento e teste do modelo.
+
+## FASE 4
+
+Containerização: Empacotamento do modelo em containers Docker para facilitar a implantação e a escalabilidade
+
+Pipelines de CI/CD: Configuração de pipelines de CI/CD (Continuos Integration/Continuos Deployment) usando ferramentas como Jenkins ou Gitab CI para automação do processo de teste e implementação.
+
+Serviço de predição: Implementação do modelo como um seriviço de predição, através de API ou através de integração com aplicações e sistemas.
+
+## FASE 5
+
+Monitoramento: Ferramentas como Prometheus e Grafana para monitorar o desempeho do modelo em produção, incluindo latência (tempo) das predições e precisão das recomendações.
+
+Atualização contínua: Configuração de processos para re-treinamento regular do modelo com novos dados para garantir que as recomendações permaneçam relevantes e precisas.
+
+Feedback do usuário: Implementação de mecanismos para coletar feedback dos usuários sobre relevância das recomendações, que pode ser utilizado para ajustar e melhorar o modelo.
