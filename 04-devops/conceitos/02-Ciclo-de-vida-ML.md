@@ -543,3 +543,5 @@ Monitoramento: Ferramentas como Prometheus e Grafana para monitorar o desempeho 
 Atualização contínua: Configuração de processos para re-treinamento regular do modelo com novos dados para garantir que as recomendações permaneçam relevantes e precisas.
 
 Feedback do usuário: Implementação de mecanismos para coletar feedback dos usuários sobre relevância das recomendações, que pode ser utilizado para ajustar e melhorar o modelo.
+
+https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/well-architected-machine-learning-lifecycle.html

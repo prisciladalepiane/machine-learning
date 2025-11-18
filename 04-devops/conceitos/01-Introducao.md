@@ -84,4 +84,3 @@ MLOps Engineering at Scale. Autor: Carl Osipov. Editora: Manning
 Introducing  MLOps:  How  to  Scale  Machine  Learning  in  the  Enterprise.  Autor:  Mark  Treveil,Nicolas Omont, Clément Stenac, Kenji Lefevre, Du Phan. Editora: O'Reilly
 
 
-https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/well-architected-machine-learning-lifecycle.html
