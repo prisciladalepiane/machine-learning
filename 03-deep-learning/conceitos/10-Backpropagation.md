@@ -93,3 +93,4 @@ O algoritmo aplica a **regra da cadeia** muitas vezes.
 3. **Backward:** calcula como cada peso afeta o erro.
 4. **Atualiza pesos:** ajusta tudo usando gradiente descendente.
 
+https://neptune.ai/blog/backpropagation-algorithm-in-neural-networks-guide
