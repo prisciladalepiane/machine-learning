@@ -114,6 +114,3 @@ A arquitetura LSTM, que surgiu em 1997, foi um dos maiores avanços em Deep Lear
 Ambas as arquiteturas revolucionaramcampos como Visão Computacional e Processamento de Linguagem Natural, respectivamente, e continuam a ser áreas de pesquisa intensa para melhorar a capacidade das máquinas de aprender e interpretar dados complexos.
 
 
-Redes Neurais Generativa
-
-Redes Neurais Generativas são algoritmos deaprendizado de máquina que permitem a geração de novos dados que são semelhantes aos dados em que foram treinadas. Ao contrário das  redes  neurais  discriminativas  (como  CNNs  e  RNNs),  que  aprendem  a  mapear  dados  de entrada em categorias, as redes generativas são capazes de gerar dados novos, criando amostras plausíveis a partir do mesmo espaço de distribuição dos dados de treino.Uma  das  arquiteturas  mais  conhecidas  dentro  das  Redes  Neurais  Generativas  são  as Redes Adversariais Generativas (GANs). As GANs são compostas por duas redes neurais que são treinadas simultaneamente: o gerador e o discriminado
