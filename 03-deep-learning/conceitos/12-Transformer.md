@@ -11,3 +11,6 @@ Em vez de tratar todas as partes de entrada igualmente, o mecanismo de atenção
 
 A arquiterura transformer foi criada inicialmente para problemas de PLN mas pode ser empregada em diversas áreas. Porém transformers requer uma quantidade massiva de dados (bilhões/trilhões).
 
+https://quantdare.com/transformers-is-attention-all-we-need-in-finance-part-i/
+
+https://arxiv.org/abs/1706.03762

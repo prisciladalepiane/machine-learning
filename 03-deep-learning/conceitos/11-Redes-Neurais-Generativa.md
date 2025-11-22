@@ -9,5 +9,7 @@ As redes neurais generativas também incluem as Redes Geradoras de Momento Varia
 
 As redes neurais generativas têm uma ampla gama de aplicações, desde a criação de arte, música e textos até a geração de modelos 3D. Sua capacidade de gerar dados novos e diversos, que são ao mesmo tempo únicos e semelhantes aos dados originais, abre novoscaminhos na exploração da criatividade assistida por máquina e na resolução de problemas complexos em diversos campos da ciência e engenharia.
 
+https://www.deeplearningbook.com.br/algoritmo-backpropagation-parte-2-treinamento-de-redes-neurais/
 
+https://epoch.ai/blog/backward-forward-FLOP-ratio
  
