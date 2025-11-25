@@ -15,13 +15,12 @@ https://quantdare.com/transformers-is-attention-all-we-need-in-finance-part-i/
 
 https://arxiv.org/abs/1706.03762
 
-## Camadas
 
 ```
 INPUT Tokens → Embedding → Atenção → Feed Forward → Saída
 ```
 
-### Embedding
+## Embedding
 
 Imagine que você tem uma frase. O modelo não entende palavras. Ele só entende números. Então antes de treinar qualquer rede neural, você precisa transformar:
 
@@ -50,13 +49,13 @@ import torch.nn as nn
 # 3 = casa
 
 vocab_size = 4
-embedding_dim = 5  # cada palavra vira um vetor de 5 números
+embedding_dim = 5 # cada palavra vira um vetor de 5 números
 
 embedding = nn.Embedding(vocab_size, embedding_dim)
 
 # Entrada: uma frase com tokens
 # Exemplo: "gato cachorro carro"
-entrada = torch.tensor([0, 1, 2])  
+entrada = torch.tensor([0, 1, 2]) 
 
 # Passa pelo embedding
 saida = embedding(entrada)
@@ -67,3 +66,35 @@ print(saida)
 
 Cada palavra foi transformada em um vetor de 5 dimensões. Esses números começam aleatórios, mas durante o treinamento a rede ajusta esses vetores para que palavras com significados parecidos fiquem próximas.
 
+## Atenção
+
+### Componentes Q (Query), K (Key) e V (Value)
+
+Dentro da arquitetura Transformer, o mecanismo de atenção, especificamente a atenção do tipo "scaled dot-product", utiliza três componentes principais: Q (Query), K (Key) e V (Value).
+
+Estes componentes são essenciais para o funcionamento da atenção, que é o coração do Transformer, permitindo que ele lide eficientemente com sequências de dados, como texto, ao determinar a importância relativa de diferentes partes da entrada. Vejamos o que faz cada componente:
+
+**Q (Query)**
+
+Função: As Queries (Consultas) representam a parte da informação em que estamos interessados. Em um contexto de Processamento de Linguagem Natural (PLN), por exemplo, se estivéssemos traduzindo uma frase, a query seria a parte da frase que estamos tentando traduzir no momento.
+
+Uso: Em um modelo Transformer, para cada posição na sequência de entrada (ou saída, no caso do decoder), uma query é gerada. Estas queries são usadas para pontuar o quão relevante cada parte da entrada é para essa posição particular.
+
+**K (Key)**
+
+Função: As Keys (Chaves) são usadas para pontuar cada parte da entrada. Elas são comparadas com as queries para determinar o grau de "atenção" que cada parte da entrada deve receber.
+
+Uso: Em termos práticos, a comparação entre uma query e todas as keys resulta em um conjunto de pontuações, que indicam quão relevante cada parte da entrada é para a parte representada pela query.
+
+
+**V (Value)**
+
+Função: Os Values (Valores) contêm a informação real que queremos extrair. Depois que as queries e as keys determinam onde o modelo deve focar, os values são usadas para compor a saída do mecanismo de atenção.
+
+Uso: Cada value é associado a uma key. Depois que as pontuações são calculadas entre queries e keys, estas pontuações são usadas para ponderar os values. O resultado ponderado destes values é a saída do mecanismo de atenção.
+
+**Como Funciona na Prática**
+
+No Transformer, Q, K e V são derivados da mesma entrada em camadas de atenção do encoder, mas de entradas diferentes no decoder (Q vem da saída da camada anterior do decoder, enquanto K e V vêm da saída do encoder). O mecanismo de atenção calcula um conjunto de pontuações (usando o produto escalar entre Q e K, daí o nome "scaled dot-product attention"), aplica uma função softmax para obter pesos de atenção e usa esses pesos para ponderar os values, criando uma saída que é uma combinação ponderada das informações relevantes de entrada.
+
+Este processo permite que o modelo dê "atenção" às partes mais relevantes da entrada para cada parte da saída, o que é especialmente útil em tarefas como tradução, onde a relevância de diferentes palavras da entrada pode variar dependendo da parte da fraseque está sendo traduzida.
