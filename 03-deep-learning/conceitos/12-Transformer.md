@@ -67,6 +67,31 @@ print(saida)
 Cada palavra foi transformada em um vetor de 5 dimensões. Esses números começam aleatórios, mas durante o treinamento a rede ajusta esses vetores para que palavras com significados parecidos fiquem próximas.
 
 ## Atenção
+O mecanismo de atenção tenta responder a uma pergunta simples: ao processar um token, para quais outros tokens ele deve prestar mais atenção?
+
+De forma simples, o funcionamento é este:
+
+Cada palavra (já transformada em vetor pelo embedding) é usada para criar três vetores diferentes: Query, Key e Value.
+
+Query = o que estou procurando
+Key = o que eu ofereço
+Value = a informação que eu carrego
+
+Para cada palavra da frase, o modelo compara sua Query com todas as Keys das outras palavras.
+Isso gera uma pontuação que indica o quanto uma palavra deve olhar para outra.
+
+Essas pontuações passam por um softmax, viram pesos de atenção.
+
+Cada palavra recebe uma combinação ponderada dos Values das outras palavras, usando esses pesos.
+Assim, ela coleta informação relevante do contexto.
+
+O resultado é um vetor enriquecido, que entende relações na frase.
+
+Exemplo simples:
+Na frase : "o gato bebeu água porque estava com sede",
+ao ler "porque", o modelo aprende que deve prestar mais atenção a gato e bebeu água para entender quem está com sede.
+
+Atenção é o mecanismo que permite ao modelo olhar para o contexto inteiro e decidir o que importa para cada palavra.
 
 ### Componentes Q (Query), K (Key) e V (Value)
 
@@ -98,3 +123,64 @@ Uso: Cada value é associado a uma key. Depois que as pontuações são calculad
 No Transformer, Q, K e V são derivados da mesma entrada em camadas de atenção do encoder, mas de entradas diferentes no decoder (Q vem da saída da camada anterior do decoder, enquanto K e V vêm da saída do encoder). O mecanismo de atenção calcula um conjunto de pontuações (usando o produto escalar entre Q e K, daí o nome "scaled dot-product attention"), aplica uma função softmax para obter pesos de atenção e usa esses pesos para ponderar os values, criando uma saída que é uma combinação ponderada das informações relevantes de entrada.
 
 Este processo permite que o modelo dê "atenção" às partes mais relevantes da entrada para cada parte da saída, o que é especialmente útil em tarefas como tradução, onde a relevância de diferentes palavras da entrada pode variar dependendo da parte da fraseque está sendo traduzida.
+
+## Scaled Dot-Product Attention
+
+A Scaled Dot-Product Attention calcula o quanto cada palavra deve prestar atenção às outras comparando seus vetores Query e Key por meio de um produto escalar(dot-product) entre: quanto maior o resultado, mais relevante uma palavra é para a outra. Esses valores são divididos pela raiz da dimensão dos vetores para evitar números grandes e instáveis, e depois passam por um softmax que transforma tudo em pesos de atenção. Por fim, esses pesos são usados para combinar os vetores Value, gerando uma representação final onde cada palavra incorpora informações importantes de todas as outras no contexto.
+
+3 passos:
+
+**1. Calcular similaridade entre palavras**
+
+O modelo cria três vetores para cada token:
+Query (Q), Key (K) e Value (V).
+
+Para medir o quanto uma palavra A deve olhar para uma palavra B, fazemos:
+
+similaridade = Q • K
+
+
+Isso é um dot-product: ele mede o alinhamento entre os dois vetores.
+Quanto maior, mais atenção A deve dar a B.
+
+**2. Escalar (dividir pela raiz quadrada da dimensão)**
+
+Sem esse passo, os valores poderiam ficar muito grandes e deixar o softmax instável.
+
+O ajuste é:
+
+$$\frac{(Q • K)}{\sqrt{d_k}}$$
+
+
+
+Onde d_k é o tamanho do vetor Key.
+Isso reduz a explosão dos valores e deixa o cálculo mais suave.
+
+Por isso o nome scaled (escalado).
+
+**3. Transformar em pesos com softmax**
+
+Aplicamos o softmax para transformar as similaridades em probabilidades:
+
+```
+weights = softmax( 
+    (Q • K) / sqrt(d_k) 
+    )
+```
+
+Esses pesos dizem quanto cada palavra importa.
+
+**4. Combinar com os valores (Values)**
+
+Os valores finais da atenção são:
+
+```
+attention_output = weights × V
+```
+
+
+Ou seja: cada palavra vira uma média ponderada (com pesos inteligentes) da informação de todas as outras palavras.
+
+
+> **Scaled Dot-Product Attention** pega Queries e Keys para medir similaridade, divide para estabilizar e usa isso para combinar inteligentemente os Values que carregam informação.
+
