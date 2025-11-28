@@ -96,3 +96,62 @@ Quando alimentamos uma rede neural com uma entrada, a informação flui da camad
 No entanto, saber o gradiente por si só não é suficiente. É aqui que entra a otimização. O processo de otimização ajusta iterativamente os pesos da rede na direção oposta ao gradiente, buscando minimizar o erro. O tamanho do ajuste é geralmente determinadopor um parâmetro chamado "taxa de aprendizado". Um dos otimizadores mais básicos e amplamente conhecidos é o Gradiente Descendente (e suas variantes como Gradiente Descendente Estocástico e Gradiente Descendente em Mini-lotes). No entanto, existem muitos outros otimizadores, como Adam, RMSprop e Adagrad, que não só consideram o gradiente atual, mas também incorporam informações de gradientes anteriores para fazer atualizações mais informadas.
 
 Juntos, o backpropagation e os algoritmos de otimização formam a espinha dorsal do treinamento de redes neurais em Deep Learning. Eles permitem que a rede aprenda padrões complexos e não lineares nos dados, ajustando-se iterativamente para reduzir o erro e melhorar a precisão. Esta combinação de calcular gradientes e ajustar pesos é repetida muitas vezes até que a rede alcance um desempenho satisfatório ou até que se cumpra algum critério de parada definido
+
+
+# Compreendendo o Algoritmo Backpropagation
+
+O algoritmo de retropropagação (backpropagation) é um método utilizado para treinar redes neurais artificiais. Ele é usado em conjunto com um algoritmo de otimização, como o Gradiente Descendente, para ajustar os pesos da rede neural. A ideia central é minimizar a diferença entre a saída prevista pela rede neural e a saída real (ou desejada), conhecida como erro ou perda.
+
+O Processo de Backpropagation é Composto Pelas Seguintes Etapas:
+
+## Etapa 1. Propagação para Frente (Forward Propagation)
+
+
+• A entrada é fornecida à rede neural.
+
+• Esta entrada passa pelas várias camadas da rede, onde cada neurônio processa a entrada e a passa para a próxima camada.
+
+• O processo continua até que a saída seja gerada.
+
+
+## Etapa 2. Cálculo do Erro:
+
+
+
+• A saída gerada pela rede é comparada com a saída esperada para calcular o erro. Geralmente, usa-se uma função de perda para isso, como o erro quadrático médio.
+
+
+Etapa 3. Propagação Reversa do Erro (Backpropagation):
+
+
+• O erro é então propagado de volta pela rede, começando da última camada até a primeira.
+
+
+• Durante este processo, o algoritmo calcula o gradiente da função de perda em relação a cada peso na rede. Isso é feito usando a regra da cadeia do cálculo diferencial.
+
+
+## Etapa 4. Ajuste dos Pesos:
+
+
+• Os pesos da rede são ajustados na direção oposta ao gradiente para minimizar o erro. Esse ajuste é feito usando um algoritmo de otimização, como o Gradiente Descendente.
+
+
+• A taxa de aprendizagem determina o tamanho do passo feito na direção oposta ao gradiente.
+
+
+## Etapa 5. Iteração:
+
+
+• Este processo é repetido para várias iterações ou até que o erro seja reduzido a um nível aceitável.
+
+
+
+## Etapa 6. Atualização em Lote ou Mini-Lote:
+
+
+• O treinamento geralmente é feito em lotes ou mini-lotes, o que significa que os pesos são atualizados após passar múltiplos exemplos de treinamento pela rede, o que ajuda na estabilidade e eficiência do treinamento.
+
+
+O algoritmo de backpropagation é essencial para o aprendizado profundo, pois permite que redes neurais complexas com muitas camadas aprendam padrões intrincados e sutis a partir de grandes quantidades de dados.
+
+A eficiência e eficácia desse algoritmo são um dos principais motivos pelos quais as redes neurais são tão poderosas em tarefas de aprendizado de máquina, como reconhecimento de imagem, processamento de linguagem natural, entre outros.
