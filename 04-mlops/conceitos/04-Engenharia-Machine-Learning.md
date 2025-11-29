@@ -77,33 +77,32 @@ O objetivo é facilitar a colaboração entre Cientistas de Dados e equipes de o
 
 Aspectos Principais de "Ops" em MLOps:
 
-1. Integração e Entrega Contínua (CI/CD):
+1. **Integração e Entrega Contínua (CI/CD)**:
 
 
 Integração Contínua (CI): Automatiza a integração de código e modelos para validar sua qualidade através de testes automáticos.
 Entrega Contínua (CD): Automatiza o lançamento de modelos validados para ambientes de teste e produção, garantindo que as versões possam ser implantadas a qualquer momento.
 
-2. Monitoramento e Manutenção:
-
+2. **Monitoramento e Manutenção:**
 Monitorar o desempenho do modelo para detectar e corrigir degradações ou mudanças nos padrões de dados.
 Manter e atualizar os sistemas conforme necessário para garantir a precisão e eficiência contínuas.
 
-3. Gestão de Configuração e Infraestrutura:
+3. **Gestão de Configuração e Infraestrutura**:
 
 Configurar e gerenciar a infraestrutura necessária para treinar e servir modelos em escala.
 Gerenciar as configurações dos sistemas para garantir consistência e reprodutibilidade.
 
-4. Gestão de Dados:
+4. **Gestão de Dados**:
 
 Gerenciar pipelines de dados para garantir a qualidade e a disponibilidade dos dados usados para treinamento e inferência.
 Implementar práticas de governança de dados para manter a integridade e a segurança dos dados.
 
-5. Controle de Versão e Artefatos:
+5. **Controle de Versão e Artefatos**:
 
 Manter o controle de versão de modelos, dados e códigos para permitir a rastreabilidade e facilitar rollbacks se necessário.
 Gerenciar os artefatos de Machine Learning, incluindo modelos treinados e componentes associados.
 
-6. Colaboração entre Equipes:
+6. **Colaboração entre Equipes**:
 
 Facilitar a colaboração eficaz entre cientistas de dados, engenheiros de software, e equipes de operações.
 Promover uma cultura de compartilhamento de conhecimento e melhores práticas.

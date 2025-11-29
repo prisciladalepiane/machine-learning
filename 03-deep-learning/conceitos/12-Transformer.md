@@ -184,3 +184,30 @@ Ou seja: cada palavra vira uma média ponderada (com pesos inteligentes) da info
 
 > **Scaled Dot-Product Attention** pega Queries e Keys para medir similaridade, divide para estabilizar e usa isso para combinar inteligentemente os Values que carregam informação.
 
+## Stack de Encoders e Decoders
+
+Em sua essência, a arquitetura Transformers contém uma pilha de camadas codificadoras e camadas decodificadoras. Para evitar confusão, nos referiremos à camada individual como Codificador ou Decodificador e usaremos a pilha do codificador ou a pilha do decodificador para um grupo de camadas do codificador.
+
+A pilha do codificador e a pilha do decodificador têm, cada uma, suas camadas de incorporação (embedding) correspondentes para suas respectivas entradas. Finalmente, existe uma camada de saída para gerar a saída final.
+
+Todos os codificadores são idênticos entre si. Da mesma forma, todos os decodificadores são idênticos.
+
+O codificador contém a importante camada de autoatenção que calcula o relacionamento entre as diferentes palavras na sequência, bem como uma camada de feed-forward.
+
+O Decodificador contém a camada de autoatenção e a camada de feed-forward, bem como uma segunda camada de atenção do codificador-decodificador.
+
+Cada codificador e decodificador possui seu próprio conjunto de pesos. Existem muitas variações da arquitetura do Transformer. Algumas arquiteturas de Transformer não possuem nenhum decodificador e dependem apenas do codificador.
+
+## O Que Faz a **Autoatenção**?
+
+A chave para o desempenho inovador do Transformer é o uso da Atenção, especificamente da Autoatenção.
+
+Ao processar uma palavra, a Atenção permite que o modelo se concentre em outras palavras da entrada que estejam intimamente relacionadas a essa palavra.
+
+Por exemplo. ‘Bola’ está intimamente relacionado com ‘azul’ e ‘segurar’. Por outro lado, ‘azul’ não está relacionado com ‘menino’.
+
+```
+O menino está segurando a bola azul
+``` 
+
+A arquitetura do Transformer usa Autoatenção relacionando cada palavra na sequência de entrada com todas as outras palavras.
