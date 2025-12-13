@@ -70,10 +70,10 @@ Garantir que as tecnologias de ML sejam desenvolvidas de maneira inclusiva, cons
 
 Isso inclui a diversificação das equipes de desenvolvimento e a inclusão de stakeholders em processos de design e implementação.
 
----
-Abordar essas questões éticas e de responsabilidade requer uma abordagem multidisciplinar, envolvendo não apenas especialistas em tecnologia, mas também em ética, direito, sociologia e outras áreas relevantes.
 
-Além disso, é essencial o desenvolvimento de padrões, diretrizes e regulamentações em nível tanto nacional quanto internacional para orientar o uso ético da IA e do ML.
+> Abordar essas questões éticas e de responsabilidade requer uma abordagem multidisciplinar, envolvendo não apenas especialistas em tecnologia, mas também em ética, direito, sociologia e outras áreas relevantes. Além disso, é essencial o desenvolvimento de padrões, diretrizes e regulamentações em nível tanto nacional quanto internacional para orientar o uso ético da IA e do ML.
+
+---
 
 REFERÊNCIAS
 
