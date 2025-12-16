@@ -113,6 +113,7 @@ Projeto com ênfase na modelagem estatística com objetivo de analisar os dados 
 O Projeto demonstra na prática como aplicar regressão não paramétrica no contexto de  um problema  de  negócio  com  o  objetivo  de  prever  sentimento  em  avaliações  de  usuários.
 
 📁 [02-mat-est-aplicada/08-regressao-loess.ipynb](08-regressao-loess.ipynb)
+
 ---
 
 # 🔗 Outros Projetos
