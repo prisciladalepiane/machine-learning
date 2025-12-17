@@ -49,7 +49,7 @@ O projeto implementa um fluxo completo de MLOps em Python, desde o pré-processa
 
 ### 7 - Monitoramento de Data Driften
 
-O Projeto tem como foco o desenvolvimento de um sistema automatizado para detectar e mitigar mudanças no comportamento dos dados e na performance dos modelos de Machine Learning ao longo do tempo. Utilizando o dataset de vinhos da UCI Machine Learning Repository, o projeto simula cenários de Data Drift e Model Drift, monitorando a degradação da acurácia e aplicando estratégias de mitigação como retreinamento com novos dados, otimização de hiperparâmetros e mudança de algoritmos. São implementados diferentes estágios de resposta — desde o reuso do modelo inicial até a combinação de modelos com o GradientBoostingClassif
+O Projeto tem como foco o desenvolvimento de um sistema automatizado para detectar e mitigar mudanças no comportamento dos dados e na performance dos modelos de Machine Learning ao longo do tempo. Utilizando o dataset de vinhos da UCI Machine Learning Repository, o projeto simula cenários de Data Drift e Model Drift, monitorando a degradação da acurácia e aplicando estratégias de mitigação como retreinamento com novos dados, otimização de hiperparâmetros e mudança de algoritmos. São implementados diferentes estágios de resposta, desde o reuso do modelo inicial até a combinação de modelos com o GradientBoostingClassif
 
 📁 [01-deploy-ml/07-monitorar-data-driften](01-deploy-ml/07-monitorar-data-driften)
 
@@ -157,5 +157,4 @@ Lista de repositórios externos.
 **Priscila Gonçalves Dalepiane**
 Estatística | Engenharia de Software | Pós em Machine Learning e MLOps  
 
-
-[LinkedIn](https://www.linkedin.com/in/prisciladalepiane) | [Rpubs](https://rpubs.com/prisciladalepiane) | [GitHub](https://github.com/prisciladalepiane)
+[LinkedIn](https://www.linkedin.com/in/priscila-gon%C3%A7alves-dalepiane-947b65b2/) | [Rpubs](https://rpubs.com/prisciladalepiane) | [GitHub](https://github.com/prisciladalepiane)
