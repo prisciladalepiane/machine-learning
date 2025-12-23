@@ -13,7 +13,7 @@ Vetorização é o processo de converter texto em vetores de números. Em PLN, i
 
 O TF é uma medida da frequência com que uma palavra ocorre em um documento. É calculado como o número de vezes que uma palavra aparece no documento dividido pelo número total de palavras no documento. Isso dá uma medida de quão importante uma palavra é para um documento individual em um corpus.
 
-$$ TF(t,d) = frac{freq(t,d)}{total de palavras em d} $$
+$$ TF(t,d) = \frac{freq(t,d)}{total de palavras em d} $$
 
 Onde:
 
