@@ -96,3 +96,27 @@ def plot_volume(hist, ticker):
     
     # Exibe o gráfico no Streamlit
     st.plotly_chart(fig)
+
+
+################################### Agentes de IA ###############################################
+
+agente_web_search = Agent(name="DSA Agente Web Search",
+                          role="Fazer busca na web",
+                          model=Groq(id="deepseek-r1-distill-llama-70b"),
+                          tools=[DuckDuckGo()],
+                          instructions=["Sempre inclua as fontes"],
+                          show_tool_calls=True, markdown=True)
+
+agente_financeiro = Agent(name="DSA Agente Financeiro",
+                          model=Groq(id="deepseek-r1-distill-llama-70b"),
+                          tools=[YFinanceTools(stock_price=True,
+                                                analyst_recommendations=True,
+                                                stock_fundamentals=True,
+                                                company_news=True)],
+                           instructions=["Use tabelas para mostrar os dados"],
+                           show_tool_calls=True, markdown=True)
+
+multi_ai_agent = Agent(team=[agente_web_search, agente_financeiro],
+                       model=Groq(id="llama-3.3-70b-versatile"),
+                       instructions=["Sempre inclua as fontes", "Use tabelas para mostrar os dados"],
+                       show_tool_calls=True, markdown=True)
