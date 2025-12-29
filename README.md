@@ -157,7 +157,7 @@ Lista de repositórios externos.
 
 ## 📚 Monografia Teoria de Resposta ao Item
 
-- [latex](https://github.com/prisciladalepiane/latex): Repositório da monografia sobre TRI, com código LaTeX e referências.
+- [artigo-tri-latex](https://github.com/prisciladalepiane/artigo-tri-latex): Repositório da monografia sobre TRI, com código LaTeX e referências.
 
 ---
 
