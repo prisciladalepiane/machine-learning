@@ -15,3 +15,4 @@ target/
 mlruns/
 *.db
 *.ipynb_checkpoints
+*.env
