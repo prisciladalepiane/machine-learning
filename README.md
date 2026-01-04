@@ -7,7 +7,7 @@ Projetos voltados ao ciclo completo de criação e entrega de modelos de machine
 
 📘 [Conceitos teóricos e explicações](01-deploy-ml/conceitos)
 
-### 1 - Modelo de Classificação Logística
+### 1 - Modelo de Classificação para área de Logística
 
 Este projeto demonstra a construção e o deploy de um modelo de Machine Learning aplicado à logística, com o objetivo de prever o tipo de produto eletrônico contido em uma embalagem com base em duas variáveis: peso e tipo de embalagem. Utilizando a biblioteca `scikit-learn`, o modelo foi desenvolvido com o algoritmo **Decision Tree Classifier,** que aprende a relacionar essas variáveis para identificar o produto mais provável. Após o treinamento e avaliação do modelo (com métricas como acurácia e relatório de classificação) o sistema foi integrado em uma aplicação web desenvolvida com `flask`, permitindo realizar previsões em tempo real a partir de um formulário interativo. O projeto simula um cenário logístico real, onde a previsão automática do conteúdo das embalagens pode otimizar o manuseio de produtos e reduzir erros operacionais.
 
@@ -20,7 +20,8 @@ O projeto utiliza o algoritmo de classificação **Random Forest**, implementado
 📁 [01-deploy-ml/02-prevendo-churn-de-clientes](01-deploy-ml/02-prevendo-churn-de-clientes)
 
 ### 3 -  Projeto na Nuven AWS
-O projeto consistiu na criação e implantação de modelos de Machine Learning (Regressão Logística, Random Forest e SVM) para prever a admissão de estudantes com base em variáveis como notas e QI. O processo incluiu pré-processamento, padronização dos dados, divisão em treino e teste, avaliação por métricas de desempenho (Acurácia, AUC, F1-score) e comparação de algoritmos.
+
+O projeto consistiu na criação e implantação de modelos de Machine Learning (**Regressão Logística, Random Forest e SVM**) para prever a admissão de estudantes com base em variáveis como notas e QI. O processo incluiu pré-processamento, padronização dos dados, divisão em treino e teste, avaliação por métricas de desempenho (Acurácia, AUC, F1-score) e comparação de algoritmos.
 O modelo foi posteriormente preparado para deploy na AWS, integrando o fluxo de previsão a um ambiente de nuvem para uso em aplicações educacionais.
 
 📁 [01-deploy-ml/03-modelo-ml-nuven-aws-escola](01-deploy-ml/03-modelo-ml-nuven-aws-escola)
@@ -49,7 +50,7 @@ O projeto implementa um fluxo completo de MLOps em Python, desde o pré-processa
 
 ### 7 - Monitoramento de Data Driften
 
-O Projeto tem como foco o desenvolvimento de um sistema automatizado para detectar e mitigar mudanças no comportamento dos dados e na performance dos modelos de Machine Learning ao longo do tempo. Utilizando o dataset de vinhos da UCI Machine Learning Repository, o projeto simula cenários de Data Drift e Model Drift, monitorando a degradação da acurácia e aplicando estratégias de mitigação como retreinamento com novos dados, otimização de hiperparâmetros e mudança de algoritmos. São implementados diferentes estágios de resposta, desde o reuso do modelo inicial até a combinação de modelos com o GradientBoostingClassif
+O Projeto tem como foco o desenvolvimento de um sistema automatizado para detectar e mitigar mudanças no comportamento dos dados e na performance dos modelos de Machine Learning ao longo do tempo. Utilizando o dataset de vinhos da UCI Machine Learning Repository, o projeto simula cenários de _Data Drift_ e _Model Drift_, monitorando a degradação da acurácia e aplicando estratégias de mitigação como retreinamento com novos dados, otimização de hiperparâmetros e mudança de algoritmos. São implementados diferentes estágios de resposta, desde o reuso do modelo inicial até a combinação de modelos com o `GradientBoostingClassif`.
 
 📁 [01-deploy-ml/07-monitorar-data-driften](01-deploy-ml/07-monitorar-data-driften)
 
@@ -74,13 +75,13 @@ Este projeto aplica conceitos de vetores e espaço vetorial em um sistema de rec
 
 ### 2 - Algoritmo de Rede Neural
 
-Este notebook implementa uma rede neural simples para classificação binária, explicando o processo de aprendizado via gradiente descendente, do cálculo da saída à atualização dos pesos. Inclui exemplo prático com separação de dados, treinamento e previsão de resultados.
+Este notebook implementa uma **rede neural simples para classificação binária**, explicando o processo de aprendizado via gradiente descendente, do cálculo da saída à atualização dos pesos. Inclui exemplo prático com separação de dados, treinamento e previsão de resultados.
 
 📁 [02-mat-est-aplicada/02-algoritmo-rede-neural.ipynb](02-mat-est-aplicada/02-algoritmo-rede-neural.ipynb)
 
 ### 3 - Analise de componetes principais
 
-Análise de componentes principais de um questionário usando algoritmo PCA.
+Análise de componentes principais de um questionário usando **algoritmo PCA**.
 
 📁 [02-mat-est-aplicada/03-analise-compontentes-principais.ipynb](02-mat-est-aplicada/03-analise-compontentes-principais.ipynb)
 
@@ -110,7 +111,7 @@ Projeto com ênfase na modelagem estatística com objetivo de analisar os dados 
 
 ### 8 - Aplicação da regressão LOESS
 
-O Projeto demonstra na prática como aplicar regressão não paramétrica no contexto de  um problema  de  negócio  com  o  objetivo  de  prever  sentimento  em  avaliações  de  usuários.
+O Projeto demonstra na prática como aplicar regressão não paramétrica no contexto de um problema de negócio com o objetivo de prever sentimento em avaliações de usuários.
 
 📁 [02-mat-est-aplicada/08-regressao-loess.ipynb](08-regressao-loess.ipynb)
 
