@@ -60,3 +60,35 @@ Apesar de sua importância, as funções de ativação não são isentas de desa
 - São fundamentais para que o modelo aprenda a representar relações complexas e abstratas nos dados.
 
 > As funções de ativação são componentes essenciais das redes neurais em Deep Learning, permitindo que elas capturem e representem complexidades nos dados. A escolha da função de ativação apropriada depende da arquitetura da rede e da natureza do problema que está sendo tratado. 
+
+## LeakyReLu
+
+A função de ativação LeakyReLU (Leaky Rectified Linear Unit) é uma variação da função ReLU (Rectified Linear Unit), amplamente usada em redes neurais.
+
+A ideia por trás da LeakyReLU é abordar um dos problemas da ReLU, quando alguns neurônios se tornam inativos e só apresentando output zero, independentemente do input recebido. Isso pode ocorrer durante o treinamento, especialmente com taxas de aprendizado altas.
+
+A LeakyReLU é útil para resolver o problema de neurônios inativos nas redes neurais, especialmente em redes profundas, e pode ser uma alternativa valiosa para experimentar em diferentes cenários de aprendizado de máquina.
+
+
+### O que é LeakyReLU?
+
+A LeakyReLU é definida pela fórmula f(x) = max(ax, x), onde a é um pequeno valor constante.
+
+Para valores positivos de x, funciona da mesma forma que a ReLU, mantendo x.
+
+Para valores negativos de x, ao invés de gerar zero (como a ReLU faria), ela gera um pequeno valor proporcional a x (ou seja, ax), onde a é tipicamente um valor pequeno como 0.01.
+
+### Vantagens da LeakyReLU:
+
+Previne Neurônios Mortos: Ao permitir um pequeno gradiente quando a unidade está inativa, ajuda a manter os neurônios ativos durante o treinamento e evita o problema comum na ReLU.
+
+Melhora o Desempenho: Em alguns casos, a LeakyReLU pode acelerar a convergência do treinamento e melhorar o desempenho do modelo em comparação com a ReLU.
+
+### Quando usar LeakyReLU?
+
+**Em Redes Profundas:** Em redes profundas a LeakyReLU pode ser particularmente útil.
+
+**Experimentação em diferentes problemas**: Como com muitas técnicas em deep learning, a eficácia da LeakyReLU pode variar dependendo do problema específico. É comum experimentá-la e comparar os resultados com outras funções de ativação, como a ReLU ou a ELU (Exponential Linear Unit).
+
+**Quando houver problemas com neurônios morrendo**: Se durante o treinamento você observar que muitos neurônios estão se tornando inativos, a LeakyReLU pode ser uma solução para experimentar.
+
