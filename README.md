@@ -117,18 +117,6 @@ O Projeto demonstra na prática como aplicar regressão não paramétrica no con
 
 -----------------------------------------------------------------------------
 
-## 📂 Deep Learning para Aplicações de Inteligência Artificial com Python e C++
-
-### 1 - Implementando o Mecanismo de Atenção em Python (sem usar framework)
-
-Projeto focado na implementação e compreensão do mecanismo de atenção dos modelos Transformer, inspirado no artigo _Attention Is All You Need_. O trabalho combina uma implementação didática em PyTorch com a construção manual dos principais componentes usando apenas NumPy, incluindo embeddings, função softmax, scaled dot-product attention e camada linear de saída. O objetivo é aprofundar o entendimento do funcionamento interno da atenção, do fluxo de dados entre Q, K e V e da geração de representações contextualizadas em sequências, priorizando clareza conceitual em vez de performance ou treinamento em larga escala.
-
-📁 [03-deep-learning/01-Mecanismo-Atencao.ipynb](01-Mecanismo-Atencao.ipynb)
-
-### 2 - Fine-Tuning de um Modelo Transformer para Classificação de Sentimento (Em Andamento)
-
-📁 [03-deep-learning/02-Classificacao-Sentimento.ipynb](01-Mecanismo-Atencao.ipynb)
-
 ## 📂 MLOps e Ciclo de Vida de Modelos de Machine Learning
 
 
@@ -156,7 +144,7 @@ Lista de repositórios externos.
 
 - [banco_de_dados](https://github.com/prisciladalepiane/banco_de_dados): Modelagem e consultas SQL com foco em bancos relacionais. Inclui scripts de criação de tabelas e casos de uso.
 
-## 📚 Monografia Teoria de Resposta ao Item
+## 📚 Artigo Teoria de Resposta ao Item
 
 - [artigo-tri-latex](https://github.com/prisciladalepiane/artigo-tri-latex): Repositório da monografia sobre TRI, com código LaTeX e referências.
 
