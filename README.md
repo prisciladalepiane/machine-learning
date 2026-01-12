@@ -36,7 +36,7 @@ A API foi construída com `FastAPI` e empacotada em um container Docker, garanti
 
 ### 5 - Construção de feature-store e Aplicação de Engenharia de Atributos
 
-Este projeto implementa um pipeline completo de Machine Learning, desde a geração sintética de dados e criação de uma Feature Store até o treinamento, avaliação e salvamento automatizado do modelo e suas previsões. O fluxo é composto por módulos independentes responsáveis por cada etapa: criação da feature store, exploração e visualização dos dados, engenharia de atributos, treinamento de modelo (com Random Forest), e salvamento de artefatos e métricas.
+Este projeto implementa um pipeline completo de Machine Learning, desde a geração sintética de dados e criação de uma Feature Store até o treinamento, avaliação e salvamento automatizado do modelo e suas previsões. O fluxo é composto por módulos independentes responsáveis por cada etapa: criação da **feature store**, exploração e **visualização dos dados**, **engenharia de atributos**, treinamento de modelo (com Random Forest), e salvamento de artefatos e métricas.
 
 O objetivo é demonstrar como estruturar um pipeline reproduzível e escalável, aplicando boas práticas de MLOps, como modularização, versionamento e persistência de resultados. Todo o processo é executado por meio do script pipeline.py, que automatiza as etapas e registra o desempenho do modelo em formato JSON.
 
@@ -44,7 +44,7 @@ O objetivo é demonstrar como estruturar um pipeline reproduzível e escalável,
 
 ### 6 - Pipeline de Versionamento, Retreinamento e Deploy
 
-O projeto implementa um fluxo completo de MLOps em Python, desde o pré-processamento e treinamento inicial de um modelo até seu deploy via API Flask. O pipeline automatiza etapas como validação cruzada, avaliação de métricas, versionamento de modelos e retreinamento com novos dados, garantindo reprodutibilidade e rastreabilidade. Cada nova versão é salva e avaliada antes de ser promovida a produção, enquanto o modelo mais recente pode ser consumido por requisições HTTP, simulando um ambiente real de manutenção e atualização contínua de modelos de Machine Learning.
+O projeto implementa um fluxo completo de MLOps em Python, desde o pré-processamento e treinamento inicial de um modelo até seu deploy via API Flask. O pipeline automatiza etapas como **validação cruzada**, **avaliação de métricas**, **versionamento de modelos** e retreinamento com novos dados, garantindo reprodutibilidade e rastreabilidade. Cada nova versão é salva e avaliada antes de ser promovida a produção, enquanto o modelo mais recente pode ser consumido por requisições HTTP, simulando um ambiente real de manutenção e atualização contínua de modelos de Machine Learning.
 
 📁 [01-deploy-ml/06-versionamento](01-deploy-ml/06-versionamento)
 
@@ -122,6 +122,9 @@ O Projeto demonstra na prática como aplicar regressão não paramétrica no con
 
 Lista de repositórios externos.
 
+
+## 🧠 Deep Learning
+- [deep-learning](https://github.com/prisciladalepiane/deep-learning): Estudos e projetos com redes neurais, fundamentos de arquiteturas profundas, treinamento, avaliação e experimentos aplicados.
 
 ## 🔬 Ciência de Dados com Python
 
