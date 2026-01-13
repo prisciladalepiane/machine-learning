@@ -122,6 +122,8 @@ O Projeto demonstra na prática como aplicar regressão não paramétrica no con
 
 Lista de repositórios externos.
 
+## ♾️ MLOPs
+- [mlops](https://github.com/prisciladalepiane/mlops)
 
 ## 🧠 Deep Learning
 - [deep-learning](https://github.com/prisciladalepiane/deep-learning): Estudos e projetos com redes neurais, fundamentos de arquiteturas profundas, treinamento, avaliação e experimentos aplicados.
