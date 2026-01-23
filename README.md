@@ -1,6 +1,6 @@
-# Portifólio de Machine Learning, Data Science e MLOps
+# Portifólio de Machine Learning e Data Science
 
-Repositório dedicado a estudos, anotações e projetos práticos realizados durante a minha pós-graduaçao em Machine Learning e MLOps. 
+Repositório dedicado a estudos, anotações e projetos práticos em Data Science e Machine Learning. 
 
 ## 📂 Desenvolvimento e Deploy de Modelos de Machine Learning
 Projetos voltados ao ciclo completo de criação e entrega de modelos de machine learning.
