@@ -16,3 +16,4 @@ mlruns/
 *.db
 *.ipynb_checkpoints
 *.env
+*.keras
