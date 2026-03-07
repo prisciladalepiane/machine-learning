@@ -32,11 +32,11 @@ Apresentamos a seguir algumas das métricas mais comuns por tarefa:
  
  ## Outras Métricas
 
- **Log Loss:** Usada para modelos probabilísticos em classificação.
+ - **Log Loss:** Usada para modelos probabilísticos em classificação.
 
- **Precisão-Recall AUC**: Semelhante ao AUC-ROC, mas foca na relação entre precisão e recall.
+ - **Precisão-Recall AUC**: Semelhante ao AUC-ROC, mas foca na relação entre precisão e recall.
 
- **Coeficiente de Correlação de Pearson**: Mede a correlação linear entre previsões e resultados reais.
+ - **Coeficiente de Correlação de Pearson**: Mede a correlação linear entre previsões e resultados reais.
 
 Cada métrica tem seu próprio contexto de aplicação e deve ser escolhida com base nas necessidades específicas do problema e nas características do conjunto de dados.
 
