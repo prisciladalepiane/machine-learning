@@ -41,3 +41,14 @@ Apresentamos a seguir algumas das métricas mais comuns por tarefa:
 Cada métrica tem seu próprio contexto de aplicação e deve ser escolhida com base nas necessidades específicas do problema e nas características do conjunto de dados.
 
 Em alguns casos, pode ser útil considerar uma combinação de várias métricas para obter uma avaliação abrangente do modelo.
+
+## Funções Auxiliares
+**Split de Dados:** Dividir o conjunto de dados em treinamento, validação (opcionalmente) e teste, para avaliar a performance do modelo de maneira justa.
+
+**Cross-Validation:** Técnica para avaliar a generalização do modelo e reduzir o risco de overfitting, dividindo o conjunto de dados em partes iguais para treinamento e teste.
+
+**Feature Scaling/Normalization**: Normalizar ou padronizar as características dos dados para melhorar o desempenho de certos algoritmos de modelagem.
+
+**Feature Selection/Engineering:** Selecionar as características mais importantes ou criar novas características para melhorar a performance do modelo.
+
+**Hyperparameter Tuning**: Ajustar os parâmetros do modelo para maximizar sua performance, muitas vezes utilizando métodos como Grid Search ou Random Search.
