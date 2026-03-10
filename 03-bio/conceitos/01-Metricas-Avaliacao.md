@@ -52,3 +52,40 @@ Em alguns casos, pode ser útil considerar uma combinação de várias métricas
 **Feature Selection/Engineering:** Selecionar as características mais importantes ou criar novas características para melhorar a performance do modelo.
 
 **Hyperparameter Tuning**: Ajustar os parâmetros do modelo para maximizar sua performance, muitas vezes utilizando métodos como Grid Search ou Random Search.
+
+# Sensibilidade e Especifidade 
+
+A **Sensibilidade** é a capacidade do modelo em identificar, dentre as pessoas com suspeita da doença, àquelas realmente doentes. Ou seja, prever a classe positiva.
+
+A **Especificidade** é a capacidade do mesmo modelo prever a classe negativa nos indivíduos que não apresentam a doença que está sendo investigada.
+
+___
+
+- Sensibilidade = TruePositive / (TruePositive + FalseNegative)
+- Sensibilidade = True Positive Rate
+
+___
+
+- Especificidade (Recall) = TrueNegative / (FalsePositive + TrueNegative)
+- Especificidade = 1 – False Positive Rate
+
+___
+
+O modelo ideal seria aquele que apresentasse 100% de sensibilidade e 100% de especificidade. Assim, teríamos apenas dois resultados: negativo (a pessoa não estaria doente) ou positivo (o indivíduo estaria doente). Portanto, não teríamos o falso-negativo ou o falso-positivo.
+
+Infelizmente, isso raramente ocorre na prática. Imagine uma balança, onde um dos pratos é a sensibilidade e o outro, a especificidade. Se ocorre melhora na sensibilidade de um modelo (o prato da balança sobe), frequentemente ocorre diminuição na especificidade (o prato da balança desce). Em algumas situações, ter uma sensibilidade de 100% é muito importante, como nas triagens sorológicas em bancos de sangue, onde os testes são realizados para a prevenção de transmissão de infecções.
+
+Para a detecção de uma doença, por exemplo, a sensibilidade clínica é influenciada por fatores diversos, como por exemplo: o dia da coleta em relação ao início da infecção, o tipo de amostra utilizada, manifestações clínicas do paciente e a qualidade pré-técnica da amostra.
+
+Muitos algoritmos de aprendizado de máquina são capazes de prever uma probabilidade ou uma pontuação de associação de classe.
+
+Geralmente, isso é útil porque fornece uma medida da certeza ou incerteza de uma previsão. Ele também fornece granularidade adicional sobre apenas prever o rótulo da classe que pode ser interpretado.
+
+Algumas tarefas de classificação requerem uma previsão exata do rótulo da classe. Isso significa que, embora uma probabilidade ou pontuação de associação de classe seja prevista, ela deve ser convertida em um rótulo de classe claro.
+
+A decisão de converter uma probabilidade prevista ou pontuação em um rótulo de classe é governada por um parâmetro denominado "limite de decisão", "limite de discriminação" ou simplesmente o "limite" (threshold). O valor padrão para o limite é 0,5 para probabilidades previstas normalizadas ou pontuações no intervalo entre 0 ou 1.
+
+Por exemplo, em um problema de classificação binária com rótulos de classe 0 e 1, e um limite de 0,5, então, valores menores que o limite de 0,5 são atribuídos à classe 0 e valores maiores ou iguais a 0,5 são atribuídos à classe 1 .
+
+- Previsão < 0,5 = Classe 0
+- Previsão >= 0,5 = Classe 1
