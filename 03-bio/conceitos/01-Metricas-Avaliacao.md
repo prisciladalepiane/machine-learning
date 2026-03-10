@@ -68,7 +68,6 @@ ___
 
 - Especificidade (Recall) = TrueNegative / (FalsePositive + TrueNegative)
 - Especificidade = 1 – False Positive Rate
-
 ___
 
 O modelo ideal seria aquele que apresentasse 100% de sensibilidade e 100% de especificidade. Assim, teríamos apenas dois resultados: negativo (a pessoa não estaria doente) ou positivo (o indivíduo estaria doente). Portanto, não teríamos o falso-negativo ou o falso-positivo.
@@ -87,5 +86,39 @@ A decisão de converter uma probabilidade prevista ou pontuação em um rótulo 
 
 Por exemplo, em um problema de classificação binária com rótulos de classe 0 e 1, e um limite de 0,5, então, valores menores que o limite de 0,5 são atribuídos à classe 0 e valores maiores ou iguais a 0,5 são atribuídos à classe 1 .
 
+___
+
 - Previsão < 0,5 = Classe 0
 - Previsão >= 0,5 = Classe 1
+___
+
+O limite (threshold) no Scikit-Learn é 0,5 para classificação binária e qualquer classe que tenha a maior probabilidade em classificação multiclasse. Em muitos problemas, um resultado muito melhor pode ser obtido ajustando o limite. 
+
+A maioria dos métodos de ajuste do limite é baseada nas características de operação do receptor (ROC) e na estatística J de Youden, mas também pode ser feito por outros métodos, como uma pesquisa com um algoritmo genético.
+
+Aqui está um artigo que descreve como fazer isso em problemas na área Biomédica:
+
+http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2515362/
+
+
+> Os Limites de teste alteram o trade-off entre Sensibilidade e Especificidade
+
+### Alternativas 
+
+#### Alternativa 1
+
+Para aumentar a Sensibilidade ou a Especificidade uma alternativa é definir o limiar que você deseja.
+
+Exemplo: `limiar = 0.00009 `
+
+#### Alternativa 2
+
+Outra alternativa para ajustar o modelo é aplicar as probabilidades previamente calculadas (com base em evidências estatísticas).
+
+Para definir os priors em um modelo Naive Bayes usando a biblioteca sklearn, você precisa passar uma lista com as probabilidades a priori de cada classe para o parâmetro priors do GaussianNB. 
+
+Esses priors devem ser proporcionais à frequência relativa esperada de cada classe. Por exemplo, se você espera que 10% dos exemplos sejam da classe 0 e 90% sejam da classe 1, você pode definir os priors da seguinte forma: 
+
+`priors = [0.1, 0.9]`
+
+É importante lembrar que a soma dos priors deve ser igual a 1. Além disso, os priors são úteis quando você tem conhecimento prévio sobre a distribuição das classes no seu conjunto de dados ou quando o conjunto de dados é desbalanceado. Se você não tem essa informação ou se o conjunto de dados é balanceado, pode não ser necessário definir os priors e o modelo irá estimá-los a partir dos dados de treinamento.
