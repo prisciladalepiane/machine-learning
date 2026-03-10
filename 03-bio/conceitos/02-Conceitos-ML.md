@@ -1,3 +1,26 @@
+# Paradigmas clássicos de aprendizado de máquina
+
+### Aprendizado supervisionado
+
+o modelo aprende com dados rotulados
+
+exemplos: regressão, classificação.
+
+### Aprendizado não supervisionado
+
+os dados não possuem rótulos
+
+o modelo busca padrões nos dados
+
+exemplos: clustering, redução de dimensionalidade.
+
+### Aprendizado por reforço
+
+o agente aprende por tentativa e erro,
+recebe recompensas ou penalidades
+
+usado em jogos, robótica e controle.
+
 # Data Leakage 
 
 ## O que é Data Leakage (Vazamento de Dados)?
