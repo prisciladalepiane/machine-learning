@@ -48,9 +48,11 @@ Aqui estão algumas situações em que a padronização é particularmente aplic
 
 ### 1. Algoritmos Sensíveis à Escala dos Dados
 
-Modelos Lineares: Algoritmos como regressão linear, regressão logística e máquinas de vetor de suporte (SVM) assumem que todos os recursos estão na mesma escala para interpretar os coeficientes de maneira significativa.
-K-Means: Este algoritmo de agrupamento calcula distâncias entre pontos de dados. Se os recursos estiverem em escalas diferentes, recursos com maior variância podem dominar o cálculo da distância.
-Análise de Componentes Principais (PCA): Destinado a capturar a maior variância nos dados, a PCA pode ser distorcida por recursos em escalas diferentes.
+**Modelos Lineares:** Algoritmos como regressão linear, regressão logística e máquinas de vetor de suporte (SVM) assumem que todos os recursos estão na mesma escala para interpretar os coeficientes de maneira significativa.
+
+**K-Means**: Este algoritmo de agrupamento calcula distâncias entre pontos de dados. Se os recursos estiverem em escalas diferentes, recursos com maior variância podem dominar o cálculo da distância.
+
+**Análise de Componentes Principais (PCA)**: Destinado a capturar a maior variância nos dados, a PCA pode ser distorcida por recursos em escalas diferentes.
 
 ### 2. Melhoria da Convergência em Métodos de Otimização
 
