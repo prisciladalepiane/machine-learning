@@ -24,6 +24,8 @@ A regressão logística é amplamente utilizada em diversas áreas, como:
 
 # Naive Bayes
 
+https://scikit-learn.org/stable/modules/naive_bayes.html
+
 O modelo Naive Bayes é um classificador probabilístico fundamentado no Teorema de Bayes, que opera sob a suposição "ingênua" de independência entre os preditores.
 
 Em outras palavras, assume que a presença de uma característica particular em uma classe é independente da presença de qualquer outra característica. Essa suposição simplifica os cálculos, permitindo que o modelo seja treinado de maneira eficiente mesmo em grandes conjuntos de dados.
