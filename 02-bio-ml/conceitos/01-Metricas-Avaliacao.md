@@ -93,20 +93,45 @@ Em alguns casos, pode ser útil considerar uma combinação de várias métricas
 
 # Sensibilidade e Especifidade 
 
+A análise de sensibilidade e especificidade são duas métricas imporantes utilizadas para avaliar a performance de modelos de classificação, especialmente em campos como medicina e diagnóstico.
+
+Essas métricas ajudam a entender como um modelo é eficaz em identificar corretamente as condições positivas e negativas, oferecendo uma visão clara sobre a confiabilidade dos resultados do modelo em diferentes cenários.
+
 A **Sensibilidade** é a capacidade do modelo em identificar, dentre as pessoas com suspeita da doença, àquelas realmente doentes. Ou seja, prever a classe positiva.
 
 A **Especificidade** é a capacidade do mesmo modelo prever a classe negativa nos indivíduos que não apresentam a doença que está sendo investigada.
 
+### Sensibilidade (ou Recall)
+
+A sensibilidade, também conhecida como recall ou taxa de verdadeiros positivos, mede a proporção de verdadeiros positivos (isto é, resultados corretamente identificados como positivos pelo modelo) em relação ao total de casos que são realmente positivos. Ela indica quão bem o modelo é capaz de detectar as condições positivas.
 ___
 
 - Sensibilidade = TruePositive / (TruePositive + FalseNegative)
 - Sensibilidade = True Positive Rate
-
 ___
 
+Por exemplo, na área médica, se um teste de diagnóstico é aplicado para detectar uma doença, a sensibilidade do teste indica a probabilidade de que, se um paciente tem a doença, o teste identificará corretamente a doença.
+
+### Especificidade
+A especificidade, também chamada de taxa de verdadeiros negativos, mede a proporção de verdadeiros negativos (isto é, resultados corretamente identificados como negativos pelo modelo) em relação ao total de casos que são realmente negativos. 
+
+Ela reflete quão bem o modelo pode identificar corretamente as condições negativas.
+
+___
 - Especificidade (Recall) = TrueNegative / (FalsePositive + TrueNegative)
 - Especificidade = 1 – False Positive Rate
 ___
+
+Por exemplo, em um teste de diagnóstico, a especificidade de um teste indica a probabilidade de que, se um paciente não tem a doença, o teste confirmará corretamente que o paciente está livre da doença.
+
+### Importância
+
+Essas métricas são particularmente importantes quando:
+Em contextos médicos, por exemplo, falhar na identificação de uma doença pode ter consequências graves, assim como identificar incorretamente uma doença em uma pessoa saudável pode levar a ansiedade desnecessária ou tratamentos desnecessários.
+
+Geralmente, existe um trade-off entre sensibilidade e especificidade. Aumentar uma pode diminuir a outra, e o equilíbrio ideal depende da aplicação específica.
+
+A escolha entre um modelo com alta sensibilidade ou alta especificidade pode depender do custo associado a falsos positivos versus falsos negativos.
 
 O modelo ideal seria aquele que apresentasse 100% de sensibilidade e 100% de especificidade. Assim, teríamos apenas dois resultados: negativo (a pessoa não estaria doente) ou positivo (o indivíduo estaria doente). Portanto, não teríamos o falso-negativo ou o falso-positivo.
 
@@ -160,3 +185,7 @@ Esses priors devem ser proporcionais à frequência relativa esperada de cada cl
 `priors = [0.1, 0.9]`
 
 É importante lembrar que a soma dos priors deve ser igual a 1. Além disso, os priors são úteis quando você tem conhecimento prévio sobre a distribuição das classes no seu conjunto de dados ou quando o conjunto de dados é desbalanceado. Se você não tem essa informação ou se o conjunto de dados é balanceado, pode não ser necessário definir os priors e o modelo irá estimá-los a partir dos dados de treinamento.
+
+## Curva ROC
+
+A análise de sensibilidade e especificidade pode ser visualizada através de uma Curva de Característica de Operação do Receptor (**ROC**), onde a taxa de verdadeiros positivos (sensibilidade) é plotada em função da taxa de falsos positivos (1 - especificidade). A área sob a curva ROC (**AUC-ROC**) fornece uma medida agregada de desempenho de um modelo de classificação em todos os limiares de classificação.
