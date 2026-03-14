@@ -166,7 +166,7 @@ http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2515362/
 
 > Os Limites de teste alteram o trade-off entre Sensibilidade e Especificidade
 
-### Alternativas 
+## Alternativas para ajustar o modelo
 
 #### Alternativa 1
 
@@ -189,3 +189,40 @@ Esses priors devem ser proporcionais à frequência relativa esperada de cada cl
 ## Curva ROC
 
 A análise de sensibilidade e especificidade pode ser visualizada através de uma Curva de Característica de Operação do Receptor (**ROC**), onde a taxa de verdadeiros positivos (sensibilidade) é plotada em função da taxa de falsos positivos (1 - especificidade). A área sob a curva ROC (**AUC-ROC**) fornece uma medida agregada de desempenho de um modelo de classificação em todos os limiares de classificação.
+
+
+# Métricas de Avaliação em Diagnósticos
+
+No contexto do diagnóstico, as métricas de avaliação são ferramentas essenciais para mensurar o desempenho de testes, modelos e algoritmos.
+
+Elas fornecem informações valiosas sobre a precisão, confiabilidade e utilidade desses métodos na identificação de doenças ou condições.
+
+Ao escolher as métricas adequadas, profissionais de saúde, cientistas e desenvolvedores podem tomar decisões mais informadas sobre a utilização de ferramentas diagnósticas, comparar diferentes métodos e aprimorar continuamente a acurácia do diagnóstico.
+
+Métricas Comuns em Diagnósticos:
+
+- **Acurácia**: indica a proporção de casos em que o teste/modelo classificou corretamente os pacientes, seja como positivos ou negativos para a doença. É calculada pela soma dos resultados verdadeiros positivos e verdadeiros negativos, dividida pelo número total de casos.
+
+- **Sensibilidade**: indica a proporção de pacientes com a doença que foram corretamente identificados como tal pelo teste/modelo. É calculada pela divisão dos verdadeiros positivos pelo número total de pacientes com a doença.
+
+- **Especificidade**: indica a proporção de pacientes sem a doença que foram corretamente identificados como tal pelo teste/modelo. É calculada pela divisão dos verdadeiros negativos pelo número total de pacientes sem a doença.
+
+- **Valor Preditivo Positivo (VPP)**: indica a probabilidade de um paciente com resultado positivo no teste/modelo realmente ter a doença. É calculado pela divisão dos verdadeiros positivos pela soma dos verdadeiros positivos e falsos positivos.
+
+- **Valor Preditivo Negativo (VPN)**: indica a probabilidade de um paciente com resultado negativo no teste/modelo realmente não ter a doença. É calculado pela divisão dos verdadeiros negativos pela soma dos verdadeiros negativos e falsos negativos.
+
+- **Razão de Verossimilhança Positiva (RRP)**: indica quantas vezes um resultado positivo no teste/modelo é mais provável em um paciente com a doença do que em um sem a doença. É calculada pela divisão da sensibilidade pela (1 - especificidade).
+
+- **Razão de Verossimilhança Negativa (RVN)**: indica quantas vezes um resultado negativo no teste/modelo é mais provável em um paciente sem a doença do que em um com a doença. É calculada pela divisão da especificidade pela (1 - sensibilidade).
+
+- **Curva ROC (Receiver Operating Characteristic)**: representa a capacidade do teste/modelo de distinguir entre pacientes com e sem a doença em diferentes níveis de corte. É uma ferramenta gráfica que permite visualizar a sensibilidade e especificidade em diferentes pontos de corte.
+
+- **Área sob a Curva ROC (AUC)**: quantifica a capacidade geral do teste/modelo de discriminar entre pacientes com e sem a doença. Uma AUC de 1 indica que o teste/modelo é perfeito, enquanto uma AUC de 0,5 indica que o teste/modelo não tem valor discriminatório.
+
+A escolha das métricas adequadas depende do contexto específico e do objetivo do diagnóstico. É importante considerar fatores como a prevalência da doença, o custo do teste/modelo e as consequências de um diagnóstico incorreto.
+
+A interpretação das métricas deve ser feita em conjunto com outras informações, como a história clínica do paciente e os resultados de outros exames. É importante evitar conclusões precipitadas baseadas apenas em números.
+
+As métricas de avaliação devem ser utilizadas para monitorar o desempenho do teste/modelo ao longo do tempo e identificar oportunidades de aprimorar sua acurácia e confiabilidade.
+
+> As métricas de avaliação são instrumentos essenciais para garantir a qualidade e confiabilidade dos métodos diagnósticos. Ao utilizá-las de forma adequada, profissionais de saúde, cientistas e desenvolvedores podem contribuir para o aprimoramento do diagnóstico e melhorar o cuidado dos pacientes.
