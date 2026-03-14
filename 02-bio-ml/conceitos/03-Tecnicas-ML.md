@@ -70,3 +70,25 @@ Quando um modelo assume explicitamente que os dados seguem uma distribuição no
 **Dados Já em Escala Comum**: Se seus dados já estão em uma escala comum ou representam proporções ou rankings que devem ser preservados, a padronização pode não ser necessária ou até mesmo prejudicial.
 
 Antes de aplicar a padronização, é importante analisar a natureza dos dados e o modelo que você planeja usar. Além disso, lembre-se de que qualquer transformação aplicada aos dados de treinamento também deve ser aplicada aos dados de teste e quaisquer dados futuros antes de fazer previsões. A padronização é apenas uma das muitas técnicas de pré-processamento disponíveis e sua aplicabilidade pode variar dependendo do contexto específico do problema.
+
+---
+
+# Quantização
+
+## O que é o Processo de Quantização?
+
+A quantização é uma técnica que visa reduzir a precisão dos parâmetros do modelo para diminuir o tamanho do modelo e acelerar a inferência mantendo, na medida do possível, a precisão original das previsões.
+
+Isso é particularmente relevante em aplicações biomédicas, onde pode haver uma necessidade de processar grandes volumes de dados, como imagens médicas, sequências genéticas ou registros de saúde eletrônicos, de maneira eficiente e em dispositivos com recursos limitados.
+
+A quantização funciona convertendo os pesos de um modelo, que normalmente são representados como números de ponto flutuante de 32 bits (float32), para formatos de precisão mais baixa, como ponto flutuante de 16 bits (float16) ou inteiros de 8 bits (int8). 
+
+### Estratégias de Quantização
+
+**Quantização pós-treinamento**: aplicada a um modelo já treinado, ajustando os pesos e ativações para formatos de menor precisão sem a necessidade de re-treinamento.
+
+**Quantização durante o treinamento**: integra a quantização como parte do processo de treinamento, permitindo que o modelo se ajuste às distorções introduzidas pela quantização.
+
+A quantização pode ajudar a reduzir os requisitos de memória e acelerar a computação, o que é crítico para aplicar LLMs em análises biomédicas em tempo real ou em dispositivos de borda (edge), como smartphones e dispositivos médicos portáteis.
+
+Apesar dos benefícios, a quantização pode introduzir erros devido à perda de precisão, o que necessita de cuidadosa avaliação para garantir que a performance do modelo em tarefas biomédicas específicas não seja significativamente prejudicada.
