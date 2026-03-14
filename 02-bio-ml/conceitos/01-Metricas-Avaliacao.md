@@ -1,10 +1,48 @@
-# Principais Métricas de Avaliação do Modelo de Machine Learning
+# Validação e Verificação de Modelos
+
+A validação e verificação de modelos são etapas críticas no processo de desenvolvimento de modelos de aprendizado de máquina. Ambos os processos visam garantir que o modelo seja confiável, preciso e adequado para o propósito pretendido. 
+
+A validação e verificação são essenciais para:
+
+- Garantir a confiabilidade e precisão do modelo.
+- Evitar overfitting e underfitting.
+- Assegurar que o modelo seja útil na prática, e não apenas em teoria.
+- Facilitar a tomada de decisões informada baseada nas previsões do modelo.
+
+## Validação de Modelos
+Validação de modelos envolve testar a eficácia do modelo em termos de sua capacidade de realizar a tarefa para a qual foi projetado, geralmente usando dados que não foram vistos durante o treinamento.
+
+A validação busca garantir que o modelo seja generalizável, ou seja, capaz de funcionar bem em novos, variados e futuros conjuntos de dados, não apenas no conjunto de dados de treinamento.
+
+**Técnicas:** 
+
+<u> **Validação Cruzada** </u>: Divide o conjunto de dados em várias partes menores (folds). O modelo é treinado em várias combinações desses folds e testado no fold restante. Isso ajuda a avaliar a estabilidade e confiabilidade do modelo.
+
+<u> **Conjunto de Testes** </u>: Após o treinamento, o modelo é avaliado usando um conjunto de testes separado que não foi usado durante o treinamento. Isso verifica a capacidade do modelo de generalizar.
+
+<u> **Validação Externa** </u>: Quando possível, o modelo é testado em um conjunto de dados completamente externo ou em um contexto diferente do que foi usado para treinamento, para verificar sua aplicabilidade a novas condições.
+
+## Verificação de Modelos
+Verificação de modelos refere-se ao processo de garantir que o modelo foi implementado corretamente e está funcionando como previsto. Envolve a verificação técnica de que o modelo está livre de erros no código, que os dados estão sendo processados corretamente, e que os resultados gerados são consistentes com as expectativas.
+
+É um passo fundamental antes de avançar para a validação mais aprofundada do modelo.
+
+Atividades Comuns na Verificação de Modelos:
+
+<u> **Testes de Unidade** </u>: Checar cada componente ou função do modelo isoladamente para garantir que está funcionando corretamente.
+
+<u> **Testes de Integração** </u>: Testar a integração de diferentes componentes do modelo para verificar se trabalham juntos sem problemas.
+
+<u> **Revisão de Código** </u>: Avaliar o código do modelo para garantir boas práticas de programação e evitar bugs.
+
+
+## Principais Métricas de Avaliação do Modelo de Machine Learning
 
 As métricas de avaliação em machine learning medem a performance de um modelo. Elas variam de acordo com o tipo de tarefa (classificação, regressão, detecção de anomalias, etc.).
 
 Apresentamos a seguir algumas das métricas mais comuns por tarefa:
 
-## Para Classificação
+### Para Classificação
 
  - **Acurácia**: Proporção de previsões corretas sobre o total. É mais útil quando as classes estão equilibradas.
 
@@ -19,7 +57,7 @@ Apresentamos a seguir algumas das métricas mais comuns por tarefa:
 
  - **Matriz de Confusão**: Tabela que mostra os verdadeiros positivos, verdadeiros negativos, falsos positivos e falsos negativos.
 
-## Para Regressão
+### Para Regressão
 
 
  * **Erro Quadrático Médio (MSE):** Média dos quadrados dos erros. Sensível a outliers.
@@ -30,7 +68,7 @@ Apresentamos a seguir algumas das métricas mais comuns por tarefa:
 
  * **R² (Coeficiente de Determinação)**: Proporção da variância na variável dependente que é previsível a partir das variáveis independentes.
  
- ## Outras Métricas
+ ### Outras Métricas
 
  - **Log Loss:** Usada para modelos probabilísticos em classificação.
 
