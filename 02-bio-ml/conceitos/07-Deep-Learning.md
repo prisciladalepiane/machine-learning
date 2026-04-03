@@ -163,3 +163,26 @@ A escolha adequada dos hiperparâmetros pode ter um impacto significativo no des
 
 Por outro lado, uma otimização eficaz dos hiperparâmetros pode melhorar substancialmente a capacidade do modelo de capturar padrões nos dados e generalizar para novos exemplos.
 Técnicas como validação cruzada são frequentemente usadas em conjunto com a otimização de hiperparâmetros para assegurar que os modelos não sejam apenas bem ajustados aos dados de treinamento, mas também mantenham um bom desempenho em dados não vistos.
+
+## GNNs (Graph Neural Networks) 
+
+Graph neural networks: A review of methods and applications
+https://arxiv.org/pdf/1812.08434
+
+**Graph Neural Networks (GNNs)** são uma classe de modelos de aprendizado profundo projetada para operar em dados que podem ser representados como grafos. Grafos são estruturas compostas por nós (ou vértices) e arestas que conectam esses nós.
+
+GNNs são particularmente úteis para tarefas onde os dados têm uma natureza relacional complexa e podem ser representados de forma mais natural como grafos. Alguns exemplos de tais dados incluem redes sociais, moléculas químicas, rotas de transporte e interações de proteínas.
+
+As principais características e componentes das GNNs incluem:
+
+**Representação de Grafos**: Um grafo G é representado por um conjunto de nós V e um conjunto de arestas E. Cada nó pode ter atributos (como características ou features) e cada aresta pode ter pesos ou rótulos.
+
+**Propagação de Mensagens (Message Passing)**: O processo central das GNNs envolve a propagação de informações entre nós através das arestas. Cada nó atualiza seu estado (ou representação) com base nas informações recebidas dos nós vizinhos. Esse processo é iterado várias vezes, permitindo que a informação se propague pelo grafo.
+
+**Agregação de Informações**: Durante a propagação de mensagens, cada nó coleta informações de seus vizinhos. Essa agregação pode ser feita de várias maneiras, como soma, média, ou através de redes neurais mais complexas.
+
+**Atualização de Estados**: Após a agregação, cada nó atualiza seu estado (ou embedding) usando uma função de atualização, que geralmente é uma rede neural. Esse novo estado reflete a informação agregada dos vizinhos.
+
+**Leitura (Readout)**: Após várias iterações de propagação e atualização, as representações dos nós podem ser usadas para tarefas específicas, como classificação de nós, previsão de links (arestas), ou classificação de grafos inteiros. A leitura pode envolver agregações globais das representações dos nós para obter uma representação do grafo inteiro.
+
+A força das GNNs reside em sua capacidade de capturar e utilizar a estrutura topológica e as relações entre os dados de uma maneira que modelos tradicionais de aprendizado profundo não conseguem fazer. Isso as torna uma ferramenta poderosa para uma ampla gama de problemas complexos e interconectados.
