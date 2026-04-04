@@ -186,3 +186,39 @@ As principais características e componentes das GNNs incluem:
 **Leitura (Readout)**: Após várias iterações de propagação e atualização, as representações dos nós podem ser usadas para tarefas específicas, como classificação de nós, previsão de links (arestas), ou classificação de grafos inteiros. A leitura pode envolver agregações globais das representações dos nós para obter uma representação do grafo inteiro.
 
 A força das GNNs reside em sua capacidade de capturar e utilizar a estrutura topológica e as relações entre os dados de uma maneira que modelos tradicionais de aprendizado profundo não conseguem fazer. Isso as torna uma ferramenta poderosa para uma ampla gama de problemas complexos e interconectados.
+
+### Logits
+
+Logits são os valores brutos (ou não normalizados) produzidos pela camada final de um modelo de classificação, antes de serem transformados em probabilidades. Em um modelo de rede neural a última camada geralmente gera esses logits, que representam a "força" ou "confiança" do modelo em relação a cada classe.
+
+Esses valores ainda não são probabilidades, pois podem estar em qualquer faixa de números reais (positivos ou negativos). Para converter os logits em probabilidades, usa-se uma função de ativação, como a softmax ou sigmóide, que normaliza os logits para que se transformem em uma distribuição de probabilidades (valores entre 0 e 1 que somam 1). A classe com a maior probabilidade será a previsão final do modelo.
+
+### Backpropagation
+
+O **backpropagation** é um algoritmo usado para treinar redes neurais artificiais. Ele ajusta os pesos das conexões entre os neurônios para minimizar o erro entre as previsões da rede e os valores reais. O processo funciona assim:
+
+- A rede faz uma previsão com base em uma entrada.
+
+- Calcula-se o erro comparando a previsão com o valor esperado.
+
+- Esse erro é "retropropagado" pela rede, ou seja, o erro é distribuído de trás para frente, camada por camada, ajustando os pesos de cada conexão.
+
+- O ajuste é feito usando o gradiente descendente, que otimiza os pesos para reduzir o erro na próxima iteração.
+
+Esse processo é repetido até que o erro seja minimizado, e a rede esteja devidamente treinada.
+
+### Gradientes
+
+Os **gradientes** no treinamento de modelos de Machine Learning, especialmente redes neurais, são <u> vetores que indicam a direção e a magnitude da mudança necessária nos pesos do modelo para minimizar o erro </u> (ou a função de perda). Eles representam a taxa de variação da função de perda em relação a cada peso do modelo.
+
+Durante o treinamento, o algoritmo calcula o gradiente da função de perda em relação aos pesos (ou parâmetros) da rede. Esse gradiente indica como ajustar os pesos para reduzir o erro na próxima iteração.
+
+O processo ocorre assim:
+
+- **Cálculo da perda**: A rede faz uma previsão para uma amostra de dados e calcula a diferença (erro ou perda) entre a previsão e o valor real.
+
+- **Retropropagação (backpropagation)**: O erro é retropropagado pelas camadas da rede, e o gradiente da perda é calculado em relação a cada peso do modelo. Isso é feito aplicando a regra da cadeia (derivadas parciais) em cada camada.
+
+- **Atualização dos pesos**: Os pesos são ajustados na direção oposta ao gradiente, usando o gradiente descendente. Esse ajuste é controlado por uma taxa de aprendizado (learning rate), que define o tamanho do passo a ser dado na direção sugerida pelo gradiente.
+
+Os gradientes são fundamentais para orientar a rede neural a modificar seus pesos de forma a minimizar a função de perda, permitindo que o modelo aprenda e melhore sua performance ao longo do tempo.
