@@ -55,3 +55,56 @@ Técnicas de Interpretabilidade
 > A interpretabilidade é um componente fundamental para a integração bem-sucedida da Inteligência Artificial nos cuidados de saúde. À medida que a tecnologia avança, também deve evoluir nossa capacidade de explicar e justificar as decisões automatizadas, garantindo que elas complementem e enriqueçam a prática médica, em vez de complicá-la.
 
 > A colaboração contínua entre especialistas em dados e profissionais de saúde é essencial para desenvolver modelos que sejam não só poderosos, mas também transparentes e confiáveis.
+
+### Fundamentos da Interpretabilidade em Machine Learning
+
+A interpretabilidade em Machine Learning refere-se à capacidade de compreender e explicar como um modelo de aprendizado de máquina toma decisões ou faz previsões.
+
+Em aplicações biomédicas, essa compreensão é fundamental, pois decisões automatizadas podem afetar diretamente a saúde e o bem-estar dos pacientes. 
+
+Em modelos mais simples, como árvores de decisão e regressão linear, a interpretabilidade é direta, já que a lógica por trás das previsões pode ser facilmente analisada.
+
+Já em modelos mais complexos, como redes neurais, a interpretabilidade se torna desafiadora, o que pode dificultar a confiança dos médicos e reguladores em usar essas soluções para diagnósticos e tratamentos.
+
+> Técnicas pós-hoc permitem que se obtenha uma visão clara das variáveis mais importantes e de como elas influenciaram uma decisão específica.
+
+Isso é primordial em biomedicina, onde as decisões precisam ser justificadas e compreensíveis, especialmente quando envolvem fatores críticos de saúde, como condições médicas ou histórico do paciente.
+
+A necessidade de explicabilidade vai além do campo técnico, pois médicos e outros profissionais de saúde, que muitas vezes não são especialistas em Machine Learning, precisam entender os resultados de maneira prática e clara.
+
+Dessa forma, isso é relevante para cumprir regulamentações e garantir a segurança dos pacientes, já que modelos que não podem ser explicados podem encontrar resistência tanto por questões éticas quanto legais. 
+
+> A interpretabilidade não é apenas uma questão técnica, mas sim uma exigência regulatória e clínica para assegurar a confiança nos sistemas automatizados.
+
+### Métricas e Métodos de Avaliação da Interpretabilidade
+
+Métricas e métodos de avaliação da interpretabilidade em Machine Learning são usados para medir o quão compreensível e explicável é um modelo para os seres humanos, especialmente em áreas sensíveis como a biomedicina.
+
+Avaliar a interpretabilidade envolve uma combinação de análise qualitativa e quantitativa para garantir que os resultados de um modelo sejam tanto precisos quanto acessíveis aos profissionais que o utilizam.
+
+#### 1. Métricas de Avaliação Qualitativa
+A avaliação qualitativa da interpretabilidade envolve medir o quão intuitiva ou compreensível uma explicação é para os especialistas do domínio, como médicos ou profissionais de saúde.
+
+Um método comum é o uso de entrevistas e feedback de especialistas, onde os profissionais avaliam se as explicações fornecidas por um modelo são coerentes com o conhecimento clínico.
+
+Outra técnica é o questionário de compreensibilidade, no qual os usuários do modelo respondem se as explicações fornecidas são claras, detalhadas e úteis para a tomada de decisão.
+
+Este tipo de avaliação deve ser considerada, pois mesmo que um modelo seja preciso, se ele não puder ser interpretado e compreendido, sua utilidade em ambientes críticos será limitada.
+
+#### 2. Métricas de Avaliação Quantitativa
+Já no lado quantitativo, existem várias métricas que podem ser usadas para medir a interpretabilidade de um modelo.
+
+Uma delas é o tamanho do modelo, que mede a simplicidade de um modelo com base no número de parâmetros ou regras que ele utiliza. Modelos menores e mais simples são geralmente considerados mais interpretáveis.
+
+Outra métrica importante é a profundidade da árvore de decisão ou a complexidade do modelo, em que modelos com menos camadas ou ramos são mais fáceis de entender.
+
+Essas métricas são especialmente úteis em modelos como árvores de decisão, onde o caminho para uma decisão pode ser facilmente rastreado.
+
+#### 3. Métodos Pós-Hoc e Medição da Explicabilidade
+Outro método para avaliar a interpretabilidade é o uso de técnicas pós-hoc, que são aplicadas após o treinamento do modelo para gerar explicações.
+
+As métricas aqui incluem a fidelidade local, que mede o quanto a explicação gerada reflete corretamente o comportamento do modelo em torno de uma determinada previsão.
+
+Ferramentas como LIME (Local Interpretable Model-agnostic Explanations) e SHAP (SHapley Additive exPlanations) são amplamente utilizadas para gerar explicações interpretáveis para modelos complexos, e suas saídas podem ser avaliadas quanto à coerência com o comportamento geral do modelo.
+
+As métricas e métodos de avaliação da interpretabilidade visam garantir que os modelos de Machine Learning sejam utilizáveis em ambientes onde a confiança e a compreensão das decisões são essenciais, como na área médica.
