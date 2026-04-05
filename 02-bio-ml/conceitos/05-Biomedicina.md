@@ -107,4 +107,32 @@ As métricas aqui incluem a fidelidade local, que mede o quanto a explicação g
 
 Ferramentas como LIME (Local Interpretable Model-agnostic Explanations) e SHAP (SHapley Additive exPlanations) são amplamente utilizadas para gerar explicações interpretáveis para modelos complexos, e suas saídas podem ser avaliadas quanto à coerência com o comportamento geral do modelo.
 
-As métricas e métodos de avaliação da interpretabilidade visam garantir que os modelos de Machine Learning sejam utilizáveis em ambientes onde a confiança e a compreensão das decisões são essenciais, como na área médica.
+> As métricas e métodos de avaliação da interpretabilidade visam garantir que os modelos de Machine Learning sejam utilizáveis em ambientes onde a confiança e a compreensão das decisões são essenciais, como na área médica.
+
+### Modelos Intrinsecamente Interpretáveis
+
+Modelos **intrinsecamente interpretáveis** são aqueles cuja estrutura e funcionamento são, por natureza, transparentes e fáceis de entender.
+
+Em contraste com os "modelos de caixa-preta", como redes neurais profundas ou florestas aleatórias, os modelos intrinsecamente interpretáveis oferecem clareza direta sobre como as decisões são tomadas, sem a necessidade de técnicas adicionais de explicação ou análise.
+
+Eles permitem que os usuários compreendam, de maneira intuitiva, quais variáveis influenciam a previsão ou classificação, e como esses fatores são ponderados.
+
+Exemplos de Modelos Intrinsecamente Interpretáveis:
+
+1. **Regressão Linear**: Um dos exemplos mais simples, a regressão linear oferece uma equação explícita que mostra como cada variável de entrada afeta a variável de saída. A relação direta entre os coeficientes e a variável dependente facilita a compreensão e a explicação de como o modelo chega a uma previsão.
+
+2. **Árvores de Decisão**: As árvores de decisão são consideradas intrinsecamente interpretáveis porque apresentam uma estrutura hierárquica e lógica de decisões, onde cada nó corresponde a uma pergunta ou divisão com base em uma variável. O caminho da raiz até uma folha (decisão final) pode ser facilmente rastreado, mostrando exatamente como o modelo chega a uma conclusão.
+
+3. **Regressão Logística**: Assim como a regressão linear, a regressão logística é transparente, mas voltada para problemas de classificação. Ela fornece coeficientes que indicam a influência de cada variável nas probabilidades de uma determinada classe. Embora mais complexa que a regressão linear, ainda é considerada um modelo interpretável.
+
+4. **K-Nearest Neighbors (k-NN)**: Esse modelo classifica um ponto com base em seus vizinhos mais próximos. A lógica por trás de suas decisões é simples e intuitiva: a proximidade dos pontos de dados com os outros é um critério claro e fácil de entender, sem complexidades ocultas.
+
+Benefícios dos Modelos Intrinsecamente Interpretáveis:
+
+- **Transparência**: Como a lógica de decisão é clara e visível, profissionais de diferentes áreas podem compreender e validar o comportamento do modelo. 
+
+- **Facilidade de Validação:** Os modelos intrinsecamente interpretáveis permitem que os especialistas validem os resultados do modelo de forma direta, verificando se as decisões estão em conformidade com o conhecimento e as práticas estabelecidas.
+
+- **Regulamentação**: Em setores regulamentados, como o de saúde e finanças, a interpretabilidade é muitas vezes uma exigência para a utilização de modelos preditivos.
+
+> Modelos intrinsecamente interpretáveis facilitam o cumprimento dessas regulamentações, pois suas decisões podem ser explicadas e auditadas facilmente.
