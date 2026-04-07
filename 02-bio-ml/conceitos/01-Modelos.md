@@ -2,7 +2,7 @@
 
 A modelagem preditiva é uma técnica de análise de dados que utiliza modelos estatísticos e algoritmos de aprendizado de máquina para prever resultados futuros com base em dados históricos. O objetivo é criar um modelo que possa prever tendências e comportamentos, facilitando a tomada de decisões proativas em diversas áreas, como negócios, saúde, engenharia, ciências sociais e mais.
 
-### Etapas Fundamentais Da Modelagem Preditiva:
+### Etapas Fundamentais da Modelagem Preditiva:
 
 1. <u> **Coleta de Dados:**</u>  Inicialmente, é necessário coletar uma grande quantidade de dados históricos relevantes para o problema.
 
@@ -57,48 +57,33 @@ Os modelos de classificação estão entre os mais comuns algoritmos no aprendiz
 
 Esses modelos são treinados com dados que já possuem etiquetas de classe, permitindo que o modelo aprenda a associar as características dos dados às suas respectivas categorias. Depois de treinado, o modelo pode então classificar novos dados em uma das categorias conhecidas.
 
-Apresentamos a seguir alguns dos modelos de classificação mais comuns e amplamente utilizados:
+Modelos de classificação mais comuns e amplamente utilizados:
 
-### 1. Regressão Logística
-
+1. <u> **Regressão Logística:** </u> 
 Apesar do nome, é um modelo de classificação que estima a probabilidade de uma variável binária (duas categorias) baseada em uma ou mais variáveis independentes. É utilizado principalmente para problemas de classificação binária.
-
 Exemplo de uso: Prever se um cliente fará ou não a renovação de uma assinatura.
 
-### 2. Árvores de Decisão
-
-Utiliza uma estrutura de árvore onde cada nó interno representa um "teste" em um atributo, cada ramificação representa o resultado do teste e cada nó folha representa uma etiqueta de classe. Pode ser usado para classificação e regressão.
-
+ 2. <u> **Árvores de Decisão1:** </u> 
+Utiliza uma estrutura de árvore onde cada nó interno representa um "teste" em um atributo, cada ramificação representa o resultado do teste e cada nó folha representa uma etiqueta de classe. Pode ser usado para classificação e regressão. 
 Exemplo de uso: Diagnosticar pacientes com base em características clínicas.
 
-### 3. Florestas Aleatórias (Random Forests)
-
+3. <u> **Florestas Aleatórias (Random Forests):** </u> 
 Um método de ensemble que constrói múltiplas árvores de decisão durante o treinamento e utiliza a média para melhorar a precisão preditiva e controlar o overfitting.
-
 Exemplo de uso: Classificar tipos de plantas com base em medições morfológicas.
 
-### 4. Máquinas de Vetores de Suporte (Support Vector Machines, SVM)
+4. <u> **Máquinas de Vetores de Suporte (Support Vector Machines, SVM):** </u> 
+Busca a melhor fronteira de decisão, chamada de hiperplano, que separa diferentes classes com a maior margem possível. É eficaz em espaços de alta dimensão. Exemplo de uso: Classificação de imagens, reconhecimento de padrões em biologia computacional.
 
-Busca a melhor fronteira de decisão, chamada de hiperplano, que separa diferentes classes com a maior margem possível. É eficaz em espaços de alta dimensão.
-
-Exemplo de uso: Classificação de imagens, reconhecimento de padrões em biologia computacional.
-
-### 5. Redes Neurais Artificiais
-
-Sistemas inspirados no cérebro humano que são capazes de aprender a partir de grandes quantidades de dados. São particularmente poderosas para lidar com dados complexos e não lineares.
-
+5. <u> **Redes Neurais Artificiais:** </u> 
+Sistemas inspirados no cérebro humano que são capazes de aprender a partir de grandes quantidades de dados. São particularmente poderosas para lidar com dados complexos e não lineares. 
 Exemplo de uso: Reconhecimento de fala, classificação de textos.
 
-### 6. k-Vizinhos Mais Próximos (k-Nearest Neighbors, k-NN)
-
+6. <u> **k-Vizinhos Mais Próximos (k-Nearest Neighbors, k-NN):** </u>
 Classifica novos casos com base em uma similaridade de características com casos conhecidos, considerando os 'k' vizinhos mais próximos.
-
 Exemplo de uso: Recomendação de produtos com base nas preferências de usuários similares.
 
-### 7. Naive Bayes
-
-Um classificador probabilístico baseado no teorema de Bayes com a suposição de independência entre os preditores. Simples, mas surpreendentemente eficaz.
-
+7. <u> **Naive Bayes:** </u>
+Um classificador probabilístico baseado no teorema de Bayes com a suposição de independência entre os preditores. Simples, mas surpreendentemente eficaz. 
 Exemplo de uso: Filtragem de spam em e-mails.
 
 
@@ -106,56 +91,41 @@ Exemplo de uso: Filtragem de spam em e-mails.
 
 Os modelos de regressão são uma classe de algoritmos de aprendizado de máquina supervisionado utilizados para prever valores contínuos. 
 
-A seguir apresentamos uma visão geral de alguns dos modelos de regressão mais comuns e suas aplicações:
+Alguns dos modelos de regressão mais comuns e suas aplicações:
 
-### 1. Regressão Linear Simples
-
-Este modelo assume uma relação linear entre a variável dependente e uma variável independente. A relação é modelada através de uma linha reta (Y = a + bX).
-
+1. <u> **Regressão Linear Simples:** </u>
+Este modelo assume uma relação linear entre a variável dependente e uma variável independente. A relação é modelada através de uma linha reta $(Y = a + bX)$.
 Exemplo de uso: Prever o preço de venda de uma casa com base na sua área total.
 
-### 2. Regressão Linear Múltipla
-
+2. <u> **Regressão Linear Múltipla:** </u>
 Extensão da regressão linear simples, onde diversas variáveis independentes são usadas para prever a variável dependente. 
-
 Exemplo de uso: Estimar o consumo de combustível de um veículo com base em atributos como peso, potência do motor e tipo de combustível.
 
-### 3. Regressão Polinomial
-
+3. <u> **Regressão Polinomial**: </u>
 Uma forma de regressão linear onde a relação entre a variável independente e a variável dependente é modelada como um polinômio de grau n. É útil para modelar relações não lineares.
-
 Exemplo de uso: Modelar a progressão de doenças ao longo do tempo com mudanças não lineares.
 
-### 4. Regressão Ridge (Ridge Regression)
-
+4. <u> **Regressão Ridge (Ridge Regression)**: </u>
 Um método que introduz o termo de regularização (L2) no modelo de regressão linear para prevenir overfitting, o que é especialmente útil quando há multicolinearidade nos dados ou quando o número de parâmetros é quase igual ao número de observações.
-
 Exemplo de uso: Prever rendimentos baseados em dados demográficos em estudos de economia.
 
-### 5. Regressão Lasso
-
+5. <u> **Regressão Lasso**: </u>
 Semelhante à regressão Ridge, mas usa a regularização L1, que tem a capacidade de reduzir os coeficientes de algumas variáveis preditoras exatamente a zero. Isso proporciona uma seleção automática de características e modelos mais esparsos.
-
 Exemplo de uso: Seleção de variáveis em modelagem genética para identificar genes significativos.
 
-### 6. Regressão Elastic Net
-
+6. <u> **Regressão Elastic Net**: </u>
 Combina as penalidades das normas L1 e L2 da regressão Lasso e Ridge. É útil quando existem várias características correlacionadas.
-
 Exemplo de uso: Previsão de risco de crédito onde muitos atributos podem ser intercorrelacionados.
 
-### 7. Regressão Quantílica
-
+7. <u> **Regressão Quantílica**: </u>
 Diferente da regressão ordinária que estima a média condicional, a regressão quantílica visa estimar os quantis (por exemplo, a mediana) da variável dependente, proporcionando uma visão mais completa da possível distribuição dos dados de resposta.
-
 Exemplo de uso: Economia para prever diferentes percentis de renda.
 
-### 8. Modelos de Regressão Generalizados (Generalized Linear Models, GLM)
-
+8. <u> **Modelos de Regressão Generalizados (Generalized Linear Models, GLM)**: </u>
 Generaliza a regressão linear para permitir que a variável dependente tenha uma distribuição de erro que não seja necessariamente uma distribuição normal, incluindo distribuições como binomial, Poisson, e outras.
-
 Exemplo de uso: Modelar o número de sinistros de seguro, que tipicamente segue uma distribuição Poisson.
-Cada um desses modelos tem suas próprias forças e limitações, e a escolha do modelo apropriado depende da natureza dos dados, dos objetivos do estudo, e das suposições subjacentes que se pode razoavelmente fazer sobre a distribuição dos dados e a relação entre as variáveis.
+
+> Cada um desses modelos tem suas próprias forças e limitações, e a escolha do modelo apropriado depende da natureza dos dados, dos objetivos do estudo, e das suposições subjacentes que se pode razoavelmente fazer sobre a distribuição dos dados e a relação entre as variáveis.
 
 
 # Regressão Logistica
@@ -177,9 +147,7 @@ Essa abordagem permite que o modelo lide com casos em que as categorias não sã
 A regressão logística é amplamente utilizada em diversas áreas, como:
 
 * Medicina, para prever a probabilidade de uma doença com base em fatores de risco;
-
 * Marketing, para prever a probabilidade de um cliente comprar um produto;
-
 * Setor Financeiro, para avaliar o risco de inadimplência de um empréstimo, devido à sua flexibilidade e interpretabilidade.
 
 # Naive Bayes
@@ -210,17 +178,15 @@ O núcleo da modelagem preditiva probabilística com Naive Bayes é o Teorema de
 
 # XGBoost (Xtreme Gradient Boosting Classifier)
 
-O XGBoost (Xtreme Gradient Boosting) é uma implementação avançada do algoritmo gradiente boosting que tem ganhado popularidade devido à sua eficiência e eficácia em competições de Ciência de Dados e aplicações práticas.
+O XGBoost (Xtreme Gradient Boosting) é uma implementação avançada do algoritmo gradiente boosting que tem ganhado popularidade devido à sua **eficiência** e **eficácia** em competições de Ciência de Dados e aplicações práticas.
 
-O princípio por trás do XGBoost é a otimização sequencial de árvores de decisão, onde cada nova árvore é construída para corrigir os erros residuais das árvores anteriores.
+O princípio por trás do XGBoost é a **otimização sequencial de árvores de decisão**, onde cada nova árvore é construída para corrigir os erros residuais das árvores anteriores.
 
 Diferentemente de outros métodos de boosting, o XGBoost utiliza um modelo formal de otimização para encontrar a melhor forma de combinar as previsões das árvores, minimizando uma função de perda que quantifica a diferença entre as previsões e os verdadeiros valores.
 
 Além disso, incorpora técnicas de regularização (L1 e L2) para controlar a complexidade do modelo, ajudando a prevenir o overfitting e melhorando a capacidade de generalização do modelo.
 
-O XGBoost é notável por sua velocidade e desempenho, atribuídos a várias otimizações na construção do modelo e na utilização de recursos computacionais.
-
-Por exemplo: emprega técnicas como a "quantização de características" para reduzir o uso de memória e melhorar a eficiência do treinamento, e o "pruning" de árvores baseado em ganho, cortando ramos que adicionam pouco valor às previsões.
+O XGBoost é notável por sua **velocidade** e **desempenho**, atribuídos a várias otimizações na construção do modelo e na utilização de recursos computacionais. Por exemplo: emprega técnicas como a "quantização de características" para reduzir o uso de memória e melhorar a eficiência do treinamento, e o "pruning" de árvores baseado em ganho, cortando ramos que adicionam pouco valor às previsões.
 
 Ele também suporta computação paralela e distribuída, o que permite que lide eficientemente com grandes volumes de dados.
 
