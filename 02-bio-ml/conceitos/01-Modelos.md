@@ -152,9 +152,11 @@ A regressão logística é amplamente utilizada em diversas áreas, como:
 
 # Naive Bayes
 
-https://scikit-learn.org/stable/modules/naive_bayes.html
+A modelagem preditiva probabilística com Naive Bayes é uma abordagem estatística para classificação e previsão que se baseia no Teorema de Bayes. Ela é chamada de "naive" (ingênua) porque faz uma suposição fundamental de independência entre as características (ou features) dos dados, considerando que a presença (ou ausência) de uma característica particular é independente da presença (ou ausência) de outras características, dado o resultado da variável alvo. Essa suposição simplifica os cálculos e, apesar de sua simplicidade, modelos Naive Bayes muitas vezes funcionam surpreendentemente bem em muitas aplicações práticas, especialmente em classificação de texto, filtragem de spam, diagnóstico médico e detecção de sentimentos.
 
-O modelo Naive Bayes é um classificador probabilístico fundamentado no Teorema de Bayes, que opera sob a suposição "ingênua" de independência entre os preditores.
+O núcleo da modelagem preditiva probabilística com Naive Bayes é o Teorema de Bayes, que é uma maneira de calcular a probabilidade posterior P(Y∣X) de uma classe Y dado um vetor de características X.
+
+https://scikit-learn.org/stable/modules/naive_bayes.html
 
 Em outras palavras, assume que a presença de uma característica particular em uma classe é independente da presença de qualquer outra característica. Essa suposição simplifica os cálculos, permitindo que o modelo seja treinado de maneira eficiente mesmo em grandes conjuntos de dados.
 
@@ -162,7 +164,7 @@ O modelo é utilizado para tarefas de classificação, onde o objetivo é prever
 
 A base do Naive Bayes é o cálculo das probabilidades condicionais de cada classe dadas as características observadas, utilizando o Teorema de Bayes para atualizar as probabilidades a priori das classes com base nas evidências fornecidas pelos dados.
 
-Naive Bayes é particularmente popular em aplicações de classificação de texto, como filtragem de spam e análise de sentimentos, devido à sua simplicidade, eficiência e eficácia nessas tarefas.
+Naive Bayes é particularmente popular em aplicações de **classificação de texto**, como filtragem de spam e análise de sentimentos, devido à sua simplicidade, eficiência e eficácia nessas tarefas.
 
 O modelo calcula a probabilidade de um documento pertencer a uma classe específica (por exemplo, "spam" ou "não spam") com base na frequência das palavras nele contidas.
 
@@ -170,11 +172,6 @@ Apesar de sua suposição simplista de independência, Naive Bayes pode oferecer
 
 Além disso, Naive Bayes é fácil de implementar e requer uma quantidade relativamente pequena de dados de treinamento para estimar os parâmetros necessários para a classificação.
 
-## Modelagem Preditiva Probabilística
-
-A modelagem preditiva probabilística com Naive Bayes é uma abordagem estatística para classificação e previsão que se baseia no Teorema de Bayes. Ela é chamada de "naive" (ingênua) porque faz uma suposição fundamental de independência entre as características (ou features) dos dados, considerando que a presença (ou ausência) de uma característica particular é independente da presença (ou ausência) de outras características, dado o resultado da variável alvo. Essa suposição simplifica os cálculos e, apesar de sua simplicidade, modelos Naive Bayes muitas vezes funcionam surpreendentemente bem em muitas aplicações práticas, especialmente em classificação de texto, filtragem de spam, diagnóstico médico e detecção de sentimentos.
-
-O núcleo da modelagem preditiva probabilística com Naive Bayes é o Teorema de Bayes, que é uma maneira de calcular a probabilidade posterior P(Y∣X) de uma classe Y dado um vetor de características X.
 
 # XGBoost (Xtreme Gradient Boosting Classifier)
 

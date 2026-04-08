@@ -79,16 +79,16 @@ Utilizar técnicas de ensemble como Bagging e Boosting pode melhorar o desempenh
 
 Ao aplicar técnicas de balanceamento, é fundamental validar o modelo cuidadosamente para garantir que o balanceamento não introduza viés ou sobreajuste.
 
-Deve-se sempre testar várias abordagens e validar o desempenho do modelo usando métricas apropriadas, como a curva ROC-AUC mencionada anteriormente, para avaliar os verdadeiros impactos das técnicas de balanceamento no desempenho do modelo.
+Deve-se sempre **testar várias abordagens e validar o desempenho do modelo** usando métricas apropriadas, como a curva ROC-AUC, para avaliar os verdadeiros impactos das técnicas de balanceamento no desempenho do modelo.
 
 Balancear um conjunto de dados de maneira adequada pode levar a melhorias significativas na precisão e na robustez do modelo de aprendizado de máquina, contribuindo para decisões mais informadas e eficazes.
 
 
 # Padronização
 
-## Quando Aplicar Padronização?
-
 A padronização é uma técnica de pré-processamento de dados utilizada em aprendizado de máquina para tornar os atributos mais comparáveis e "justos" para os algoritmos.
+
+## Quando Aplicar Padronização?
 
 Ela é aplicada ao redimensionar os recursos (features) para que tenham média 0 e desvio padrão 1. Isso é especialmente útil em modelos que assumem que todos os recursos estão centralizados em torno de 0 e têm variações na mesma escala.
 
@@ -103,7 +103,6 @@ Aqui estão algumas situações em que a padronização é particularmente aplic
 **Análise de Componentes Principais (PCA)**: Destinado a capturar a maior variância nos dados, a PCA pode ser distorcida por recursos em escalas diferentes.
 
 ### 2. Melhoria da Convergência em Métodos de Otimização
-
 
 Algoritmos que usam gradient descent ou outros métodos de otimização baseados em gradiente, como redes neurais, podem convergir mais rapidamente se os recursos forem padronizados. Isso ocorre porque a padronização ajuda a evitar que o gradiente oscile demais em direções associadas a recursos em grande escala.
 
