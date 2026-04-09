@@ -145,7 +145,7 @@ Geralmente, isso é útil porque fornece uma medida da certeza ou incerteza de u
 
 Algumas tarefas de classificação requerem uma previsão exata do rótulo da classe. Isso significa que, embora uma probabilidade ou pontuação de associação de classe seja prevista, ela deve ser convertida em um rótulo de classe claro.
 
-A decisão de converter uma probabilidade prevista ou pontuação em um rótulo de classe é governada por um parâmetro denominado "limite de decisão", "limite de discriminação" ou simplesmente o "limite" (threshold). O valor padrão para o limite é 0,5 para probabilidades previstas normalizadas ou pontuações no intervalo entre 0 ou 1.
+A decisão de converter uma probabilidade prevista ou pontuação em um rótulo de classe é governada por um parâmetro denominado "**limite de decisão**", "limite de discriminação" ou simplesmente o "limite" (**threshold**). O valor padrão para o limite é 0,5 para probabilidades previstas normalizadas ou pontuações no intervalo entre 0 ou 1.
 
 Por exemplo, em um problema de classificação binária com rótulos de classe 0 e 1, e um limite de 0,5, então, valores menores que o limite de 0,5 são atribuídos à classe 0 e valores maiores ou iguais a 0,5 são atribuídos à classe 1 .
 
