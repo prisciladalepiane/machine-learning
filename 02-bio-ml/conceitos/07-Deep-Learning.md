@@ -115,13 +115,30 @@ Esse cálculo é feito através de três vetores: chave, consulta e valor. A con
 
 Esses pesos são então aplicados aos valores para gerar uma representação ponderada da sequência, permitindo que a rede capture dependências contextuais sem a necessidade de processamento sequencial.
 
-
 Modelos de Linguagem de Grande Escala (LLMs) são baseados na arquitetura de Transformadores e se destacam por suas capacidades impressionantes em diversas tarefas de PLN.
 
 Esses modelos são treinados em vastos corpora de texto, permitindo-lhes aprender representações profundas e contextuais da linguagem.
 
 LLMs podem ser usados para tarefas como tradução automática, resumo de texto, resposta a perguntas e geração de texto.
 A flexibilidade e eficiência dos Transformadores, combinadas com a capacidade de lidar com grandes quantidades de dados, fazem dos LLMs ferramentas poderosas para avançar o estado da arte em processamento de linguagem natural e outras aplicações de Inteligência Artificial.
+
+Transformers têm duas partes principais: o codificador e o decodificador. O codificador analisa o texto de entrada, capturando suas relações internas, enquanto o decodificador gera a saída (como uma tradução, por exemplo), usando informações do codificador e ajustando-as com base no contexto. A arquitetura também usa mecanismos como multi-head attention e camadas feed-forward para melhorar o aprendizado e a captura de padrões complexos. Além disso, camadas de normalização e conexões residuais ajudam a estabilizar o treinamento e a manter o desempenho.
+
+Os elementos principais da arquitetura Transformers são:
+
+**Self-Attention:** Este mecanismo permite que o modelo analise cada palavra (token) em relação a todas as outras palavras da entrada, ajudando a identificar quais palavras são mais relevantes para cada uma. Isso é essencial para capturar contextos e dependências entre palavras em uma frase.
+
+**Multi-Head Attention**: Para melhorar o poder de análise do self-attention, o modelo utiliza várias "cabeças" de atenção. Cada uma delas captura diferentes aspectos das relações entre as palavras. As informações obtidas por essas várias cabeças são então combinadas, enriquecendo a representação contextual.
+
+**Camadas Feed-Forward**: Cada bloco de Transformer possui uma rede neural densa totalmente conectada que processa os dados de forma independente para cada posição. Essas camadas ajudam a refinar e transformar as representações aprendidas na camada de atenção.
+
+**Positional Encoding**: Como o Transformer não possui uma estrutura recorrente, ele usa codificações posicionais para fornecer uma noção de ordem ao modelo, adicionando vetores que indicam a posição de cada palavra na sequência.
+
+**Normas e Conexões Residuais**: Cada subcamada é seguida por uma camada de normalização (normalização por camada) e uma conexão residual. A normalização ajuda a manter os valores em uma faixa estável, facilitando o treinamento, enquanto as conexões residuais ajudam a prevenir o problema de dissipação do gradiente (comum em redes profundas) e melhoram a fluidez do aprendizado.
+
+**Codificador e Decodificador:** No Transformer original, o codificador recebe o texto de entrada e gera representações contextuais, enquanto o decodificador usa essas representações para gerar a saída (por exemplo, a tradução). O codificador é composto de várias camadas que incluem multi-head attention, camadas feed-forward e normalização, e o decodificador também possui essas camadas, além de uma atenção cruzada para capturar informações do codificador.
+
+Esses elementos formam a base da arquitetura Transformer, que se tornou a base para modelos avançados de linguagem, como o BERT e o GPT, usados em uma ampla gama de tarefas de PLN (Processamento de Linguagem Natural).
 
 ## Estratégia de Transfer Learning (Transferência de Aprendizado)
 
