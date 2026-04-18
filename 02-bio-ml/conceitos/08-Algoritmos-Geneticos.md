@@ -96,3 +96,39 @@ A ideia é diminuir as chances de escolha de indivíduos que possam reduzir a va
 - Desvantagem: Implementação mais complexa e pode afetar negativamente a pressão seletiva se a penalização não for bem calibrada.
 
 Essas estratégias permitem ajustar o equilíbrio entre a exploração do espaço de busca (mantendo diversidade) e a exploração de soluções promissoras (focando nas melhores soluções). A escolha da estratégia depende da natureza do problema, dos requisitos de performance e da diversidade desejada ao longo das gerações.
+
+## Crossover
+
+O Crossover e a Mutação são os principais operadores dos Algoritmos Genéticos (AGs). Eles são inspirados pela reprodução e pela variabilidade genética observadas na natureza e servem para gerar novas soluções (ou indivíduos) a partir de uma população existente. Vamos detalhar cada um deles, começando pelo Crossover e seus tipos.
+
+**Crossover (ou Cruzamento)**
+
+O Crossover é o processo pelo qual dois indivíduos (ou pais) trocam partes de suas representações genéticas para criar novos indivíduos (ou filhos). Esse operador é fundamental para combinar características de boas soluções e explorar o espaço de busca. Existem várias técnicas de Crossover, cada uma com suas particularidades:
+
+**Crossover de um ponto:**
+
+Um ponto de corte é escolhido aleatoriamente no cromossomo (representação genética). As porções dos dois pais são trocadas nesse ponto para formar dois novos indivíduos. Por exemplo, se o ponto de corte for no meio do cromossomo, a primeira metade de um pai se combina com a segunda metade do outro e vice-versa. É uma técnica simples e comumente utilizada.
+
+**Crossover de dois pontos:**
+
+Dois pontos de corte são escolhidos aleatoriamente ao longo do cromossomo. A parte intermediária entre esses pontos é trocada entre os pais, criando dois novos indivíduos. Essa técnica permite uma combinação genética mais variada e é útil para problemas onde características mais distribuídas no cromossomo precisam ser trocadas.
+
+**Crossover Uniforme**
+
+Em vez de cortar o cromossomo em pontos específicos, cada gene do cromossomo é trocado aleatoriamente com uma probabilidade determinada (geralmente 50%).
+
+Esse tipo de Crossover permite uma combinação mais diversificada de genes entre os pais e pode aumentar a variabilidade genética.
+
+**Crossover Aritmético**
+
+É mais comum em AGs que lidam com números reais. Aqui, os genes dos pais são combinados usando uma média aritmética ou outra operação matemática para gerar os filhos.
+
+Exemplo: se dois genes numéricos dos pais são 5 e 10, o gene do filho poderia ser uma média, 7,5, ou um valor entre 5 e 10.
+
+**Crossover em Anel (ou Circular)**
+
+Genes são tratados em uma estrutura circular. O Crossover começa em um ponto aleatório e continua até que um determinado número de genes seja trocado.
+
+É especialmente útil em problemas de otimização onde a ordem dos genes é significativa, como o Problema do Caixeiro Viajante.
+
+O objetivo do Crossover é explorar o espaço de busca, permitindo que boas soluções se combinem para possivelmente criar soluções ainda melhores. A taxa de Crossover define a probabilidade de que o Crossover ocorra, e é um parâmetro importante para controlar a exploração do AG.
