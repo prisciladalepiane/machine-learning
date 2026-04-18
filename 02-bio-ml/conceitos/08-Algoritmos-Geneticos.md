@@ -132,3 +132,35 @@ Genes são tratados em uma estrutura circular. O Crossover começa em um ponto a
 É especialmente útil em problemas de otimização onde a ordem dos genes é significativa, como o Problema do Caixeiro Viajante.
 
 O objetivo do Crossover é explorar o espaço de busca, permitindo que boas soluções se combinem para possivelmente criar soluções ainda melhores. A taxa de Crossover define a probabilidade de que o Crossover ocorra, e é um parâmetro importante para controlar a exploração do AG.
+
+## Mutação
+
+A Mutação é o operador que realiza pequenas alterações aleatórias nos indivíduos, e serve para garantir diversidade genética. Enquanto o Crossover combina informações existentes, a mutação introduz novas informações, ajudando o algoritmo a evitar a convergência prematura para soluções subótimas. Diferentes tipos de Mutação são usados para atender diferentes representações genéticas.
+
+**Mutação por Inversão**
+
+Um segmento do cromossomo é escolhido aleatoriamente e sua ordem é invertida. Isso é útil para problemas onde a ordem dos genes é significativa.
+
+
+**Mutação de Ponto**
+
+Um gene individual é escolhido aleatoriamente e alterado para outro valor possível. Por exemplo, se o cromossomo é uma string binária (como 101011), a mutação pode mudar um bit, resultando em 100011.
+
+
+**Mutação Por Deslocamento**
+
+Uma parte do cromossomo é deslocada para a esquerda ou direita, enquanto os genes deslocados são preenchidos novamente em outra parte do cromossomo. Usada em problemas de otimização onde a posição relativa dos genes é importante.
+
+
+**Mutação Gaussiana (para números reais)**
+
+Utilizada em AGs com valores contínuos. A mutação adiciona um valor aleatório, retirado de uma distribuição gaussiana, a um gene específico. Essa técnica permite pequenas variações controladas, adequadas para problemas de otimização fina.
+
+**Mutação de Troca**
+
+Dois genes são escolhidos aleatoriamente e trocados entre si. Muito utilizada em problemas de ordenação e de permutação, como o Problema do Caixeiro Viajante, onde a posição dos elementos importa.
+
+
+A taxa de Mutação controla a probabilidade de que uma Mutação ocorra. Geralmente, essa taxa é baixa (ex: 1% a 5%), pois a Mutação excessiva pode levar o algoritmo a um comportamento mais aleatório, dificultando a convergência para uma solução ótima.
+
+Enquanto o Crossover combina boas soluções, a Mutação introduz variação, garantindo que o AG possa escapar de ótimos locais e buscar soluções melhores no espaço de busca.
