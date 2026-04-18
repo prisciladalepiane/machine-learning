@@ -44,3 +44,11 @@ A capacidade de processar sequências longas de texto permite que os LLMs captur
 **Transparência e Responsabilidade**: Entender como os modelos tomam decisões específicas pode ser desafiador, levantando questões sobre a responsabilidade pelas ações realizadas com base nas suas saídas.
 
 Os LLMs representam um avanço significativo na interação entre humanos e máquinas, prometendo transformações em muitos aspectos da vida e do trabalho. No entanto, é importante estar atento aos seus desafios éticos e técnicos para garantir que seu desenvolvimento e uso sejam benéficos e justos para todos.
+
+## Métrica de Perplexidade
+
+A métrica de perplexidade é usada para avaliar a qualidade de modelos de linguagem, especialmente em modelos de previsão de sequência, como redes neurais e Transformers. Ela mede a incerteza do modelo ao prever a próxima palavra ou token em uma sequência. Matematicamente, a perplexidade é a exponencial da entropia cruzada entre a distribuição real das palavras e a distribuição prevista pelo modelo.
+
+Uma perplexidade baixa indica que o modelo está mais confiante e preciso em suas previsões, sugerindo que ele compreende bem os padrões e a estrutura da linguagem. Por outro lado, uma perplexidade alta indica maior incerteza, o que significa que o modelo está tendo dificuldades em prever corretamente, possivelmente por não entender adequadamente o contexto ou as relações entre os tokens.
+
+Em termos práticos, a perplexidade é interpretada como o número de escolhas possíveis que o modelo considera viáveis em média para cada palavra – por exemplo, uma perplexidade de 10 sugere que, em média, o modelo "escolhe" entre 10 palavras possíveis para cada previsão, refletindo seu nível de indecisão.
