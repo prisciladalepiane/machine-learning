@@ -52,3 +52,15 @@ A métrica de perplexidade é usada para avaliar a qualidade de modelos de lingu
 Uma perplexidade baixa indica que o modelo está mais confiante e preciso em suas previsões, sugerindo que ele compreende bem os padrões e a estrutura da linguagem. Por outro lado, uma perplexidade alta indica maior incerteza, o que significa que o modelo está tendo dificuldades em prever corretamente, possivelmente por não entender adequadamente o contexto ou as relações entre os tokens.
 
 Em termos práticos, a perplexidade é interpretada como o número de escolhas possíveis que o modelo considera viáveis em média para cada palavra – por exemplo, uma perplexidade de 10 sugere que, em média, o modelo "escolhe" entre 10 palavras possíveis para cada previsão, refletindo seu nível de indecisão.
+
+- A perplexidade está relacionada à probabilidade que o modelo atribui à sequência de palavras correta.
+- Perplexidade baixa indica que o modelo está "menos confuso", ou seja, consegue prever a próxima palavra na sequência com maior confiança.
+- Perplexidade alta indica que o modelo está "mais confuso", atribuindo probabilidades mais distribuídas entre várias palavras, o que significa que ele está mais incerto sobre a sequência correta.
+
+Interpretação:
+
+- Se a perplexidade é 1, significa que o modelo está totalmente certo sobre qual palavra prever — ele atribui probabilidade 1 ao próximo token correto.
+- Se a perplexidade é maior que 1, o modelo está incerto. A perplexidade de 10, por exemplo, indica que o modelo tem a capacidade de escolher entre 10 palavras igualmente prováveis, em média.
+- Uma perplexidade próxima do tamanho do vocabulário (digamos, milhares) indicaria que o modelo não aprendeu a prever bem e está atribuindo uma probabilidade quase igual para todas as palavras possíveis.
+
+A perplexidade é diretamente ligada à função de perda de entropia cruzada (Cross-Entropy Loss). De fato, a perplexidade é exponencial à entropia cruzada.
