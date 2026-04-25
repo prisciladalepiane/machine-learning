@@ -1,6 +1,6 @@
 # Algoritmos Genéticos (AG)
 
-Algoritmos Genéticos (AGs) são uma técnica de otimização e busca inspirada na teoria da evolução de Charles Darwin. Eles simulam processos evolutivos para encontrar soluções aproximadas para problemas complexos. Aqui estão os princípios fundamentais:
+Algoritmos Genéticos (AGs) são uma **técnica de otimização e busca inspirada na teoria da evolução de Charles Darwin**. Eles simulam processos evolutivos para encontrar soluções aproximadas para problemas complexos. Aqui estão os princípios fundamentais:
 
 **Codificação**: Cada solução possível para o problema é representada por um "indivíduo" ou "cromossomo", que é uma estrutura de dados com uma representação específica. Normalmente, usa-se uma string binária ou uma sequência de números, onde cada posição representa uma característica (ou "gene") da solução.
 
